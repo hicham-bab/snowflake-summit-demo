@@ -2,7 +2,6 @@ version: 2
 
 models:
   - name: dim_customers
-    access: public
     description: >
       Customer dimension — one row per customer, enriched with lifetime order
       statistics, lifecycle stage, and value tier. Rebuilt nightly as a full table.
@@ -55,7 +54,6 @@ models:
           - not_null
 
   - name: dim_dates
-    access: public
     description: >
       Date spine 2022–2027 with standard calendar, Atlas fiscal calendar
       (Feb–Jan), US retail holidays, and season flags.
@@ -66,7 +64,6 @@ models:
           - not_null
 
   - name: fct_orders
-    access: public
     description: >
       Central order fact table — one row per order. Incremental (merge on order_id),
       clustered by [order_date, store_id]. Includes gross/net revenue, return data,
@@ -106,7 +103,6 @@ models:
           - not_null
 
   - name: fct_order_items
-    access: public
     description: >
       Order line-item fact — one row per product per order. Incremental (merge),
       clustered by [order_id, category]. Includes unit margin and line margin_pct
