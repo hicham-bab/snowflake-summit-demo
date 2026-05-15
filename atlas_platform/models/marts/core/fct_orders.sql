@@ -20,18 +20,28 @@
   atlas_marketing and atlas_finance via dbt Mesh cross-project refs.
 */
 
+{% if is_incremental() %}
+-- Compute cutoff in a standalone CTE to avoid correlated aggregate error
+-- when int_orders_enriched is inlined as an ephemeral CTE by Snowflake.
+WITH incremental_cutoff AS (
+    SELECT DATEADD('day', -3, MAX(_loaded_at)) AS cutoff
+    FROM {{ this }}
+),
+
+orders AS (
+    SELECT o.*
+    FROM {{ ref('int_orders_enriched') }} o
+    CROSS JOIN incremental_cutoff ic
+    WHERE o._loaded_at >= ic.cutoff
+)
+
+{% else %}
+
 WITH orders AS (
     SELECT * FROM {{ ref('int_orders_enriched') }}
-
-    {% if is_incremental() %}
-        -- On incremental runs, only process orders loaded in the past 3 days
-        -- (3-day window handles late-arriving data and status updates)
-        WHERE _loaded_at >= (
-            SELECT DATEADD('day', -3, MAX(_loaded_at))
-            FROM {{ this }}
-        )
-    {% endif %}
 )
+
+{% endif %}
 
 SELECT
     order_id,
