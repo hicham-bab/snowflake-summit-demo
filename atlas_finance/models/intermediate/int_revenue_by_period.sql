@@ -41,10 +41,10 @@ daily_agg AS (
         store_channel,
         store_region,
 
-        COUNT(*)                                        AS total_orders,
-        COUNT(*) FILTER (WHERE is_completed)            AS completed_orders,
-        COUNT(*) FILTER (WHERE is_returned)             AS returned_orders,
-        COUNT(*) FILTER (WHERE is_cancelled)            AS cancelled_orders,
+        COUNT(*)                                                        AS total_orders,
+        SUM(CASE WHEN is_completed THEN 1 ELSE 0 END)                   AS completed_orders,
+        SUM(CASE WHEN is_returned  THEN 1 ELSE 0 END)                   AS returned_orders,
+        SUM(CASE WHEN is_cancelled THEN 1 ELSE 0 END)                   AS cancelled_orders,
 
         SUM(CASE WHEN is_completed THEN gross_revenue ELSE 0 END)
                                                         AS gross_revenue,
