@@ -13,7 +13,8 @@ models:
       - name: roas_tier
         tests:
           - accepted_values:
-              values: ['high_performing', 'efficient', 'break_even', 'underperforming']
+              arguments:
+                values: ['high_performing', 'efficient', 'break_even', 'underperforming']
 
   - name: fct_customer_acquisition
     description: >
