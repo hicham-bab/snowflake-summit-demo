@@ -3,7 +3,7 @@ atlas_platform:
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder') }}"
       user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
@@ -15,7 +15,7 @@ atlas_platform:
       query_tag: dbt_platform
     prod:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder') }}"
       user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE_PROD', 'TRANSFORMER_PROD') }}"
@@ -30,7 +30,7 @@ atlas_marketing:
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder') }}"
       user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
@@ -45,7 +45,7 @@ atlas_finance:
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder') }}"
       user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
