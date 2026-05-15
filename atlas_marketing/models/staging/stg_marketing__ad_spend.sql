@@ -24,9 +24,9 @@ renamed AS (
         impressions,
         clicks,
         attributed_orders,
-        click_through_rate_pct,
-        cost_per_click,
-        cost_per_acquisition,
+        ROUND(clicks / NULLIF(impressions, 0) * 100, 4)    AS click_through_rate_pct,
+        ROUND(spend_usd / NULLIF(clicks, 0), 2)            AS cost_per_click,
+        ROUND(spend_usd / NULLIF(attributed_orders, 0), 2) AS cost_per_acquisition,
 
         DATE_TRUNC('week',  spend_date)                AS spend_week,
         DATE_TRUNC('month', spend_date)                AS spend_month,
