@@ -9,14 +9,11 @@
     {%- else -%}
 
         {#-
-          In production, use only the custom schema (no target prefix).
-          In dev, prefix with the target schema to isolate developer schemas.
+          Always use the custom schema name without target prefix so that
+          cross-project sources (atlas_marketing, atlas_finance) can resolve
+          raw/staging/mart schemas consistently across dev and prod.
         -#}
-        {%- if target.name == 'prod' -%}
-            {{ custom_schema_name | trim }}
-        {%- else -%}
-            {{ default_schema }}_{{ custom_schema_name | trim }}
-        {%- endif -%}
+        {{ custom_schema_name | trim }}
 
     {%- endif -%}
 

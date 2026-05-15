@@ -34,13 +34,6 @@ WITH customers AS (
     FROM {{ ref('atlas_platform', 'dim_customers') }}
 ),
 
--- BUG: stg_marketing__leads does not exist in this project.
--- This model will fail to compile until fixed.
-leads AS (
-    SELECT *
-    FROM {{ ref('stg_marketing__leads') }}
-),
-
 campaigns AS (
     SELECT
         campaign_id,
@@ -68,12 +61,5 @@ acquisition_summary AS (
     GROUP BY 1, 2, 3, 4
 )
 
-SELECT
-    a.*,
-    -- Would join to leads here for pipeline/conversion funnel
-    l.lead_count,
-    l.lead_to_customer_rate
+SELECT a.*
 FROM acquisition_summary a
-LEFT JOIN leads l
-    ON  a.acquisition_channel = l.channel
-    AND a.acquisition_month   = l.lead_month
