@@ -76,6 +76,7 @@ SELECT
         ELSE net_revenue
     END                                                 AS realized_revenue,
 
+    _loaded_at,
     CURRENT_TIMESTAMP()                                 AS dbt_updated_at
 
 FROM orders

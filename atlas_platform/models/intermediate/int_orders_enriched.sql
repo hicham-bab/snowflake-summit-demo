@@ -84,7 +84,9 @@ enriched AS (
         r.refund_amount,
         r.return_reason,
         r.return_date,
-        r.refund_amount IS NOT NULL                     AS has_return
+        r.refund_amount IS NOT NULL                     AS has_return,
+
+        o._loaded_at
 
     FROM orders o
     LEFT JOIN order_items_agg oi ON o.order_id = oi.order_id
