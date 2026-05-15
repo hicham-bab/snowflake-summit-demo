@@ -1,0 +1,31 @@
+name: atlas_marketing
+version: '1.0.0'
+require-dbt-version: [">=1.9.0"]
+
+profile: atlas_marketing
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+docs-paths: ["docs"]
+
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  atlas_marketing:
+    intermediate:
+      +materialized: ephemeral
+      +tags: ["intermediate", "marketing"]
+    marts:
+      +materialized: table
+      +schema: marts_marketing
+      +tags: ["mart", "marketing"]
+    # semantic_models/ contains MetricFlow YAML only — no materialization needed
+
+vars:
+  start_date: '2025-06-01'
+  end_date: '2026-06-15'
+  platform_database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"

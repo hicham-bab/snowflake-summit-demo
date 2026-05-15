@@ -1,0 +1,81 @@
+product_id,product_name,sku,category,subcategory,unit_price,cost_price,margin_pct,brand,is_active,launch_date,weight_lbs,is_featured
+1,Wireless Earbuds Pro,ELEC-WEP-001,Electronics,Audio,89.99,29.00,67.8,SoundWave,true,2024-03-01,0.4,true
+2,Smart Home Hub X2,ELEC-SHH-002,Electronics,Smart Home,149.99,52.00,65.3,Nexus,true,2024-06-15,0.8,true
+3,Portable Bluetooth Speaker,ELEC-PBS-003,Electronics,Audio,59.99,18.50,69.2,SoundWave,true,2024-01-10,1.2,false
+4,USB-C Charging Hub 7-Port,ELEC-UCH-004,Electronics,Accessories,39.99,11.00,72.5,TechPro,true,2023-11-01,0.5,false
+5,4K Webcam Ultra HD,ELEC-WCM-005,Electronics,Peripherals,119.99,42.00,65.0,VisionClear,true,2024-09-01,0.6,true
+6,Mechanical Gaming Keyboard,ELEC-MKB-006,Electronics,Peripherals,149.99,55.00,63.3,TechPro,true,2024-07-01,2.1,true
+7,Wireless Charging Pad Duo,ELEC-WCP-007,Electronics,Accessories,49.99,15.00,70.0,Nexus,true,2024-02-14,0.3,false
+8,Smart Watch Series 3,ELEC-SWT-008,Electronics,Wearables,299.99,105.00,65.0,VisionClear,true,2024-08-01,0.3,true
+9,Noise-Cancelling Headphones,ELEC-NCH-009,Electronics,Audio,199.99,72.00,64.0,SoundWave,true,2024-05-01,0.9,true
+10,Portable SSD 1TB,ELEC-SSD-010,Electronics,Storage,119.99,48.00,60.0,TechPro,true,2024-04-01,0.3,false
+11,Coffee Maker Pro 12-Cup,HOME-CMK-011,Home & Kitchen,Appliances,129.99,45.00,65.4,BrewMaster,true,2023-09-15,5.5,true
+12,Air Purifier HEPA True,HOME-APR-012,Home & Kitchen,Air Quality,199.99,72.00,64.0,CleanAir,true,2024-01-20,8.2,true
+13,Robot Vacuum Gen 3,HOME-RBV-013,Home & Kitchen,Cleaning,349.99,130.00,62.9,CleanBot,true,2024-03-10,5.8,true
+14,Smart Blender 1200W,HOME-BLD-014,Home & Kitchen,Appliances,89.99,32.00,64.4,BrewMaster,true,2023-12-01,6.3,false
+15,LED Desk Lamp Touch,HOME-LMP-015,Home & Kitchen,Lighting,49.99,16.00,68.0,BrightHome,true,2023-10-01,1.8,false
+16,Instant Pot 8-Quart,HOME-IPT-016,Home & Kitchen,Appliances,119.99,43.00,64.2,CookPro,true,2023-08-01,11.8,true
+17,Cordless Stick Vacuum,HOME-STV-017,Home & Kitchen,Cleaning,159.99,58.00,63.7,CleanBot,true,2024-02-01,4.8,true
+18,French Press 34oz,HOME-FPR-018,Home & Kitchen,Appliances,34.99,9.50,72.8,BrewMaster,true,2023-07-01,1.6,false
+19,Bamboo Cutting Board Set,HOME-CUT-019,Home & Kitchen,Kitchen Tools,44.99,13.00,71.1,CookPro,true,2023-11-15,3.2,false
+20,Ceramic Non-Stick Pan Set,HOME-PAN-020,Home & Kitchen,Cookware,89.99,30.00,66.7,CookPro,true,2024-01-05,4.5,true
+21,Waterproof Rain Jacket,CLTH-RJK-021,Clothing & Apparel,Outerwear,89.99,28.00,68.9,TrailBlazer,true,2024-09-01,1.1,true
+22,Performance Running Shorts,CLTH-RSH-022,Clothing & Apparel,Activewear,35.99,10.50,70.8,SwiftGear,true,2025-02-01,0.4,false
+23,Merino Wool Crew Neck,CLTH-MCN-023,Clothing & Apparel,Sweaters,79.99,26.00,67.5,ComfortFit,true,2024-08-01,0.9,true
+24,Yoga Leggings High Waist,CLTH-YLG-024,Clothing & Apparel,Activewear,55.99,18.00,67.8,SwiftGear,true,2025-01-15,0.5,true
+25,Oxford Button-Down Shirt,CLTH-OBS-025,Clothing & Apparel,Shirts,49.99,15.50,69.0,ClassicWear,true,2024-06-01,0.6,false
+26,Denim Slim Jeans,CLTH-DSJ-026,Clothing & Apparel,Pants,69.99,22.00,68.6,ClassicWear,true,2024-07-01,1.2,true
+27,Puffer Vest Lightweight,CLTH-PVT-027,Clothing & Apparel,Outerwear,64.99,21.00,67.7,TrailBlazer,true,2024-10-01,0.7,true
+28,Athletic Tank Top,CLTH-ATT-028,Clothing & Apparel,Activewear,24.99,7.00,72.0,SwiftGear,true,2025-03-01,0.3,false
+29,Compression Socks 3-Pack,CLTH-CSS-029,Clothing & Apparel,Accessories,22.99,6.50,71.7,SwiftGear,true,2024-04-01,0.4,false
+30,Fleece Pullover Hoodie,CLTH-FPH-030,Clothing & Apparel,Sweaters,59.99,19.00,68.3,ComfortFit,true,2024-09-15,0.8,true
+31,Resistance Band Set Pro,SPRT-RBS-031,Sports & Outdoors,Fitness,29.99,8.00,73.3,FitForce,true,2024-01-15,1.5,false
+32,Camping Headlamp 500LM,SPRT-CHL-032,Sports & Outdoors,Camping,24.99,7.50,70.0,OutdoorPro,true,2023-06-01,0.3,false
+33,Insulated Water Bottle 32oz,SPRT-IWB-033,Sports & Outdoors,Hydration,34.99,10.00,71.4,HydroFlow,true,2023-09-01,0.9,true
+34,Yoga Mat Premium 6mm,SPRT-YMP-034,Sports & Outdoors,Fitness,59.99,19.00,68.3,FitForce,true,2024-02-01,3.5,true
+35,Foam Roller Deep Tissue,SPRT-FRD-035,Sports & Outdoors,Recovery,39.99,11.00,72.5,FitForce,true,2024-03-01,2.8,false
+36,Trekking Poles Collapsible,SPRT-TPC-036,Sports & Outdoors,Camping,79.99,26.00,67.5,OutdoorPro,true,2024-04-15,2.4,true
+37,Gym Duffel Bag 45L,SPRT-GDB-037,Sports & Outdoors,Bags,54.99,17.50,68.2,FitForce,true,2024-05-01,1.2,false
+38,Jump Rope Speed Cable,SPRT-JRS-038,Sports & Outdoors,Fitness,19.99,5.50,72.5,FitForce,true,2024-01-01,0.4,false
+39,Vitamin D3 5000 IU,HLTH-VTD-039,Beauty & Health,Supplements,18.99,5.00,73.7,VitaCore,true,2023-10-01,0.4,false
+40,Collagen Peptides Powder,HLTH-CPP-040,Beauty & Health,Supplements,44.99,14.00,68.9,VitaCore,true,2024-01-01,1.1,true
+41,Facial Moisturizer SPF 50,HLTH-FMS-041,Beauty & Health,Skincare,34.99,9.50,72.8,PureGlow,true,2024-03-15,0.3,false
+42,Electric Toothbrush Sonic,HLTH-ETS-042,Beauty & Health,Oral Care,79.99,27.00,66.3,BrightSmile,true,2024-02-01,0.5,true
+43,Natural Argan Shampoo,HLTH-NAS-043,Beauty & Health,Hair Care,22.99,6.50,71.7,PureGlow,true,2023-11-01,0.9,false
+44,Retinol Night Serum,HLTH-RNS-044,Beauty & Health,Skincare,49.99,15.00,70.0,PureGlow,true,2024-05-01,0.3,true
+45,Probiotics 50B CFU,HLTH-PRB-045,Beauty & Health,Supplements,29.99,8.50,71.7,VitaCore,true,2024-04-01,0.5,false
+46,Omega-3 Fish Oil 1000mg,HLTH-OMG-046,Beauty & Health,Supplements,24.99,7.00,72.0,VitaCore,true,2023-12-01,0.8,false
+47,Magnetic Building Blocks,TOYS-MBB-047,Toys & Games,Building,39.99,12.00,70.0,PlayBright,true,2024-08-01,1.8,true
+48,Strategy Board Game,TOYS-SBG-048,Toys & Games,Board Games,34.99,10.00,71.4,GameNight,true,2024-10-01,2.5,true
+49,Remote Control Car Stunt,TOYS-RCS-049,Toys & Games,RC Vehicles,49.99,16.00,68.0,SpeedKing,true,2024-07-01,1.4,true
+50,Jigsaw Puzzle 1500 Pieces,TOYS-JGS-050,Toys & Games,Puzzles,29.99,8.00,73.3,PuzzleMind,true,2024-09-01,2.2,false
+51,Kids STEM Science Kit,TOYS-SSK-051,Toys & Games,Educational,44.99,14.00,68.9,BrainBox,true,2024-06-01,1.6,true
+52,Watercolor Paint Set 48,TOYS-WCS-052,Toys & Games,Arts & Crafts,24.99,7.00,72.0,ArtSpark,true,2024-03-01,1.1,false
+53,Specialty Coffee Blend 12oz,FOOD-SCB-053,Food & Beverage,Coffee & Tea,24.99,8.00,68.0,RoastWorks,true,2024-01-01,0.75,true
+54,Whey Protein Chocolate 2lb,FOOD-WPC-054,Food & Beverage,Nutrition,49.99,18.00,64.0,FuelUp,true,2024-02-01,2.0,true
+55,Organic Matcha Powder,FOOD-OMP-055,Food & Beverage,Coffee & Tea,29.99,9.50,68.3,TeaCraft,true,2024-04-01,0.5,false
+56,Trail Mix Variety Pack,FOOD-TMP-056,Food & Beverage,Snacks,18.99,5.50,71.0,NatureBites,true,2023-09-01,1.5,false
+57,Dark Chocolate Gift Set,FOOD-DCG-057,Food & Beverage,Confectionery,34.99,11.00,68.6,CocoaBliss,true,2024-11-01,1.2,true
+58,Electrolyte Drink Powder,FOOD-EDP-058,Food & Beverage,Nutrition,22.99,7.00,69.6,FuelUp,true,2024-05-01,0.8,false
+59,Hot Sauce Sampler Pack,FOOD-HSS-059,Food & Beverage,Condiments,19.99,5.50,72.5,SpiceKing,true,2024-06-01,1.8,false
+60,Cold Brew Coffee Kit,FOOD-CBK-060,Food & Beverage,Coffee & Tea,39.99,13.00,67.5,RoastWorks,true,2025-01-01,2.5,true
+61,Bestseller Novel Hardcover,BOOK-BNH-061,Books & Media,Fiction,28.99,9.00,69.0,PageTurner,true,2025-01-15,1.2,false
+62,Data-Driven Leadership,BOOK-DDL-062,Books & Media,Business,22.99,7.00,69.5,PageTurner,true,2024-10-01,1.0,false
+63,Plant-Based Cookbook,BOOK-PBC-063,Books & Media,Cooking,32.99,10.50,68.2,PageTurner,true,2024-07-01,2.1,true
+64,Mindfulness Journal,BOOK-MJN-064,Books & Media,Self Help,19.99,5.50,72.5,InkWell,true,2024-09-01,0.9,false
+65,Photography Masterclass,BOOK-PMC-065,Books & Media,Arts,34.99,11.00,68.5,PageTurner,true,2024-05-01,1.8,false
+66,Smart Scale with App,HLTH-SSA-066,Beauty & Health,Wellness,59.99,20.00,66.7,HealthTrack,true,2024-06-01,2.2,true
+67,Standing Desk Converter,HOME-SDC-067,Home & Kitchen,Furniture,189.99,72.00,62.1,WorkSmart,true,2024-08-01,15.5,true
+68,Air Fryer 5.8QT,HOME-AFR-068,Home & Kitchen,Appliances,99.99,36.00,64.0,CookPro,true,2024-09-01,8.3,true
+69,Ergonomic Office Chair,HOME-EOC-069,Home & Kitchen,Furniture,299.99,115.00,61.7,WorkSmart,true,2024-10-01,42.0,true
+70,Gaming Monitor 27in 4K,ELEC-GMN-070,Electronics,Monitors,449.99,185.00,58.9,VisionClear,true,2024-11-01,16.5,true
+71,Stainless Steel Cookware Set,HOME-SCS-071,Home & Kitchen,Cookware,149.99,55.00,63.3,CookPro,true,2024-12-01,12.8,true
+72,Electric Spin Scrubber,HOME-ESS-072,Home & Kitchen,Cleaning,59.99,19.00,68.3,CleanBot,true,2025-01-01,2.1,false
+73,Men's Running Shoes,CLTH-MRS-073,Clothing & Apparel,Footwear,89.99,32.00,64.4,SwiftGear,true,2025-02-01,2.0,true
+74,Women's Trail Runners,CLTH-WTR-074,Clothing & Apparel,Footwear,94.99,34.00,64.2,SwiftGear,true,2025-02-01,1.8,true
+75,Backpack 30L Hiking,SPRT-BKP-075,Sports & Outdoors,Bags,79.99,27.00,66.3,OutdoorPro,true,2025-03-01,2.3,true
+76,Protein Bar Variety 12-Pack,FOOD-PBV-076,Food & Beverage,Nutrition,29.99,10.00,66.6,FuelUp,true,2025-01-01,1.8,false
+77,Microfiber Towel Set,HOME-MFT-077,Home & Kitchen,Textiles,29.99,8.50,71.6,ComfortFit,true,2024-11-01,1.5,false
+78,Portable Jump Starter,ELEC-PJS-078,Electronics,Auto,79.99,28.00,65.0,PowerMax,true,2024-12-01,2.8,false
+79,Weighted Blanket 15lb,HOME-WBL-079,Home & Kitchen,Bedding,89.99,32.00,64.4,ComfortFit,true,2025-01-01,15.0,true
+80,Dog GPS Tracker Collar,SPRT-DGT-080,Sports & Outdoors,Pet Accessories,59.99,21.00,65.0,PawTech,true,2025-02-15,0.4,true

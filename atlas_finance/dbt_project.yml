@@ -1,0 +1,37 @@
+name: atlas_finance
+version: '1.0.0'
+require-dbt-version: [">=1.9.0"]
+
+profile: atlas_finance
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+docs-paths: ["docs"]
+
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  atlas_finance:
+    intermediate:
+      +materialized: ephemeral
+      +tags: ["intermediate", "finance"]
+    marts:
+      +materialized: table
+      +schema: marts_finance
+      +tags: ["mart", "finance"]
+      fct_revenue_daily:
+        +materialized: incremental
+        +incremental_strategy: merge
+        +unique_key: revenue_date
+        +cluster_by: ["revenue_date", "store_id"]
+    # semantic_models/ contains MetricFlow YAML only — no materialization needed
+
+vars:
+  start_date: '2025-06-01'
+  end_date: '2026-06-15'
+  platform_database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"
+  finance_database: "{{ env_var('SNOWFLAKE_DATABASE_FIN', 'ATLAS_FINANCE') }}"

@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="customer_lifecycle_stage", model=get_where_subquery(ref('dim_customers')), values=["active","at_risk","churned","never_purchased"]) }}

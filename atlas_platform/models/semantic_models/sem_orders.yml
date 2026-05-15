@@ -1,0 +1,152 @@
+version: 2
+
+semantic_models:
+  - name: orders
+    description: >
+      Semantic model over fct_orders. Powers all order-level metrics in the
+      dbt Semantic Layer — revenue, order counts, AOV, and return rates.
+    model: ref('fct_orders')
+    defaults:
+      agg_time_dimension: order_date
+
+    entities:
+      - name: order
+        type: primary
+        expr: order_id
+      - name: customer
+        type: foreign
+        expr: customer_id
+      - name: store
+        type: foreign
+        expr: store_id
+
+    dimensions:
+      - name: order_date
+        type: time
+        type_params:
+          time_granularity: day
+      - name: order_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: order_quarter
+        type: categorical
+      - name: order_year
+        type: categorical
+      - name: order_status
+        type: categorical
+      - name: store_channel
+        type: categorical
+        label: "Channel"
+      - name: store_region
+        type: categorical
+        label: "Region"
+      - name: traffic_source
+        type: categorical
+        label: "Traffic Source"
+      - name: payment_method
+        type: categorical
+      - name: has_discount
+        type: categorical
+      - name: is_completed
+        type: categorical
+      - name: is_returned
+        type: categorical
+
+    measures:
+      - name: gross_revenue
+        description: Sum of gross order revenue before discounts and returns.
+        agg: sum
+        expr: gross_revenue
+        label: "Gross Revenue"
+      - name: net_revenue
+        description: Sum of net revenue after order-level discounts.
+        agg: sum
+        expr: net_revenue
+        label: "Net Revenue"
+      - name: realized_revenue
+        description: Net revenue minus approved refunds — cash actually collected.
+        agg: sum
+        expr: realized_revenue
+        label: "Realized Revenue"
+      - name: discount_amount
+        agg: sum
+        expr: order_level_discount
+        label: "Total Discounts"
+      - name: refund_amount
+        agg: sum
+        expr: refund_amount
+        label: "Total Refunds"
+      - name: order_count
+        description: Total number of orders placed.
+        agg: count
+        expr: order_id
+        label: "Orders"
+      - name: completed_order_count
+        agg: sum
+        expr: CASE WHEN is_completed THEN 1 ELSE 0 END
+        label: "Completed Orders"
+      - name: returned_order_count
+        agg: sum
+        expr: CASE WHEN is_returned THEN 1 ELSE 0 END
+        label: "Returned Orders"
+      - name: total_units_sold
+        agg: sum
+        expr: total_units
+        label: "Units Sold"
+
+
+metrics:
+  - name: total_gross_revenue
+    description: Total gross revenue across all orders and channels.
+    label: "Total Gross Revenue"
+    type: simple
+    type_params:
+      measure: gross_revenue
+
+  - name: total_net_revenue
+    description: Total net revenue after discounts.
+    label: "Total Net Revenue"
+    type: simple
+    type_params:
+      measure: net_revenue
+
+  - name: realized_revenue
+    description: Revenue net of all approved refunds — closest to cash collected.
+    label: "Realized Revenue"
+    type: simple
+    type_params:
+      measure: realized_revenue
+
+  - name: average_order_value
+    description: Average gross revenue per completed order.
+    label: "Average Order Value (AOV)"
+    type: ratio
+    type_params:
+      numerator: gross_revenue
+      denominator: completed_order_count
+
+  - name: return_rate
+    description: Percentage of orders that were returned.
+    label: "Return Rate"
+    type: ratio
+    type_params:
+      numerator: returned_order_count
+      denominator: order_count
+
+  - name: discount_rate
+    description: Discounts as a percentage of gross revenue.
+    label: "Discount Rate"
+    type: ratio
+    type_params:
+      numerator: discount_amount
+      denominator: gross_revenue
+
+  - name: revenue_mom_growth
+    description: Month-over-month net revenue growth rate.
+    label: "Revenue MoM Growth"
+    type: derived
+    type_params:
+      expr: "(net_revenue - LAG(net_revenue, 1) OVER (ORDER BY metric_time)) / NULLIF(LAG(net_revenue, 1) OVER (ORDER BY metric_time), 0)"
+      metrics:
+        - name: total_net_revenue

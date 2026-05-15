@@ -1,0 +1,128 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: >
+      Customer dimension — one row per customer, enriched with lifetime order
+      statistics, lifecycle stage, and value tier. Rebuilt nightly as a full table.
+      Consumed by atlas_marketing and atlas_finance via dbt Mesh.
+    # BUG #3: customer_id is missing unique + not_null tests.
+    # Copilot will flag this as a data quality gap.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier.
+        # tests:       ← Missing! Copilot will catch this.
+        #   - unique
+        #   - not_null
+      - name: customer_segment
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['VIP', 'Premium', 'Regular', 'Budget']
+      - name: customer_lifecycle_stage
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['active', 'at_risk', 'churned', 'never_purchased']
+      - name: customer_value_tier
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['high_value', 'mid_value', 'low_value', 'no_purchases']
+
+  - name: dim_products
+    description: Product dimension — 80 active SKUs across 8 categories with cost and margin data.
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: sku
+        tests:
+          - unique
+          - not_null
+      - name: category
+        tests:
+          - not_null
+
+  - name: dim_stores
+    description: Store dimension — 19 physical locations + 2 digital channels (online, mobile).
+    columns:
+      - name: store_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_dates
+    description: >
+      Date spine 2022–2027 with standard calendar, Atlas fiscal calendar
+      (Feb–Jan), US retail holidays, and season flags.
+    columns:
+      - name: date_day
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: >
+      Central order fact table — one row per order. Incremental (merge on order_id),
+      clustered by [order_date, store_id]. Includes gross/net revenue, return data,
+      and realized_revenue (net of refunds). Covers June 2025–June 2026.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+      - name: store_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_stores')
+                field: store_id
+      - name: order_status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['COMPLETED', 'RETURNED', 'CANCELLED']
+      - name: gross_revenue
+        tests:
+          - not_null
+      - name: net_revenue
+        tests:
+          - not_null
+
+  - name: fct_order_items
+    description: >
+      Order line-item fact — one row per product per order. Incremental (merge),
+      clustered by [order_id, category]. Includes unit margin and line margin_pct
+      for profitability analysis.
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fct_orders')
+                field: order_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_id

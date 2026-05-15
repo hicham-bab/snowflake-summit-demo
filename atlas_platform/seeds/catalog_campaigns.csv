@@ -1,0 +1,31 @@
+campaign_id,campaign_name,channel,campaign_type,start_date,end_date,budget_usd,target_segment,utm_source,utm_medium,utm_campaign,is_active
+1,Summer Splash 2025,paid_social,awareness,2025-06-01,2025-06-30,45000,all_customers,meta,paid_social,summer_splash_2025,false
+2,Back to School Bash,paid_search,conversion,2025-07-15,2025-08-31,62000,18-34,google,cpc,back_to_school_2025,false
+3,Back to School Email Series,email,retention,2025-07-20,2025-08-25,8000,existing_customers,email,email,bts_email_2025,false
+4,Fall Fashion Launch,paid_social,brand,2025-09-01,2025-10-15,55000,25-44,meta,paid_social,fall_fashion_2025,false
+5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-15,2025-10-31,38000,18-28,tiktok,paid_social,genz_fall_2025,false
+6,Halloween Deals Blitz,paid_search,conversion,2025-10-15,2025-10-31,28000,all_customers,google,cpc,halloween_deals_2025,false
+7,Halloween Email Blast,email,retention,2025-10-20,2025-10-31,5000,existing_customers,email,email,halloween_email_2025,false
+8,Black Friday Preview,email,retention,2025-11-01,2025-11-20,12000,loyalty_members,email,email,bfcm_preview_2025,false
+9,Black Friday Doorbusters,paid_search,conversion,2025-11-25,2025-11-30,95000,all_customers,google,cpc,black_friday_2025,false
+10,Black Friday Social Push,paid_social,conversion,2025-11-25,2025-11-30,78000,all_customers,meta,paid_social,bf_social_2025,false
+11,Cyber Monday Deals,paid_search,conversion,2025-12-01,2025-12-01,110000,all_customers,google,cpc,cyber_monday_2025,false
+12,Cyber Monday TikTok,paid_social,conversion,2025-12-01,2025-12-01,45000,18-34,tiktok,paid_social,cm_tiktok_2025,false
+13,Holiday Gift Guide Email,email,retention,2025-12-01,2025-12-20,15000,existing_customers,email,email,gift_guide_2025,false
+14,Holiday Last Minute Push,paid_search,conversion,2025-12-15,2025-12-23,85000,all_customers,google,cpc,holiday_lastmin_2025,false
+15,New Year New You,paid_social,awareness,2026-01-01,2026-01-31,48000,health_wellness,meta,paid_social,newyear_2026,false
+16,January Fitness Email,email,retention,2026-01-05,2026-01-20,9000,existing_customers,email,email,fitness_jan_2026,false
+17,Valentine's Day Campaign,paid_social,conversion,2026-02-01,2026-02-14,52000,25-44,meta,paid_social,valentines_2026,false
+18,Valentine's Gift Finder Email,email,conversion,2026-02-05,2026-02-13,7000,existing_customers,email,email,vday_email_2026,false
+19,Spring Refresh Launch,paid_social,awareness,2026-03-01,2026-03-31,58000,all_customers,meta,paid_social,spring_refresh_2026,false
+20,Spring Search Campaign,paid_search,conversion,2026-03-01,2026-03-31,65000,all_customers,google,cpc,spring_search_2026,false
+21,St Patrick's Sale,email,retention,2026-03-14,2026-03-17,4500,existing_customers,email,email,stpatricks_2026,false
+22,Earth Day Green Products,paid_social,brand,2026-04-15,2026-04-22,22000,eco_conscious,meta,paid_social,earthday_2026,false
+23,Mother's Day Preview,email,retention,2026-04-25,2026-05-04,11000,existing_customers,email,email,mothersday_preview_2026,false
+24,Mother's Day Search,paid_search,conversion,2026-05-01,2026-05-12,72000,all_customers,google,cpc,mothersday_search_2026,false
+25,Mother's Day Social,paid_social,conversion,2026-05-01,2026-05-11,65000,25-54,meta,paid_social,mothersday_social_2026,false
+26,Summer Preview Launch,paid_social,awareness,2026-05-20,2026-06-15,55000,all_customers,meta,paid_social,summer_preview_2026,false
+27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-01,2025-09-30,35000,all_customers,affiliate,affiliate,aff_q3_2025,false
+28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-01,2025-12-31,48000,all_customers,affiliate,affiliate,aff_q4_2025,false
+29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-01,2026-03-31,42000,all_customers,affiliate,affiliate,aff_q1_2026,false
+30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-01,2026-06-30,50000,all_customers,affiliate,affiliate,aff_q2_2026,true

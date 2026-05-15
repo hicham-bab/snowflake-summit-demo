@@ -1,0 +1,105 @@
+version: 2
+
+semantic_models:
+  - name: customer_ltv
+    description: Semantic model over fct_customer_ltv — customer value and LTV metrics.
+    model: ref('fct_customer_ltv')
+
+    entities:
+      - name: customer
+        type: primary
+        expr: customer_id
+
+    dimensions:
+      - name: customer_segment
+        type: categorical
+        label: "Segment"
+      - name: customer_value_tier
+        type: categorical
+        label: "Value Tier"
+      - name: customer_lifecycle_stage
+        type: categorical
+        label: "Lifecycle Stage"
+      - name: acquisition_channel
+        type: categorical
+      - name: acquisition_month
+        type: time
+        type_params:
+          time_granularity: month
+
+    measures:
+      - name: total_net_ltv
+        agg: sum
+        expr: net_ltv
+        label: "Total Net LTV"
+      - name: avg_net_ltv
+        agg: average
+        expr: net_ltv
+        label: "Avg Net LTV"
+      - name: total_customers_finance
+        agg: count
+        expr: customer_id
+        label: "Customer Count"
+      - name: total_refunds_finance
+        agg: sum
+        expr: total_refunds
+        label: "Total Refunds"
+
+  - name: cohort_retention
+    description: Semantic model over fct_cohort_analysis — cohort retention and cumulative LTV.
+    model: ref('fct_cohort_analysis')
+
+    entities:
+      - name: cohort_period
+        type: primary
+        expr: cohort_month || '_' || CAST(months_since_acquisition AS VARCHAR) || '_' || acquisition_channel
+
+    dimensions:
+      - name: cohort_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: months_since_acquisition
+        type: categorical
+        label: "Month Number"
+      - name: acquisition_channel
+        type: categorical
+      - name: customer_segment
+        type: categorical
+
+    measures:
+      - name: avg_retention_rate
+        agg: average
+        expr: retention_rate_pct
+        label: "Avg Retention Rate"
+      - name: total_cohort_revenue
+        agg: sum
+        expr: cohort_net_revenue
+        label: "Cohort Net Revenue"
+      - name: active_cohort_customers
+        agg: sum
+        expr: active_customers
+        label: "Active Customers"
+
+
+metrics:
+  - name: avg_customer_net_ltv
+    description: Average customer lifetime value net of refunds.
+    label: "Avg Net Customer LTV"
+    type: simple
+    type_params:
+      measure: avg_net_ltv
+
+  - name: cohort_month_1_retention
+    description: Percentage of customers who purchase again in Month 1 after acquisition.
+    label: "Month-1 Retention Rate"
+    type: simple
+    type_params:
+      measure: avg_retention_rate
+
+  - name: total_refunds_finance_metric
+    description: Total refunded amount — impacts realized revenue and cash flow.
+    label: "Total Refunds"
+    type: simple
+    type_params:
+      measure: total_refunds_finance

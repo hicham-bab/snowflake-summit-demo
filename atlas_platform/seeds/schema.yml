@@ -1,0 +1,58 @@
+version: 2
+
+seeds:
+  - name: catalog_products
+    description: Master product catalog for Atlas Commerce — 80 SKUs across 8 categories.
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: sku
+        tests:
+          - unique
+          - not_null
+      - name: category
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Electronics', 'Home & Kitchen', 'Clothing & Apparel', 'Sports & Outdoors',
+                         'Beauty & Health', 'Toys & Games', 'Food & Beverage', 'Books & Media']
+      - name: unit_price
+        tests:
+          - not_null
+      - name: is_active
+        tests:
+          - not_null
+
+  - name: catalog_stores
+    description: Physical stores and digital channels — 19 retail locations + 2 digital channels.
+    columns:
+      - name: store_id
+        tests:
+          - unique
+          - not_null
+      - name: store_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['physical', 'digital']
+      - name: channel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['in-store', 'online', 'mobile']
+
+  - name: catalog_campaigns
+    description: Marketing campaign registry covering June 2025 through June 2026.
+    columns:
+      - name: campaign_id
+        tests:
+          - unique
+          - not_null
+      - name: channel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['paid_social', 'paid_search', 'email', 'affiliate']

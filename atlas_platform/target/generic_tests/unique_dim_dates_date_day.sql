@@ -1,0 +1,1 @@
+{{ test_unique(column_name="date_day", model=get_where_subquery(ref('dim_dates'))) }}

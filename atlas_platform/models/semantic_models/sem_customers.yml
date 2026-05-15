@@ -1,0 +1,93 @@
+version: 2
+
+semantic_models:
+  - name: customers
+    description: >
+      Semantic model over dim_customers. Powers customer-centric metrics:
+      LTV, segment counts, acquisition performance, and lifecycle analysis.
+    model: ref('dim_customers')
+
+    entities:
+      - name: customer
+        type: primary
+        expr: customer_id
+
+    dimensions:
+      - name: customer_segment
+        type: categorical
+        label: "Customer Segment"
+      - name: customer_lifecycle_stage
+        type: categorical
+        label: "Lifecycle Stage"
+      - name: customer_value_tier
+        type: categorical
+        label: "Value Tier"
+      - name: acquisition_channel
+        type: categorical
+        label: "Acquisition Channel"
+      - name: acquisition_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: state
+        type: categorical
+        label: "State"
+      - name: gender
+        type: categorical
+      - name: is_email_subscribed
+        type: categorical
+
+    measures:
+      - name: customer_count
+        description: Total number of customers.
+        agg: count
+        expr: customer_id
+        label: "Customers"
+      - name: active_customer_count
+        agg: sum
+        expr: CASE WHEN customer_lifecycle_stage = 'active' THEN 1 ELSE 0 END
+        label: "Active Customers"
+      - name: total_customer_ltv
+        description: Sum of lifetime net revenue across all customers.
+        agg: sum
+        expr: lifetime_net_revenue
+        label: "Total Customer LTV"
+      - name: avg_customer_ltv
+        agg: average
+        expr: lifetime_net_revenue
+        label: "Average Customer LTV"
+      - name: avg_order_count_per_customer
+        agg: average
+        expr: total_orders
+        label: "Avg Orders per Customer"
+
+
+metrics:
+  - name: total_customers
+    description: Total number of customers in the system.
+    label: "Total Customers"
+    type: simple
+    type_params:
+      measure: customer_count
+
+  - name: active_customers
+    description: Customers who ordered in the past 90 days.
+    label: "Active Customers"
+    type: simple
+    type_params:
+      measure: active_customer_count
+
+  - name: average_customer_ltv
+    description: Average lifetime net revenue per customer.
+    label: "Avg Customer LTV"
+    type: simple
+    type_params:
+      measure: avg_customer_ltv
+
+  - name: customer_retention_rate
+    description: Share of customers who are active vs. at-risk or churned.
+    label: "Customer Retention Rate"
+    type: ratio
+    type_params:
+      numerator: active_customer_count
+      denominator: customer_count

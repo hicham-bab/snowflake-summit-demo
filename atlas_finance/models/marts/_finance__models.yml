@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: fct_revenue_daily
+    description: >
+      Daily revenue rollup — one row per day per store. Incremental merge on revenue_date.
+      Clustered by [revenue_date, store_id]. Includes gross margin calculation.
+      NOTE: gross_margin_pct has a known operator precedence bug (see model SQL).
+    columns:
+      - name: revenue_date
+        tests:
+          - not_null
+      - name: store_id
+        tests:
+          - not_null
+      - name: gross_revenue
+        tests:
+          - not_null
+      - name: net_revenue
+        tests:
+          - not_null
+
+  - name: fct_revenue_monthly
+    description: >
+      Monthly revenue aggregation — exec-reporting grain. Full table refresh.
+      Includes month-over-month growth rate and correct gross margin formula.
+    columns:
+      - name: revenue_month
+        tests:
+          - not_null
+      - name: gross_margin_pct
+        description: >
+          Correctly computed gross margin as (net_revenue - total_cogs) / net_revenue * 100.
+          The daily model has a bug here that this model corrects.
+
+  - name: fct_customer_ltv
+    description: >
+      Customer lifetime value — one row per customer. Full table refresh.
+      Includes net_ltv (minus refunds) and predicted_12m_ltv extrapolation.
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_cohort_analysis
+    description: >
+      Monthly cohort retention analysis — one row per cohort × activity month.
+      Computes retention_rate_pct and cumulative_cohort_revenue for the investor deck.
+    columns:
+      - name: cohort_month
+        tests:
+          - not_null
+      - name: retention_rate_pct
+        tests:
+          - not_null
+
+  - name: dim_fiscal_calendar
+    description: >
+      Atlas's fiscal calendar (Feb 1 – Jan 31) derived from the platform dim_dates.
+      Includes fiscal year/quarter/period labels for budget vs. actuals alignment.
+    columns:
+      - name: date_day
+        tests:
+          - unique
+          - not_null

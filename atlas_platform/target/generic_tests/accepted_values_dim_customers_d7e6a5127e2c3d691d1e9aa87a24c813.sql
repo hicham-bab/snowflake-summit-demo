@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="customer_value_tier", model=get_where_subquery(ref('dim_customers')), values=["high_value","mid_value","low_value","no_purchases"]) }}

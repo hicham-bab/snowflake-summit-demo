@@ -1,0 +1,154 @@
+/*
+  Atlas Commerce — Snowflake Environment Setup
+  ================================================
+  Run as ACCOUNTADMIN before executing dbt runs.
+  Creates warehouses, databases, roles, and grants for the three-project Mesh demo.
+*/
+
+-- ============================================================
+-- WAREHOUSES
+-- ============================================================
+CREATE WAREHOUSE IF NOT EXISTS ATLAS_WH
+    WAREHOUSE_SIZE   = 'MEDIUM'
+    AUTO_SUSPEND     = 120
+    AUTO_RESUME      = TRUE
+    INITIALLY_SUSPENDED = TRUE
+    COMMENT = 'Primary warehouse for Atlas demo — Snowflake Summit';
+
+CREATE WAREHOUSE IF NOT EXISTS ATLAS_GENERATE_WH
+    WAREHOUSE_SIZE   = 'LARGE'
+    AUTO_SUSPEND     = 60
+    AUTO_RESUME      = TRUE
+    INITIALLY_SUSPENDED = TRUE
+    COMMENT = 'Used once for dbt run --select tag:generate to create synthetic data';
+
+-- ============================================================
+-- DATABASES
+-- ============================================================
+CREATE DATABASE IF NOT EXISTS ATLAS_PLATFORM
+    COMMENT = 'Core platform — customers, orders, products, stores';
+
+CREATE DATABASE IF NOT EXISTS ATLAS_MARKETING
+    COMMENT = 'Marketing analytics — campaigns, attribution, ROAS';
+
+CREATE DATABASE IF NOT EXISTS ATLAS_FINANCE
+    COMMENT = 'Finance analytics — revenue, P&L, cohorts, LTV';
+
+-- ============================================================
+-- SCHEMAS (within each database)
+-- ============================================================
+
+-- Platform schemas
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.RAW;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.SEEDS;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.STAGING_ECOMMERCE;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.STAGING_MARKETING;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.MARTS_CORE;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.MARTS_INVENTORY;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.SNAPSHOTS;
+CREATE SCHEMA IF NOT EXISTS ATLAS_PLATFORM.SEMANTIC;
+
+-- Marketing schemas
+CREATE SCHEMA IF NOT EXISTS ATLAS_MARKETING.MARTS_MARKETING;
+CREATE SCHEMA IF NOT EXISTS ATLAS_MARKETING.SEMANTIC;
+
+-- Finance schemas
+CREATE SCHEMA IF NOT EXISTS ATLAS_FINANCE.MARTS_FINANCE;
+CREATE SCHEMA IF NOT EXISTS ATLAS_FINANCE.SEMANTIC;
+
+-- ============================================================
+-- ROLES
+-- ============================================================
+CREATE ROLE IF NOT EXISTS TRANSFORMER
+    COMMENT = 'dbt service account role — used by all three projects';
+
+CREATE ROLE IF NOT EXISTS ANALYST
+    COMMENT = 'Read-only access for BI tools and Cortex Analyst';
+
+-- Role hierarchy
+GRANT ROLE TRANSFORMER TO ROLE SYSADMIN;
+GRANT ROLE ANALYST     TO ROLE SYSADMIN;
+
+-- ============================================================
+-- WAREHOUSE GRANTS
+-- ============================================================
+GRANT USAGE ON WAREHOUSE ATLAS_WH          TO ROLE TRANSFORMER;
+GRANT USAGE ON WAREHOUSE ATLAS_GENERATE_WH TO ROLE TRANSFORMER;
+GRANT USAGE ON WAREHOUSE ATLAS_WH          TO ROLE ANALYST;
+
+-- ============================================================
+-- DATABASE GRANTS
+-- ============================================================
+GRANT USAGE ON DATABASE ATLAS_PLATFORM  TO ROLE TRANSFORMER;
+GRANT USAGE ON DATABASE ATLAS_MARKETING TO ROLE TRANSFORMER;
+GRANT USAGE ON DATABASE ATLAS_FINANCE   TO ROLE TRANSFORMER;
+
+GRANT USAGE ON DATABASE ATLAS_PLATFORM  TO ROLE ANALYST;
+GRANT USAGE ON DATABASE ATLAS_MARKETING TO ROLE ANALYST;
+GRANT USAGE ON DATABASE ATLAS_FINANCE   TO ROLE ANALYST;
+
+-- ============================================================
+-- SCHEMA GRANTS — TRANSFORMER (full ownership for dbt)
+-- ============================================================
+GRANT ALL ON ALL SCHEMAS IN DATABASE ATLAS_PLATFORM  TO ROLE TRANSFORMER;
+GRANT ALL ON ALL SCHEMAS IN DATABASE ATLAS_MARKETING TO ROLE TRANSFORMER;
+GRANT ALL ON ALL SCHEMAS IN DATABASE ATLAS_FINANCE   TO ROLE TRANSFORMER;
+
+GRANT ALL ON FUTURE SCHEMAS IN DATABASE ATLAS_PLATFORM  TO ROLE TRANSFORMER;
+GRANT ALL ON FUTURE SCHEMAS IN DATABASE ATLAS_MARKETING TO ROLE TRANSFORMER;
+GRANT ALL ON FUTURE SCHEMAS IN DATABASE ATLAS_FINANCE   TO ROLE TRANSFORMER;
+
+-- ============================================================
+-- OBJECT GRANTS — TRANSFORMER
+-- ============================================================
+GRANT ALL ON ALL TABLES IN DATABASE ATLAS_PLATFORM  TO ROLE TRANSFORMER;
+GRANT ALL ON ALL TABLES IN DATABASE ATLAS_MARKETING TO ROLE TRANSFORMER;
+GRANT ALL ON ALL TABLES IN DATABASE ATLAS_FINANCE   TO ROLE TRANSFORMER;
+
+GRANT ALL ON ALL VIEWS IN DATABASE ATLAS_PLATFORM   TO ROLE TRANSFORMER;
+GRANT ALL ON ALL VIEWS IN DATABASE ATLAS_MARKETING  TO ROLE TRANSFORMER;
+GRANT ALL ON ALL VIEWS IN DATABASE ATLAS_FINANCE    TO ROLE TRANSFORMER;
+
+GRANT ALL ON FUTURE TABLES IN DATABASE ATLAS_PLATFORM  TO ROLE TRANSFORMER;
+GRANT ALL ON FUTURE TABLES IN DATABASE ATLAS_MARKETING TO ROLE TRANSFORMER;
+GRANT ALL ON FUTURE TABLES IN DATABASE ATLAS_FINANCE   TO ROLE TRANSFORMER;
+
+GRANT ALL ON FUTURE VIEWS IN DATABASE ATLAS_PLATFORM  TO ROLE TRANSFORMER;
+GRANT ALL ON FUTURE VIEWS IN DATABASE ATLAS_MARKETING TO ROLE TRANSFORMER;
+GRANT ALL ON FUTURE VIEWS IN DATABASE ATLAS_FINANCE   TO ROLE TRANSFORMER;
+
+-- ============================================================
+-- OBJECT GRANTS — ANALYST (read-only)
+-- ============================================================
+GRANT SELECT ON ALL TABLES IN DATABASE ATLAS_PLATFORM  TO ROLE ANALYST;
+GRANT SELECT ON ALL TABLES IN DATABASE ATLAS_MARKETING TO ROLE ANALYST;
+GRANT SELECT ON ALL TABLES IN DATABASE ATLAS_FINANCE   TO ROLE ANALYST;
+
+GRANT SELECT ON FUTURE TABLES IN DATABASE ATLAS_PLATFORM  TO ROLE ANALYST;
+GRANT SELECT ON FUTURE TABLES IN DATABASE ATLAS_MARKETING TO ROLE ANALYST;
+GRANT SELECT ON FUTURE TABLES IN DATABASE ATLAS_FINANCE   TO ROLE ANALYST;
+
+-- ============================================================
+-- dbt SERVICE USER
+-- ============================================================
+-- Uncomment and fill in your password to create the dbt service user:
+-- CREATE USER IF NOT EXISTS DBT_MERIDIAN
+--     PASSWORD = '<your_password>'
+--     DEFAULT_ROLE      = TRANSFORMER
+--     DEFAULT_WAREHOUSE = ATLAS_WH
+--     DEFAULT_NAMESPACE  = ATLAS_PLATFORM.PUBLIC
+--     COMMENT = 'dbt service account for Atlas demo';
+-- GRANT ROLE TRANSFORMER TO USER DBT_MERIDIAN;
+
+-- ============================================================
+-- SEMANTIC VIEW PRIVILEGE (required for Cortex Analyst)
+-- ============================================================
+GRANT CREATE SEMANTIC VIEW ON SCHEMA ATLAS_PLATFORM.MARTS_CORE  TO ROLE TRANSFORMER;
+GRANT CREATE SEMANTIC VIEW ON SCHEMA ATLAS_MARKETING.MARTS_MARKETING TO ROLE TRANSFORMER;
+
+-- ============================================================
+-- VERIFY
+-- ============================================================
+SHOW DATABASES LIKE 'MERIDIAN%';
+SHOW WAREHOUSES LIKE 'MERIDIAN%';
+SHOW ROLES LIKE 'TRANSFORMER%';

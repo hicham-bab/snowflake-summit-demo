@@ -1,0 +1,657 @@
+==================== 2026-05-15T13:18:51.077636Z | 019e2bca-2ec4-7583-94c7-b7a627f7a803 ====================
+13:18:51.077887 [info ]: dbt-fusion 2.0.0-preview.175
+13:18:51.177102 [info ]:    Started resolving packages from packages.yml
+13:18:51.366154 [info ]:   Finished [  0.19s] resolving packages from packages.yml (2 items)
+13:18:51.366201 [info ]: Installing packages
+13:18:51.366672 [info ]: Installing dbt-labs/dbt_utils
+13:18:51.669672 [info ]:  Installed dbt-labs/dbt_utils: 1.3.3
+13:18:51.669690 [info ]: Installing dbt-labs/audit_helper
+13:18:51.828745 [info ]:  Installed dbt-labs/audit_helper: 0.13.0
+13:18:51.828760 [info ]:  Installed 2 packages
+13:18:51.857991 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully [780ms]
+==================== 2026-05-15T13:18:54.699041Z | 019e2bca-3ce8-7fe1-bfbc-53a1a6c2cad1 ====================
+13:18:54.699170 [info ]: dbt-fusion 2.0.0-preview.175
+13:18:54.699453 [info ]: Started loading project
+13:18:54.700665 [info ]: Loading profiles.yml
+13:18:54.701501 [info ]: Finished loading project [  0.00s]
+13:18:54.701595 [error]: dbt1005: Jinja render error: invalid operation: 'env_var': environment variable 'SNOWFLAKE_ACCOUNT' not found
+(in :1:1)
+13:18:54.807951 [info ]: 
+==================== Execution Summary =====================
+Finished 'parse' with 1 error [108ms]
+==================== 2026-05-15T13:19:14.487343Z | 019e2bca-8a36-7563-8f98-035b5f39c9c5 ====================
+13:19:14.487428 [info ]: dbt-fusion 2.0.0-preview.175
+13:19:14.487603 [info ]: Started loading project
+13:19:14.488478 [info ]: Loading profiles.yml
+13:19:14.580983 [info ]: Loading packages.yml
+13:19:14.581148 [debug]:    Started loading packages
+13:19:14.584396 [debug]:     Loaded [  0.00s] packages
+13:19:14.585103 [info ]: Finished loading project [  0.10s]
+13:19:14.585515 [info ]: Started parsing
+13:19:14.608731 [debug]: Finished parsing models/generate/_generate__models.yml [  0.00s]
+13:19:14.609111 [debug]: Finished parsing models/marts/core/_core__models.yml [  0.00s]
+13:19:14.609284 [debug]: Finished parsing models/marts/inventory/_inventory__models.yml [  0.00s]
+13:19:14.609470 [debug]: Finished parsing models/semantic_models/saved_queries.yml [  0.00s]
+13:19:14.610015 [warn ]: dbt0102: The package 'atlas_platform' defines semantic models and metrics using the legacy YAML. Please migrate to the new YAML to use the semantic layer with dbt Fusion.
+13:19:14.610046 [debug]: Finished parsing models/semantic_models/sem_customers.yml [  0.00s]
+13:19:14.610332 [debug]: Finished parsing models/semantic_models/sem_orders.yml [  0.00s]
+13:19:14.610528 [debug]: Finished parsing models/staging/ecommerce/_ecommerce__sources.yml [  0.00s]
+13:19:14.610638 [debug]: Finished parsing models/staging/marketing/_marketing__sources.yml [  0.00s]
+13:19:14.610783 [debug]: Finished parsing seeds/schema.yml [  0.00s]
+13:19:14.611677 [error]: dbt1060: Ignored unexpected key `"tags"`. YAML path: `tags`.
+  --> models/staging/ecommerce/_ecommerce__sources.yml:10:5
+13:19:14.612509 [error]: dbt1060: Ignored unexpected key `"tags"`. YAML path: `tags`.
+  --> models/staging/ecommerce/_ecommerce__sources.yml:10:5
+13:19:14.612776 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/staging/ecommerce/_ecommerce__sources.yml:58:26
+13:19:14.613118 [error]: dbt1060: Ignored unexpected key `"tags"`. YAML path: `tags`.
+  --> models/staging/ecommerce/_ecommerce__sources.yml:10:5
+13:19:14.613383 [error]: dbt1060: Ignored unexpected key `"tags"`. YAML path: `tags`.
+  --> models/staging/ecommerce/_ecommerce__sources.yml:10:5
+13:19:14.613619 [error]: dbt1060: Ignored unexpected key `"tags"`. YAML path: `tags`.
+  --> models/staging/marketing/_marketing__sources.yml:10:5
+13:19:14.613689 [error]: dbt1060: Ignored unexpected key `"freshness"`. YAML path: `freshness`.
+  --> models/staging/marketing/_marketing__sources.yml:12:5
+13:19:14.613750 [error]: dbt1060: Ignored unexpected key `"loaded_at_field"`. YAML path: `loaded_at_field`.
+  --> models/staging/marketing/_marketing__sources.yml:15:5
+13:19:14.614242 [error]: dbt1060: Ignored unexpected key `"tags"`. YAML path: `tags`.
+  --> models/staging/marketing/_marketing__sources.yml:10:5
+13:19:14.614280 [error]: dbt1060: Ignored unexpected key `"freshness"`. YAML path: `freshness`.
+  --> models/staging/marketing/_marketing__sources.yml:12:5
+13:19:14.614316 [error]: dbt1060: Ignored unexpected key `"loaded_at_field"`. YAML path: `loaded_at_field`.
+  --> models/staging/marketing/_marketing__sources.yml:15:5
+13:19:14.615450 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> seeds/schema.yml:54:23
+13:19:14.616015 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> seeds/schema.yml:19:23
+13:19:14.616805 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> seeds/schema.yml:42:23
+13:19:14.617198 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> seeds/schema.yml:38:23
+13:19:14.618162 [debug]: Finished parsing target/snapshots/scd_customers.sql [  0.00s]
+13:19:14.619276 [debug]: Finished parsing models/generate/raw_ad_spend.sql [  0.00s]
+13:19:14.619537 [debug]: Finished parsing models/generate/raw_customers.sql [  0.00s]
+13:19:14.619749 [debug]: Finished parsing models/generate/raw_events.sql [  0.00s]
+13:19:14.619979 [debug]: Finished parsing models/generate/raw_order_items.sql [  0.00s]
+13:19:14.620171 [debug]: Finished parsing models/generate/raw_orders.sql [  0.00s]
+13:19:14.620343 [debug]: Finished parsing models/generate/raw_returns.sql [  0.00s]
+13:19:14.620622 [debug]: Finished parsing models/intermediate/int_customers_with_orders.sql [  0.00s]
+13:19:14.620837 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+13:19:14.621047 [debug]: Finished parsing models/intermediate/int_orders_enriched.sql [  0.00s]
+13:19:14.621221 [error]: dbt1060: While parsing config: Ignored unexpected key `"group"`. YAML path: `group`.
+  --> models/marts/core/_core__models.yml:11:5
+13:19:14.621269 [error]: dbt1060: While parsing config: Ignored unexpected key `"access"`. YAML path: `access`.
+  --> models/marts/core/_core__models.yml:12:5
+13:19:14.621458 [debug]: Finished parsing models/marts/core/dim_customers.sql [  0.00s]
+13:19:14.621515 [error]: dbt1060: While parsing config: Ignored unexpected key `"group"`. YAML path: `group`.
+  --> models/marts/core/_core__models.yml:66:5
+13:19:14.621552 [error]: dbt1060: While parsing config: Ignored unexpected key `"access"`. YAML path: `access`.
+  --> models/marts/core/_core__models.yml:67:5
+13:19:14.621736 [debug]: Finished parsing models/marts/core/dim_dates.sql [  0.00s]
+13:19:14.621800 [error]: dbt1060: While parsing config: Ignored unexpected key `"group"`. YAML path: `group`.
+  --> models/marts/core/_core__models.yml:39:5
+13:19:14.621835 [error]: dbt1060: While parsing config: Ignored unexpected key `"access"`. YAML path: `access`.
+  --> models/marts/core/_core__models.yml:40:5
+13:19:14.621990 [debug]: Finished parsing models/marts/core/dim_products.sql [  0.00s]
+13:19:14.622048 [error]: dbt1060: While parsing config: Ignored unexpected key `"group"`. YAML path: `group`.
+  --> models/marts/core/_core__models.yml:56:5
+13:19:14.622095 [error]: dbt1060: While parsing config: Ignored unexpected key `"access"`. YAML path: `access`.
+  --> models/marts/core/_core__models.yml:57:5
+13:19:14.622532 [debug]: Finished parsing models/marts/core/dim_stores.sql [  0.00s]
+13:19:14.622613 [error]: dbt1060: While parsing config: Ignored unexpected key `"group"`. YAML path: `group`.
+  --> models/marts/core/_core__models.yml:116:5
+13:19:14.622655 [error]: dbt1060: While parsing config: Ignored unexpected key `"access"`. YAML path: `access`.
+  --> models/marts/core/_core__models.yml:117:5
+13:19:14.623102 [debug]: Finished parsing models/marts/core/fct_order_items.sql [  0.00s]
+13:19:14.623245 [error]: dbt1060: While parsing config: Ignored unexpected key `"group"`. YAML path: `group`.
+  --> models/marts/core/_core__models.yml:78:5
+13:19:14.623287 [error]: dbt1060: While parsing config: Ignored unexpected key `"access"`. YAML path: `access`.
+  --> models/marts/core/_core__models.yml:79:5
+13:19:14.623572 [debug]: Finished parsing models/marts/core/fct_orders.sql [  0.00s]
+13:19:14.624428 [debug]: Finished parsing models/marts/inventory/fct_inventory_daily.sql [  0.00s]
+13:19:14.625151 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__customers.sql [  0.00s]
+13:19:14.625366 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__order_items.sql [  0.00s]
+13:19:14.625604 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__orders.sql [  0.00s]
+13:19:14.625857 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__returns.sql [  0.00s]
+13:19:14.626022 [debug]: Finished parsing models/staging/marketing/stg_marketing__ad_spend.sql [  0.00s]
+13:19:14.626173 [debug]: Finished parsing models/staging/marketing/stg_marketing__campaigns.sql [  0.00s]
+13:19:14.626586 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:32:23
+13:19:14.626826 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:28:23
+13:19:14.626977 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:36:23
+13:19:14.628773 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:132:22
+13:19:14.629120 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:138:22
+13:19:14.629514 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:97:22
+13:19:14.630013 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:107:23
+13:19:14.630205 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/_core__models.yml:103:22
+13:19:14.631637 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/generate/_generate__models.yml:47:22
+13:19:14.634353 [debug]: Finished parsing target/generic_tests/unique_fct_order_items_order_item_id.sql [  0.00s]
+13:19:14.634861 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:19:14.634962 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:19:14.634956 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_customer_id.sql [  0.00s]
+13:19:14.635013 [debug]: Finished parsing target/generic_tests/unique_raw_customers_customer_id.sql [  0.00s]
+13:19:14.635060 [debug]: Finished parsing target/generic_tests/unique_dim_campaigns_campaign_id.sql [  0.00s]
+13:19:14.635059 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_date.sql [  0.00s]
+13:19:14.635064 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_c9e1bd56848bc6c40440c2e5a59b7a45.sql [  0.00s]
+13:19:14.635086 [debug]: Finished parsing target/generic_tests/not_null_dim_products_sku.sql [  0.00s]
+13:19:14.635199 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:19:14.635153 [debug]: Finished parsing target/generic_tests/unique_dim_products_sku.sql [  0.00s]
+13:19:14.635587 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_date.sql [  0.00s]
+13:19:14.635806 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_item_id.sql [  0.00s]
+13:19:14.635864 [debug]: Finished parsing target/generic_tests/unique_dim_stores_store_id.sql [  0.00s]
+13:19:14.636038 [debug]: Finished parsing target/generic_tests/not_null_raw_customers_customer_id.sql [  0.00s]
+13:19:14.636043 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_d7e6a5127e2c3d691d1e9aa87a24c813.sql [  0.00s]
+13:19:14.636046 [debug]: Finished parsing target/generic_tests/not_null_dim_products_sku.sql [  0.00s]
+13:19:14.636096 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:19:14.636131 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_id.sql [  0.00s]
+13:19:14.636136 [debug]: Finished parsing target/generic_tests/unique_fct_orders_order_id.sql [  0.00s]
+13:19:14.636147 [debug]: Finished parsing target/generic_tests/unique_raw_orders_order_id.sql [  0.00s]
+13:19:14.636146 [debug]: Finished parsing target/generic_tests/not_null_dim_campaigns_campaign_id.sql [  0.00s]
+13:19:14.636216 [debug]: Finished parsing target/generic_tests/not_null_dim_stores_store_id.sql [  0.00s]
+13:19:14.636262 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_product_id.sql [  0.00s]
+13:19:14.636927 [debug]: Finished parsing target/generic_tests/unique_raw_events_event_id.sql [  0.00s]
+13:19:14.636997 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_id.sql [  0.00s]
+13:19:14.637007 [debug]: Finished parsing target/generic_tests/accepted_values_dim_campaigns_25541df64b3cf7618e669e2ba6a56920.sql [  0.00s]
+13:19:14.637018 [debug]: Finished parsing target/generic_tests/unique_dim_dates_date_day.sql [  0.00s]
+13:19:14.637052 [debug]: Finished parsing target/generic_tests/not_null_dim_products_unit_price.sql [  0.00s]
+13:19:14.637063 [debug]: Finished parsing target/generic_tests/source_relationships_ecommerce_65186aa9822047f78337217c35a79791.sql [  0.00s]
+13:19:14.637080 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_campaign_id.sql [  0.00s]
+13:19:14.637098 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_id.sql [  0.00s]
+13:19:14.637127 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_b0f28835da40fb8b0928f9f26aa86d50.sql [  0.00s]
+13:19:14.637163 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_product_id.sql [  0.00s]
+13:19:14.637569 [debug]: Finished parsing target/generic_tests/accepted_values_dim_stores_channel__in_store__online__mobile.sql [  0.00s]
+13:19:14.637610 [debug]: Finished parsing target/generic_tests/not_null_dim_products_category.sql [  0.00s]
+13:19:14.637611 [debug]: Finished parsing target/generic_tests/not_null_raw_events_event_id.sql [  0.00s]
+13:19:14.637680 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:19:14.637738 [debug]: Finished parsing target/generic_tests/accepted_values_fct_orders_a2ba3e6adcfd570d0e3a76b65dc477ed.sql [  0.00s]
+13:19:14.637972 [debug]: Finished parsing target/generic_tests/not_null_dim_dates_date_day.sql [  0.00s]
+13:19:14.638014 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_date.sql [  0.00s]
+13:19:14.638111 [debug]: Finished parsing target/generic_tests/accepted_values_dim_products_c14f138f9c56ba9ab4f3a7f852627f3b.sql [  0.00s]
+13:19:14.638146 [debug]: Finished parsing target/generic_tests/unique_raw_returns_return_id.sql [  0.00s]
+13:19:14.638228 [debug]: Finished parsing target/generic_tests/unique_dim_stores_store_id.sql [  0.00s]
+13:19:14.638266 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_id.sql [  0.00s]
+13:19:14.638280 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_customer_id.sql [  0.00s]
+13:19:14.638329 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:19:14.638346 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_snapshot_date.sql [  0.00s]
+13:19:14.638357 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_store_id.sql [  0.00s]
+13:19:14.638367 [debug]: Finished parsing target/generic_tests/not_null_dim_products_category.sql [  0.00s]
+13:19:14.638677 [debug]: Finished parsing target/generic_tests/not_null_dim_products_is_active.sql [  0.00s]
+13:19:14.638793 [debug]: Finished parsing target/generic_tests/not_null_dim_stores_store_id.sql [  0.00s]
+13:19:14.638828 [debug]: Finished parsing target/generic_tests/not_null_raw_returns_return_id.sql [  0.00s]
+13:19:14.638881 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_0c6c6d9e6f30dfb9b653557ebf38e47c.sql [  0.00s]
+13:19:14.638957 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:19:14.638958 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:19:14.638991 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_store_id.sql [  0.00s]
+13:19:14.639317 [debug]: Finished parsing target/generic_tests/unique_dim_products_product_id.sql [  0.00s]
+13:19:14.639432 [debug]: Finished parsing target/generic_tests/relationships_raw_order_items_e5eae7d749019a6c8b3b4ca333ee3ab5.sql [  0.00s]
+13:19:14.639468 [debug]: Finished parsing target/generic_tests/unique_dim_products_product_id.sql [  0.00s]
+13:19:14.639554 [debug]: Finished parsing target/generic_tests/accepted_values_dim_stores_store_type__physical__digital.sql [  0.00s]
+13:19:14.639562 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_store_id__store_id__ref_dim_stores_.sql [  0.00s]
+13:19:14.639768 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_id.sql [  0.00s]
+13:19:14.639798 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:19:14.639844 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_gross_revenue.sql [  0.00s]
+13:19:14.639929 [debug]: Finished parsing target/generic_tests/not_null_dim_products_product_id.sql [  0.00s]
+13:19:14.639965 [debug]: Finished parsing target/generic_tests/not_null_dim_products_product_id.sql [  0.00s]
+13:19:14.640022 [debug]: Finished parsing target/generic_tests/unique_raw_order_items_order_item_id.sql [  0.00s]
+13:19:14.640068 [debug]: Finished parsing target/generic_tests/unique_raw_ad_spend_spend_id.sql [  0.00s]
+13:19:14.640126 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:19:14.640137 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_f8c91378e344d789985712d7cc9ba86c.sql [  0.00s]
+13:19:14.640178 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:19:14.640304 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_item_id.sql [  0.00s]
+13:19:14.640333 [debug]: Finished parsing target/generic_tests/unique_dim_products_sku.sql [  0.00s]
+13:19:14.640393 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_6605ef9332585c82f278ac817835eb79.sql [  0.00s]
+13:19:14.640414 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_net_revenue.sql [  0.00s]
+13:19:14.640469 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:19:14.640499 [debug]: Finished parsing target/generic_tests/not_null_raw_ad_spend_spend_id.sql [  0.00s]
+13:19:14.648848 [error]: dbt1022: Model 'dim_customers' cannot reference itself
+  --> models/marts/core/dim_customers.sql:13:7
+13:19:14.648866 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> models/marts/core/dim_products.sql:28:6
+13:19:14.648873 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> models/marts/core/dim_stores.sql:26:6
+13:19:14.648878 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> models/marts/inventory/fct_inventory_daily.sql:30:10
+13:19:14.648884 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> models/marts/inventory/fct_inventory_daily.sql:31:16
+13:19:14.648892 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> models/intermediate/int_order_items_enriched.sql:26:10
+13:19:14.648898 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> models/intermediate/int_orders_enriched.sql:39:10
+13:19:14.648904 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> models/generate/raw_order_items.sql:46:10
+13:19:14.648929 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/accepted_values_dim_products_c14f138f9c56ba9ab4f3a7f852627f3b.sql:1:74
+13:19:14.648934 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> generic_tests/accepted_values_dim_stores_channel__in_store__online__mobile.sql:1:73
+13:19:14.648939 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> generic_tests/accepted_values_dim_stores_store_type__physical__digital.sql:1:76
+13:19:14.648946 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/not_null_dim_products_category.sql:1:67
+13:19:14.648952 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/not_null_dim_products_is_active.sql:1:68
+13:19:14.648958 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/not_null_dim_products_product_id.sql:1:69
+13:19:14.648963 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/not_null_dim_products_sku.sql:1:62
+13:19:14.648969 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/not_null_dim_products_unit_price.sql:1:69
+13:19:14.648975 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> generic_tests/not_null_dim_stores_store_id.sql:1:67
+13:19:14.649004 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/relationships_fct_order_items_b0f28835da40fb8b0928f9f26aa86d50.sql:1:122
+13:19:14.649011 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> generic_tests/relationships_fct_orders_store_id__store_id__ref_dim_stores_.sql:1:113
+13:19:14.649025 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/unique_dim_products_product_id.sql:1:67
+13:19:14.649030 [error]: dbt1005: Found ambiguous ref('dim_products') pointing to multiple nodes: ['seed.atlas_platform.dim_products', 'model.atlas_platform.dim_products']
+  --> generic_tests/unique_dim_products_sku.sql:1:60
+13:19:14.649036 [error]: dbt1005: Found ambiguous ref('dim_stores') pointing to multiple nodes: ['seed.atlas_platform.dim_stores', 'model.atlas_platform.dim_stores']
+  --> generic_tests/unique_dim_stores_store_id.sql:1:65
+13:19:14.649484 [info ]: Finished parsing [  0.06s]
+13:19:15.202844 [info ]: New version available 2.0.0-preview.176 (run `dbt system update`)
+13:19:15.235394 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+13:19:15.235394 [info ]: 
+==================== Execution Summary =====================
+Finished 'parse' with 1 warning and 58 errors for target 'dev' [748ms]
+==================== 2026-05-15T13:23:51.538753Z | 019e2bce-c471-7901-a97e-4eee0aa74622 ====================
+13:23:51.538857 [info ]: dbt-fusion 2.0.0-preview.175
+13:23:51.539070 [info ]: Started loading project
+13:23:51.540204 [info ]: Loading profiles.yml
+13:23:51.640279 [info ]: Loading packages.yml
+13:23:51.640404 [debug]:    Started loading packages
+13:23:51.643421 [debug]:     Loaded [  0.00s] packages
+13:23:51.643827 [info ]: Finished loading project [  0.10s]
+13:23:51.644132 [info ]: Started parsing
+13:23:51.664087 [debug]: Finished parsing models/generate/_generate__models.yml [  0.00s]
+13:23:51.664523 [debug]: Finished parsing models/marts/core/_core__models.yml [  0.00s]
+13:23:51.664602 [debug]: Finished parsing models/marts/inventory/_inventory__models.yml [  0.00s]
+13:23:51.664796 [debug]: Finished parsing models/semantic_models/saved_queries.yml [  0.00s]
+13:23:51.664942 [warn ]: dbt0102: The package 'atlas_platform' defines semantic models and metrics using the legacy YAML. Please migrate to the new YAML to use the semantic layer with dbt Fusion.
+13:23:51.664967 [debug]: Finished parsing models/semantic_models/sem_customers.yml [  0.00s]
+13:23:51.665274 [debug]: Finished parsing models/semantic_models/sem_orders.yml [  0.00s]
+13:23:51.665621 [debug]: Finished parsing models/staging/ecommerce/_ecommerce__sources.yml [  0.00s]
+13:23:51.665791 [debug]: Finished parsing models/staging/marketing/_marketing__sources.yml [  0.00s]
+13:23:51.666013 [debug]: Finished parsing seeds/schema.yml [  0.00s]
+13:23:51.668341 [error]: dbt1060: Ignored unexpected key `"loaded_at_field"`. YAML path: `loaded_at_field`.
+  --> models/staging/marketing/_marketing__sources.yml:14:9
+13:23:51.668390 [error]: dbt1060: Ignored unexpected key `"freshness"`. YAML path: `freshness`.
+  --> models/staging/marketing/_marketing__sources.yml:15:9
+13:23:51.672363 [debug]: Finished parsing target/snapshots/scd_customers.sql [  0.00s]
+13:23:51.673292 [debug]: Finished parsing models/generate/raw_ad_spend.sql [  0.00s]
+13:23:51.673591 [debug]: Finished parsing models/generate/raw_customers.sql [  0.00s]
+13:23:51.673835 [debug]: Finished parsing models/generate/raw_events.sql [  0.00s]
+13:23:51.674069 [debug]: Finished parsing models/generate/raw_order_items.sql [  0.00s]
+13:23:51.674289 [debug]: Finished parsing models/generate/raw_orders.sql [  0.00s]
+13:23:51.674468 [debug]: Finished parsing models/generate/raw_returns.sql [  0.00s]
+13:23:51.674720 [debug]: Finished parsing models/intermediate/int_customers_with_orders.sql [  0.00s]
+13:23:51.674891 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+13:23:51.675082 [debug]: Finished parsing models/intermediate/int_orders_enriched.sql [  0.00s]
+13:23:51.675417 [debug]: Finished parsing models/marts/core/dim_customers.sql [  0.00s]
+13:23:51.675627 [debug]: Finished parsing models/marts/core/dim_dates.sql [  0.00s]
+13:23:51.675808 [debug]: Finished parsing models/marts/core/dim_products.sql [  0.00s]
+13:23:51.676044 [debug]: Finished parsing models/marts/core/dim_stores.sql [  0.00s]
+13:23:51.676318 [debug]: Finished parsing models/marts/core/fct_order_items.sql [  0.00s]
+13:23:51.676579 [debug]: Finished parsing models/marts/core/fct_orders.sql [  0.00s]
+13:23:51.676885 [debug]: Finished parsing models/marts/inventory/fct_inventory_daily.sql [  0.00s]
+13:23:51.677077 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__customers.sql [  0.00s]
+13:23:51.677257 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__order_items.sql [  0.00s]
+13:23:51.677498 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__orders.sql [  0.00s]
+13:23:51.677671 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__returns.sql [  0.00s]
+13:23:51.677826 [debug]: Finished parsing models/staging/marketing/stg_marketing__ad_spend.sql [  0.00s]
+13:23:51.678013 [debug]: Finished parsing models/staging/marketing/stg_marketing__campaigns.sql [  0.00s]
+13:23:51.685745 [debug]: Finished parsing target/generic_tests/not_null_dim_products_sku.sql [  0.00s]
+13:23:51.685764 [debug]: Finished parsing target/generic_tests/unique_raw_customers_customer_id.sql [  0.00s]
+13:23:51.685833 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_customer_id.sql [  0.00s]
+13:23:51.685886 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_date.sql [  0.00s]
+13:23:51.685891 [debug]: Finished parsing target/generic_tests/unique_catalog_products_sku.sql [  0.00s]
+13:23:51.685885 [debug]: Finished parsing target/generic_tests/unique_fct_order_items_order_item_id.sql [  0.00s]
+13:23:51.686083 [debug]: Finished parsing target/generic_tests/not_null_raw_customers_customer_id.sql [  0.00s]
+13:23:51.686083 [debug]: Finished parsing target/generic_tests/unique_dim_stores_store_id.sql [  0.00s]
+13:23:51.686433 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_date.sql [  0.00s]
+13:23:51.686472 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_item_id.sql [  0.00s]
+13:23:51.686551 [debug]: Finished parsing target/generic_tests/unique_raw_events_event_id.sql [  0.00s]
+13:23:51.686586 [debug]: Finished parsing target/generic_tests/unique_fct_orders_order_id.sql [  0.00s]
+13:23:51.686613 [debug]: Finished parsing target/generic_tests/not_null_dim_stores_store_id.sql [  0.00s]
+13:23:51.686797 [debug]: Finished parsing target/generic_tests/unique_raw_orders_order_id.sql [  0.00s]
+13:23:51.686841 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_sku.sql [  0.00s]
+13:23:51.686894 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_id.sql [  0.00s]
+13:23:51.686898 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:23:51.686959 [debug]: Finished parsing target/generic_tests/not_null_raw_events_event_id.sql [  0.00s]
+13:23:51.687022 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_product_id.sql [  0.00s]
+13:23:51.687306 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_id.sql [  0.00s]
+13:23:51.687310 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_id.sql [  0.00s]
+13:23:51.687353 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_product_id.sql [  0.00s]
+13:23:51.687372 [debug]: Finished parsing target/generic_tests/accepted_values_fct_orders_a2ba3e6adcfd570d0e3a76b65dc477ed.sql [  0.00s]
+13:23:51.687433 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:23:51.687460 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_unit_price.sql [  0.00s]
+13:23:51.687532 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_b0f28835da40fb8b0928f9f26aa86d50.sql [  0.00s]
+13:23:51.687545 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_store_id.sql [  0.00s]
+13:23:51.687657 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_campaign_id.sql [  0.00s]
+13:23:51.687762 [debug]: Finished parsing target/generic_tests/unique_raw_returns_return_id.sql [  0.00s]
+13:23:51.687775 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_customer_id.sql [  0.00s]
+13:23:51.687754 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_stores_f4fb8bb3076f88fed29d7be6e7fb5a4e.sql [  0.00s]
+13:23:51.687982 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_date.sql [  0.00s]
+13:23:51.688019 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_store_id__store_id__ref_dim_stores_.sql [  0.00s]
+13:23:51.688098 [debug]: Finished parsing target/generic_tests/unique_catalog_stores_store_id.sql [  0.00s]
+13:23:51.688252 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:23:51.688275 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_0c6c6d9e6f30dfb9b653557ebf38e47c.sql [  0.00s]
+13:23:51.688337 [debug]: Finished parsing target/generic_tests/not_null_raw_returns_return_id.sql [  0.00s]
+13:23:51.688442 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:23:51.688447 [debug]: Finished parsing target/generic_tests/unique_raw_ad_spend_spend_id.sql [  0.00s]
+13:23:51.688522 [debug]: Finished parsing target/generic_tests/not_null_catalog_stores_store_id.sql [  0.00s]
+13:23:51.688618 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:23:51.688634 [debug]: Finished parsing target/generic_tests/not_null_raw_ad_spend_spend_id.sql [  0.00s]
+13:23:51.688821 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_stores_store_type__physical__digital.sql [  0.00s]
+13:23:51.688834 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:23:51.688981 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_f8c91378e344d789985712d7cc9ba86c.sql [  0.00s]
+13:23:51.695450 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_customers_customer_id.sql [  0.01s]
+13:23:51.695490 [debug]: Finished parsing target/generic_tests/unique_catalog_campaigns_campaign_id.sql [  0.01s]
+13:23:51.695527 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_c9e1bd56848bc6c40440c2e5a59b7a45.sql [  0.01s]
+13:23:51.695590 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:23:51.695670 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_d7e6a5127e2c3d691d1e9aa87a24c813.sql [  0.00s]
+13:23:51.695692 [debug]: Finished parsing target/generic_tests/not_null_catalog_campaigns_campaign_id.sql [  0.00s]
+13:23:51.695747 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_id.sql [  0.00s]
+13:23:51.695813 [debug]: Finished parsing target/generic_tests/unique_dim_dates_date_day.sql [  0.00s]
+13:23:51.695834 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_campai_f03acf2551bdf832ed0201417697be84.sql [  0.00s]
+13:23:51.695966 [debug]: Finished parsing target/generic_tests/source_relationships_ecommerce_65186aa9822047f78337217c35a79791.sql [  0.00s]
+13:23:51.695974 [debug]: Finished parsing target/generic_tests/not_null_dim_dates_date_day.sql [  0.00s]
+13:23:51.695987 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_category.sql [  0.00s]
+13:23:51.696127 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:23:51.696140 [debug]: Finished parsing target/generic_tests/not_null_dim_products_category.sql [  0.00s]
+13:23:51.696151 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_produc_625c55ff32b11352e410e3b77a498d5d.sql [  0.00s]
+13:23:51.696294 [debug]: Finished parsing target/generic_tests/unique_dim_products_product_id.sql [  0.00s]
+13:23:51.696319 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:23:51.696325 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_is_active.sql [  0.00s]
+13:23:51.696485 [debug]: Finished parsing target/generic_tests/unique_catalog_products_product_id.sql [  0.00s]
+13:23:51.696496 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:23:51.696520 [debug]: Finished parsing target/generic_tests/not_null_dim_products_product_id.sql [  0.00s]
+13:23:51.696632 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_product_id.sql [  0.00s]
+13:23:51.696646 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:23:51.696653 [debug]: Finished parsing target/generic_tests/unique_dim_products_sku.sql [  0.00s]
+13:23:51.697593 [debug]: Finished parsing target/generic_tests/relationships_raw_order_items_e5eae7d749019a6c8b3b4ca333ee3ab5.sql [  0.01s]
+13:23:51.697621 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_snapshot_date.sql [  0.01s]
+13:23:51.697792 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_store_id.sql [  0.00s]
+13:23:51.697896 [debug]: Finished parsing target/generic_tests/unique_raw_order_items_order_item_id.sql [  0.00s]
+13:23:51.698019 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_id.sql [  0.00s]
+13:23:51.698148 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_item_id.sql [  0.00s]
+13:23:51.698181 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_6605ef9332585c82f278ac817835eb79.sql [  0.00s]
+13:23:51.698417 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_gross_revenue.sql [  0.01s]
+13:23:51.698554 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_net_revenue.sql [  0.00s]
+13:23:51.706638 [info ]: Finished parsing [  0.06s]
+13:23:52.010024 [info ]: New version available 2.0.0-preview.176 (run `dbt system update`)
+13:23:52.143930 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+13:23:52.143930 [info ]: 
+==================== Execution Summary =====================
+Finished 'parse' with 1 warning and 2 errors for target 'dev' [605ms]
+==================== 2026-05-15T13:24:04.771089Z | 019e2bce-f822-7ec3-b949-af8f3c2adbf4 ====================
+13:24:04.771202 [info ]: dbt-fusion 2.0.0-preview.175
+13:24:04.771424 [info ]: Started loading project
+13:24:04.772639 [info ]: Loading profiles.yml
+13:24:04.874077 [info ]: Loading packages.yml
+13:24:04.874191 [debug]:    Started loading packages
+13:24:04.876712 [debug]:     Loaded [  0.00s] packages
+13:24:04.877069 [info ]: Finished loading project [  0.11s]
+13:24:04.877380 [info ]: Started parsing
+13:24:04.896834 [debug]: Finished parsing models/generate/_generate__models.yml [  0.00s]
+13:24:04.897140 [debug]: Finished parsing models/marts/core/_core__models.yml [  0.00s]
+13:24:04.897210 [debug]: Finished parsing models/marts/inventory/_inventory__models.yml [  0.00s]
+13:24:04.897314 [debug]: Finished parsing models/semantic_models/saved_queries.yml [  0.00s]
+13:24:04.897464 [warn ]: dbt0102: The package 'atlas_platform' defines semantic models and metrics using the legacy YAML. Please migrate to the new YAML to use the semantic layer with dbt Fusion.
+13:24:04.897490 [debug]: Finished parsing models/semantic_models/sem_customers.yml [  0.00s]
+13:24:04.897768 [debug]: Finished parsing models/semantic_models/sem_orders.yml [  0.00s]
+13:24:04.897988 [debug]: Finished parsing models/staging/ecommerce/_ecommerce__sources.yml [  0.00s]
+13:24:04.898052 [debug]: Finished parsing models/staging/marketing/_marketing__sources.yml [  0.00s]
+13:24:04.898222 [debug]: Finished parsing seeds/schema.yml [  0.00s]
+13:24:04.902735 [debug]: Finished parsing target/snapshots/scd_customers.sql [  0.00s]
+13:24:04.903406 [debug]: Finished parsing models/generate/raw_ad_spend.sql [  0.00s]
+13:24:04.903662 [debug]: Finished parsing models/generate/raw_customers.sql [  0.00s]
+13:24:04.903867 [debug]: Finished parsing models/generate/raw_events.sql [  0.00s]
+13:24:04.904077 [debug]: Finished parsing models/generate/raw_order_items.sql [  0.00s]
+13:24:04.904304 [debug]: Finished parsing models/generate/raw_orders.sql [  0.00s]
+13:24:04.904480 [debug]: Finished parsing models/generate/raw_returns.sql [  0.00s]
+13:24:04.904722 [debug]: Finished parsing models/intermediate/int_customers_with_orders.sql [  0.00s]
+13:24:04.904876 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+13:24:04.905035 [debug]: Finished parsing models/intermediate/int_orders_enriched.sql [  0.00s]
+13:24:04.905294 [debug]: Finished parsing models/marts/core/dim_customers.sql [  0.00s]
+13:24:04.905459 [debug]: Finished parsing models/marts/core/dim_dates.sql [  0.00s]
+13:24:04.905657 [debug]: Finished parsing models/marts/core/dim_products.sql [  0.00s]
+13:24:04.905830 [debug]: Finished parsing models/marts/core/dim_stores.sql [  0.00s]
+13:24:04.906082 [debug]: Finished parsing models/marts/core/fct_order_items.sql [  0.00s]
+13:24:04.906319 [debug]: Finished parsing models/marts/core/fct_orders.sql [  0.00s]
+13:24:04.906553 [debug]: Finished parsing models/marts/inventory/fct_inventory_daily.sql [  0.00s]
+13:24:04.906713 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__customers.sql [  0.00s]
+13:24:04.906859 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__order_items.sql [  0.00s]
+13:24:04.907025 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__orders.sql [  0.00s]
+13:24:04.907170 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__returns.sql [  0.00s]
+13:24:04.907334 [debug]: Finished parsing models/staging/marketing/stg_marketing__ad_spend.sql [  0.00s]
+13:24:04.907476 [debug]: Finished parsing models/staging/marketing/stg_marketing__campaigns.sql [  0.00s]
+13:24:04.915018 [debug]: Finished parsing target/generic_tests/unique_catalog_products_sku.sql [  0.00s]
+13:24:04.915038 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:24:04.915134 [debug]: Finished parsing target/generic_tests/unique_fct_order_items_order_item_id.sql [  0.00s]
+13:24:04.915143 [debug]: Finished parsing target/generic_tests/unique_raw_customers_customer_id.sql [  0.00s]
+13:24:04.915441 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:24:04.915629 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_date.sql [  0.00s]
+13:24:04.915724 [debug]: Finished parsing target/generic_tests/unique_catalog_campaigns_campaign_id.sql [  0.00s]
+13:24:04.915737 [debug]: Finished parsing target/generic_tests/not_null_dim_products_sku.sql [  0.00s]
+13:24:04.915789 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_c9e1bd56848bc6c40440c2e5a59b7a45.sql [  0.00s]
+13:24:04.915808 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_item_id.sql [  0.00s]
+13:24:04.915820 [debug]: Finished parsing target/generic_tests/not_null_raw_customers_customer_id.sql [  0.00s]
+13:24:04.915829 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_customer_id.sql [  0.00s]
+13:24:04.915905 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_sku.sql [  0.00s]
+13:24:04.915944 [debug]: Finished parsing target/generic_tests/unique_fct_orders_order_id.sql [  0.00s]
+13:24:04.915946 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:24:04.915964 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:24:04.916542 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_id.sql [  0.00s]
+13:24:04.916577 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_d7e6a5127e2c3d691d1e9aa87a24c813.sql [  0.00s]
+13:24:04.916610 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_date.sql [  0.00s]
+13:24:04.916648 [debug]: Finished parsing target/generic_tests/unique_dim_stores_store_id.sql [  0.00s]
+13:24:04.916673 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_id.sql [  0.00s]
+13:24:04.916671 [debug]: Finished parsing target/generic_tests/unique_raw_events_event_id.sql [  0.00s]
+13:24:04.916702 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_unit_price.sql [  0.00s]
+13:24:04.916714 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_campaign_id.sql [  0.00s]
+13:24:04.916728 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_product_id.sql [  0.00s]
+13:24:04.916744 [debug]: Finished parsing target/generic_tests/not_null_catalog_campaigns_campaign_id.sql [  0.00s]
+13:24:04.917171 [debug]: Finished parsing target/generic_tests/source_relationships_ecommerce_65186aa9822047f78337217c35a79791.sql [  0.00s]
+13:24:04.917424 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_date.sql [  0.00s]
+13:24:04.917436 [debug]: Finished parsing target/generic_tests/unique_dim_dates_date_day.sql [  0.00s]
+13:24:04.917432 [debug]: Finished parsing target/generic_tests/accepted_values_fct_orders_a2ba3e6adcfd570d0e3a76b65dc477ed.sql [  0.00s]
+13:24:04.917505 [debug]: Finished parsing target/generic_tests/not_null_raw_events_event_id.sql [  0.00s]
+13:24:04.917555 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_b0f28835da40fb8b0928f9f26aa86d50.sql [  0.00s]
+13:24:04.917588 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_stores_f4fb8bb3076f88fed29d7be6e7fb5a4e.sql [  0.00s]
+13:24:04.917619 [debug]: Finished parsing target/generic_tests/not_null_dim_stores_store_id.sql [  0.00s]
+13:24:04.917635 [debug]: Finished parsing target/generic_tests/unique_raw_orders_order_id.sql [  0.00s]
+13:24:04.917652 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_campai_f03acf2551bdf832ed0201417697be84.sql [  0.00s]
+13:24:04.917693 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_id.sql [  0.00s]
+13:24:04.917734 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:24:04.918326 [debug]: Finished parsing target/generic_tests/unique_catalog_stores_store_id.sql [  0.00s]
+13:24:04.918389 [debug]: Finished parsing target/generic_tests/relationships_raw_order_items_e5eae7d749019a6c8b3b4ca333ee3ab5.sql [  0.00s]
+13:24:04.918404 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_id.sql [  0.00s]
+13:24:04.918429 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:04.918466 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_customer_id.sql [  0.00s]
+13:24:04.918511 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_product_id.sql [  0.00s]
+13:24:04.918534 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_store_id.sql [  0.00s]
+13:24:04.918554 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_category.sql [  0.00s]
+13:24:04.918770 [debug]: Finished parsing target/generic_tests/not_null_catalog_stores_store_id.sql [  0.00s]
+13:24:04.918894 [debug]: Finished parsing target/generic_tests/unique_raw_returns_return_id.sql [  0.00s]
+13:24:04.918902 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:24:04.918936 [debug]: Finished parsing target/generic_tests/unique_raw_order_items_order_item_id.sql [  0.00s]
+13:24:04.918950 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_0c6c6d9e6f30dfb9b653557ebf38e47c.sql [  0.00s]
+13:24:04.918962 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_produc_625c55ff32b11352e410e3b77a498d5d.sql [  0.00s]
+13:24:04.919029 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:04.919085 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_snapshot_date.sql [  0.00s]
+13:24:04.919092 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_store_id__store_id__ref_dim_stores_.sql [  0.00s]
+13:24:04.919511 [debug]: Finished parsing target/generic_tests/unique_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:04.919557 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_is_active.sql [  0.00s]
+13:24:04.919606 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_item_id.sql [  0.00s]
+13:24:04.919616 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:24:04.919649 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_gross_revenue.sql [  0.00s]
+13:24:04.919689 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_stores_store_type__physical__digital.sql [  0.00s]
+13:24:04.919722 [debug]: Finished parsing target/generic_tests/not_null_raw_returns_return_id.sql [  0.00s]
+13:24:04.919748 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:24:04.919852 [debug]: Finished parsing target/generic_tests/not_null_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:04.919864 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_f8c91378e344d789985712d7cc9ba86c.sql [  0.00s]
+13:24:04.919863 [debug]: Finished parsing target/generic_tests/unique_catalog_products_product_id.sql [  0.00s]
+13:24:04.919914 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_net_revenue.sql [  0.00s]
+13:24:04.919944 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:24:04.919951 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_store_id.sql [  0.00s]
+13:24:04.920066 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_product_id.sql [  0.00s]
+13:24:04.920099 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_id.sql [  0.00s]
+13:24:04.920102 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:24:04.920223 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_6605ef9332585c82f278ac817835eb79.sql [  0.00s]
+13:24:04.924351 [debug]: Finished parsing target/generic_tests/not_null_dim_dates_date_day.sql [  0.01s]
+13:24:04.925418 [debug]: Finished parsing target/generic_tests/not_null_dim_products_category.sql [  0.00s]
+13:24:04.926075 [debug]: Finished parsing target/generic_tests/unique_dim_products_product_id.sql [  0.00s]
+13:24:04.926560 [debug]: Finished parsing target/generic_tests/not_null_dim_products_product_id.sql [  0.00s]
+13:24:04.930294 [debug]: Finished parsing target/generic_tests/unique_dim_products_sku.sql [  0.00s]
+13:24:04.938632 [info ]: Finished parsing [  0.06s]
+13:24:05.364117 [info ]: New version available 2.0.0-preview.176 (run `dbt system update`)
+13:24:05.400006 [info ]: 
+==================== Execution Summary =====================
+Finished 'parse' with 1 warning for target 'dev' [628ms]
+==================== 2026-05-15T13:24:10.599989Z | 019e2bcf-0ee6-7f70-a394-a91db403431c ====================
+13:24:10.600101 [info ]: dbt-fusion 2.0.0-preview.175
+13:24:10.600279 [info ]: Started loading project
+13:24:10.601125 [info ]: Loading profiles.yml
+13:24:10.700768 [info ]: Loading packages.yml
+13:24:10.700884 [debug]:    Started loading packages
+13:24:10.702794 [debug]:     Loaded [  0.00s] packages
+13:24:10.703186 [info ]: Finished loading project [  0.10s]
+13:24:10.703479 [info ]: Started parsing
+13:24:10.724063 [debug]: Finished parsing models/generate/_generate__models.yml [  0.00s]
+13:24:10.724355 [debug]: Finished parsing models/marts/core/_core__models.yml [  0.00s]
+13:24:10.724436 [debug]: Finished parsing models/marts/inventory/_inventory__models.yml [  0.00s]
+13:24:10.724539 [debug]: Finished parsing models/semantic_models/saved_queries.yml [  0.00s]
+13:24:10.724699 [warn ]: dbt0102: The package 'atlas_platform' defines semantic models and metrics using the legacy YAML. Please migrate to the new YAML to use the semantic layer with dbt Fusion.
+13:24:10.724729 [debug]: Finished parsing models/semantic_models/sem_customers.yml [  0.00s]
+13:24:10.725031 [debug]: Finished parsing models/semantic_models/sem_orders.yml [  0.00s]
+13:24:10.725272 [debug]: Finished parsing models/staging/ecommerce/_ecommerce__sources.yml [  0.00s]
+13:24:10.725341 [debug]: Finished parsing models/staging/marketing/_marketing__sources.yml [  0.00s]
+13:24:10.725523 [debug]: Finished parsing seeds/schema.yml [  0.00s]
+13:24:10.730052 [debug]: Finished parsing target/snapshots/scd_customers.sql [  0.00s]
+13:24:10.730828 [debug]: Finished parsing models/generate/raw_ad_spend.sql [  0.00s]
+13:24:10.731051 [debug]: Finished parsing models/generate/raw_customers.sql [  0.00s]
+13:24:10.731229 [debug]: Finished parsing models/generate/raw_events.sql [  0.00s]
+13:24:10.731413 [debug]: Finished parsing models/generate/raw_order_items.sql [  0.00s]
+13:24:10.731586 [debug]: Finished parsing models/generate/raw_orders.sql [  0.00s]
+13:24:10.731737 [debug]: Finished parsing models/generate/raw_returns.sql [  0.00s]
+13:24:10.731981 [debug]: Finished parsing models/intermediate/int_customers_with_orders.sql [  0.00s]
+13:24:10.732143 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+13:24:10.732308 [debug]: Finished parsing models/intermediate/int_orders_enriched.sql [  0.00s]
+13:24:10.732621 [debug]: Finished parsing models/marts/core/dim_customers.sql [  0.00s]
+13:24:10.732827 [debug]: Finished parsing models/marts/core/dim_dates.sql [  0.00s]
+13:24:10.733003 [debug]: Finished parsing models/marts/core/dim_products.sql [  0.00s]
+13:24:10.733161 [debug]: Finished parsing models/marts/core/dim_stores.sql [  0.00s]
+13:24:10.733374 [debug]: Finished parsing models/marts/core/fct_order_items.sql [  0.00s]
+13:24:10.733581 [debug]: Finished parsing models/marts/core/fct_orders.sql [  0.00s]
+13:24:10.733758 [debug]: Finished parsing models/marts/inventory/fct_inventory_daily.sql [  0.00s]
+13:24:10.733913 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__customers.sql [  0.00s]
+13:24:10.734053 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__order_items.sql [  0.00s]
+13:24:10.734200 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__orders.sql [  0.00s]
+13:24:10.734337 [debug]: Finished parsing models/staging/ecommerce/stg_ecommerce__returns.sql [  0.00s]
+13:24:10.734477 [debug]: Finished parsing models/staging/marketing/stg_marketing__ad_spend.sql [  0.00s]
+13:24:10.734617 [debug]: Finished parsing models/staging/marketing/stg_marketing__campaigns.sql [  0.00s]
+13:24:10.742494 [debug]: Finished parsing target/generic_tests/unique_catalog_campaigns_campaign_id.sql [  0.00s]
+13:24:10.742506 [debug]: Finished parsing target/generic_tests/unique_fct_order_items_order_item_id.sql [  0.00s]
+13:24:10.742567 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:24:10.742625 [debug]: Finished parsing target/generic_tests/not_null_dim_products_sku.sql [  0.00s]
+13:24:10.742637 [debug]: Finished parsing target/generic_tests/unique_catalog_products_sku.sql [  0.00s]
+13:24:10.742638 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_customer_id.sql [  0.00s]
+13:24:10.742650 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_c9e1bd56848bc6c40440c2e5a59b7a45.sql [  0.00s]
+13:24:10.742677 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_date.sql [  0.00s]
+13:24:10.742682 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:24:10.742726 [debug]: Finished parsing target/generic_tests/unique_raw_customers_customer_id.sql [  0.00s]
+13:24:10.743022 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_d7e6a5127e2c3d691d1e9aa87a24c813.sql [  0.00s]
+13:24:10.743046 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_item_id.sql [  0.00s]
+13:24:10.743058 [debug]: Finished parsing target/generic_tests/unique_dim_stores_store_id.sql [  0.00s]
+13:24:10.743080 [debug]: Finished parsing target/generic_tests/not_null_catalog_campaigns_campaign_id.sql [  0.00s]
+13:24:10.743358 [debug]: Finished parsing target/generic_tests/unique_fct_orders_order_id.sql [  0.00s]
+13:24:10.743425 [debug]: Finished parsing target/generic_tests/unique_dim_dates_date_day.sql [  0.00s]
+13:24:10.743466 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_campai_f03acf2551bdf832ed0201417697be84.sql [  0.00s]
+13:24:10.743540 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_product_id.sql [  0.00s]
+13:24:10.743570 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_customers_customer_id.sql [  0.00s]
+13:24:10.743630 [debug]: Finished parsing target/generic_tests/not_null_dim_stores_store_id.sql [  0.00s]
+13:24:10.743634 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_returns_return_id.sql [  0.00s]
+13:24:10.744521 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_date.sql [  0.00s]
+13:24:10.744748 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_b0f28835da40fb8b0928f9f26aa86d50.sql [  0.00s]
+13:24:10.744914 [debug]: Finished parsing target/generic_tests/not_null_raw_customers_customer_id.sql [  0.00s]
+13:24:10.744916 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_sku.sql [  0.00s]
+13:24:10.744976 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_campaign_id.sql [  0.00s]
+13:24:10.745073 [debug]: Finished parsing target/generic_tests/not_null_dim_dates_date_day.sql [  0.00s]
+13:24:10.745086 [debug]: Finished parsing target/generic_tests/unique_raw_orders_order_id.sql [  0.00s]
+13:24:10.745108 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_product_id.sql [  0.00s]
+13:24:10.745234 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_order_id.sql [  0.00s]
+13:24:10.745262 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_id.sql [  0.00s]
+13:24:10.745677 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_category.sql [  0.00s]
+13:24:10.745740 [debug]: Finished parsing target/generic_tests/unique_raw_events_event_id.sql [  0.00s]
+13:24:10.745851 [debug]: Finished parsing target/generic_tests/not_null_raw_orders_order_id.sql [  0.00s]
+13:24:10.745885 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_date.sql [  0.00s]
+13:24:10.745926 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_unit_price.sql [  0.00s]
+13:24:10.745974 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_snapshot_date.sql [  0.00s]
+13:24:10.746122 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_customer_id.sql [  0.00s]
+13:24:10.746200 [debug]: Finished parsing target/generic_tests/not_null_dim_products_category.sql [  0.00s]
+13:24:10.746209 [debug]: Finished parsing target/generic_tests/accepted_values_fct_orders_a2ba3e6adcfd570d0e3a76b65dc477ed.sql [  0.00s]
+13:24:10.746325 [debug]: Finished parsing target/generic_tests/source_relationships_ecommerce_65186aa9822047f78337217c35a79791.sql [  0.00s]
+13:24:10.746401 [debug]: Finished parsing target/generic_tests/not_null_raw_events_event_id.sql [  0.00s]
+13:24:10.746480 [debug]: Finished parsing target/generic_tests/unique_raw_returns_return_id.sql [  0.00s]
+13:24:10.746526 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:24:10.746562 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_produc_625c55ff32b11352e410e3b77a498d5d.sql [  0.00s]
+13:24:10.746602 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_store_id.sql [  0.00s]
+13:24:10.746621 [debug]: Finished parsing target/generic_tests/unique_dim_products_product_id.sql [  0.00s]
+13:24:10.746625 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_0c6c6d9e6f30dfb9b653557ebf38e47c.sql [  0.00s]
+13:24:10.746637 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:10.746657 [debug]: Finished parsing target/generic_tests/not_null_fct_inventory_daily_store_id.sql [  0.00s]
+13:24:10.746665 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_stores_f4fb8bb3076f88fed29d7be6e7fb5a4e.sql [  0.00s]
+13:24:10.746981 [debug]: Finished parsing target/generic_tests/not_null_raw_returns_return_id.sql [  0.00s]
+13:24:10.747140 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_id.sql [  0.00s]
+13:24:10.747177 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_is_active.sql [  0.00s]
+13:24:10.747186 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_gross_revenue.sql [  0.00s]
+13:24:10.747230 [debug]: Finished parsing target/generic_tests/not_null_dim_products_product_id.sql [  0.00s]
+13:24:10.747242 [debug]: Finished parsing target/generic_tests/relationships_fct_orders_store_id__store_id__ref_dim_stores_.sql [  0.00s]
+13:24:10.747273 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_order_items_order_item_id.sql [  0.00s]
+13:24:10.747327 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:10.747341 [debug]: Finished parsing target/generic_tests/relationships_raw_order_items_e5eae7d749019a6c8b3b4ca333ee3ab5.sql [  0.00s]
+13:24:10.747488 [debug]: Finished parsing target/generic_tests/not_null_fct_order_items_order_id.sql [  0.00s]
+13:24:10.747641 [debug]: Finished parsing target/generic_tests/source_unique_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:24:10.747646 [debug]: Finished parsing target/generic_tests/relationships_fct_order_items_6605ef9332585c82f278ac817835eb79.sql [  0.00s]
+13:24:10.747660 [debug]: Finished parsing target/generic_tests/unique_catalog_stores_store_id.sql [  0.00s]
+13:24:10.747692 [debug]: Finished parsing target/generic_tests/source_unique_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:24:10.747725 [debug]: Finished parsing target/generic_tests/unique_raw_order_items_order_item_id.sql [  0.00s]
+13:24:10.747738 [debug]: Finished parsing target/generic_tests/unique_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:10.747740 [debug]: Finished parsing target/generic_tests/unique_catalog_products_product_id.sql [  0.00s]
+13:24:10.747744 [debug]: Finished parsing target/generic_tests/unique_dim_products_sku.sql [  0.00s]
+13:24:10.747781 [debug]: Finished parsing target/generic_tests/not_null_fct_orders_net_revenue.sql [  0.00s]
+13:24:10.747827 [debug]: Finished parsing target/generic_tests/source_not_null_ecommerce_raw_raw_orders_order_id.sql [  0.00s]
+13:24:10.747914 [debug]: Finished parsing target/generic_tests/source_not_null_marketing_raw_raw_events_event_id.sql [  0.00s]
+13:24:10.747925 [debug]: Finished parsing target/generic_tests/not_null_raw_order_items_order_item_id.sql [  0.00s]
+13:24:10.747964 [debug]: Finished parsing target/generic_tests/not_null_catalog_products_product_id.sql [  0.00s]
+13:24:10.748015 [debug]: Finished parsing target/generic_tests/not_null_catalog_stores_store_id.sql [  0.00s]
+13:24:10.748030 [debug]: Finished parsing target/generic_tests/not_null_raw_ad_spend_spend_id.sql [  0.00s]
+13:24:10.748141 [debug]: Finished parsing target/generic_tests/accepted_values_catalog_stores_store_type__physical__digital.sql [  0.00s]
+13:24:10.748262 [debug]: Finished parsing target/generic_tests/accepted_values_dim_customers_f8c91378e344d789985712d7cc9ba86c.sql [  0.00s]
+13:24:10.756810 [info ]: Finished parsing [  0.05s]
+13:24:10.839827 [info ]: DOWNLOADING deferral manifest
+13:24:11.527570 [info ]: DOWNLOADED deferral manifest to /Users/hichambabahmed/snowflake-summit-demo/atlas_platform/target/dbt_cloud_defer/manifest.json
+13:24:11.555344 [info ]: Started scheduling
+13:24:11.555891 [info ]: Finished scheduling [  0.00s]
+13:24:11.556869 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ATLAS_PLATFORM", schema: "PUBLIC_SEEDS", table: "CATALOG_CAMPAIGNS" }) and interval: None
+13:24:11.556895 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ATLAS_PLATFORM", schema: "PUBLIC_SEEDS", table: "CATALOG_PRODUCTS" }) and interval: None
+13:24:11.557653 [info ]: Started deferring state
+13:24:11.557728 [info ]: Finished deferring state [  0.00s]
+13:24:11.628438 [info ]: Started building task graph
+13:24:11.628745 [info ]: Finished building task graph [  0.00s]
+13:24:24.063172 [error]: dbt1308: Failed to create schema 'public_raw' in database 'ATLAS_PLATFORM' in remote for model.atlas_platform.raw_returns: Post "https://placeholder.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?databaseName=ATLAS_PLATFORM&requestId=adef703e-58f4-4320-4072-20cec12499fc&request_guid=09ce6b96-5e2e-4d60-409a-610e8925554b&roleName=TRANSFORMER&schemaName=public&warehouse=ATLAS_WH": tls: failed to verify certificate: x509: certificate is valid for *.prod3.us-west-2.aws.snowflakecomputing.com, *.global.privatelink.snowflakecomputing.com, *.global.snowflakecomputing.com, *.ingest.pdxaaj.privatelink.snowflakecomputing.com, *.ingest.pdxaaj.snowflakecomputing.com, *.opencatalog.pdxaaj.privatelink.snowflakecomputing.com, *.opencatalog.pdxaaj.snowflakecomputing.com, *.openflow.pdxaaj.privatelink.snowflakecomputing.com, *.openflow.pdxaaj.snowflakecomputing.com, *.pdxaaj.privatelink.snowflakecomputing.com, *.privatelink.snowflakecomputing.com, *.prod3.privatelink.snowflake.app, *.prod3.snowflake.app, *.prod3.us-west-2.privatelink.snowflakecomputing.com, *.prod3.us-west-2.snowflakecomputing.com, *.registry.privatelink.snowflakecomputing.com, *.sis.pdxaaj.privatelink.snowflake.app, *.snowflakecomputing.com, *.snowpark.pdxaaj.privatelink.snowflakecomputing.com, *.snowpark.pdxaaj.snowflakecomputing.com, *.spcs.pdxaaj.privatelink.snowflake.app, *.telemetry.pdxaaj.privatelink.snowflakecomputing.com, *.telemetry.pdxaaj.snowflakecomputing.com, *.unused.snowflakecomputing.com, *.us-west-2.aws.privatelink.snowflakecomputing.com, *.us-west-2.aws.snowflakecomputing.com, *.us-west-2.privatelink.snowflakecomputing.com, *.us-west-2.snowflakecomputing.com, global.privatelink.snowflakecomputing.com, global.snowflakecomputing.com, ingest.pdxaaj.privatelink.snowflakecomputing.com, ingest.pdxaaj.snowflakecomputing.com, opencatalog.pdxaaj.privatelink.snowflakecomputing.com, opencatalog.pdxaaj.snowflakecomputing.com, openflow.pdxaaj.privatelink.snowflakecomputing.com, openflow.pdxaaj.snowflakecomputing.com, pdxaaj.privatelink.snowflakecomputing.com, privatelink.snowflakecomputing.com, prod3.privatelink.snowflake.app, prod3.snowflake.app, prod3.us-west-2.aws.snowflakecomputing.com, prod3.us-west-2.privatelink.snowflakecomputing.com, prod3.us-west-2.snowflakecomputing.com, registry.privatelink.snowflakecomputing.com, sis.pdxaaj.privatelink.snowflake.app, snowflakecomputing.com, snowpark.pdxaaj.privatelink.snowflakecomputing.com, snowpark.pdxaaj.snowflakecomputing.com, spcs.pdxaaj.privatelink.snowflake.app, telemetry.pdxaaj.privatelink.snowflakecomputing.com, telemetry.pdxaaj.snowflakecomputing.com, unused.snowflakecomputing.com, us-west-2.aws.privatelink.snowflakecomputing.com, us-west-2.aws.snowflakecomputing.com, us-west-2.privatelink.snowflakecomputing.com, us-west-2.snowflakecomputing.com, not placeholder.snowflakecomputing.com.snowflakecomputing.com
+13:24:24.063214 [info ]: New version available 2.0.0-preview.176 (run `dbt system update`)
+13:24:24.092086 [info ]: 
+==================== Execution Summary =====================
+Finished 'build' with 1 warning and 1 error for target 'dev' [13.5s]
+Processed: 6 models | 16 tests

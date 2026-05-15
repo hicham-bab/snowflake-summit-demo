@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="campaign_id", model=get_where_subquery(ref('catalog_campaigns'))) }}

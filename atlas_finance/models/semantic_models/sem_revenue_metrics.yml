@@ -1,0 +1,135 @@
+version: 2
+
+semantic_models:
+  - name: revenue_daily
+    description: >
+      Semantic model over fct_revenue_daily. Powers the finance Semantic Layer —
+      daily revenue, margins, refunds, and order counts by store and channel.
+    model: ref('fct_revenue_daily')
+    defaults:
+      agg_time_dimension: revenue_date
+
+    entities:
+      - name: revenue_day_store
+        type: primary
+        expr: revenue_date || '_' || CAST(store_id AS VARCHAR)
+
+    dimensions:
+      - name: revenue_date
+        type: time
+        type_params:
+          time_granularity: day
+      - name: order_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: order_quarter
+        type: categorical
+        label: "Calendar Quarter"
+      - name: order_year
+        type: categorical
+        label: "Calendar Year"
+      - name: store_channel
+        type: categorical
+        label: "Channel"
+      - name: store_region
+        type: categorical
+        label: "Region"
+
+    measures:
+      - name: total_gross_revenue
+        agg: sum
+        expr: gross_revenue
+        label: "Gross Revenue"
+      - name: total_net_revenue
+        agg: sum
+        expr: net_revenue
+        label: "Net Revenue"
+      - name: total_realized_revenue
+        agg: sum
+        expr: realized_revenue
+        label: "Realized Revenue"
+      - name: total_cogs
+        agg: sum
+        expr: total_cogs
+        label: "COGS"
+      - name: total_discounts
+        agg: sum
+        expr: total_discounts
+        label: "Total Discounts"
+      - name: total_refunds
+        agg: sum
+        expr: total_refunds
+        label: "Total Refunds"
+      - name: total_completed_orders
+        agg: sum
+        expr: completed_orders
+        label: "Completed Orders"
+      - name: total_unique_customers
+        agg: sum
+        expr: unique_customers
+        label: "Unique Customers"
+
+
+metrics:
+  - name: finance_gross_revenue
+    description: Total gross revenue — all channels, all regions.
+    label: "Gross Revenue"
+    type: simple
+    type_params:
+      measure: total_gross_revenue
+
+  - name: finance_net_revenue
+    description: Net revenue after discounts.
+    label: "Net Revenue"
+    type: simple
+    type_params:
+      measure: total_net_revenue
+
+  - name: finance_realized_revenue
+    description: Revenue net of all refunds — cash collected.
+    label: "Realized Revenue"
+    type: simple
+    type_params:
+      measure: total_realized_revenue
+
+  - name: gross_profit
+    description: Gross profit — net revenue minus COGS.
+    label: "Gross Profit"
+    type: derived
+    type_params:
+      expr: "total_net_revenue - total_cogs"
+      metrics:
+        - name: finance_net_revenue
+        - name: finance_cogs
+
+  - name: finance_cogs
+    description: Total cost of goods sold for completed orders.
+    label: "COGS"
+    type: simple
+    type_params:
+      measure: total_cogs
+
+  - name: gross_margin_rate
+    description: Gross margin percentage — (net_revenue - cogs) / net_revenue.
+    label: "Gross Margin %"
+    type: ratio
+    type_params:
+      numerator: gross_profit
+      denominator: finance_net_revenue
+
+  - name: refund_rate_pct
+    description: Refunds as a percentage of gross revenue.
+    label: "Refund Rate"
+    type: ratio
+    type_params:
+      numerator: total_refunds
+      denominator: total_gross_revenue
+
+  - name: discount_impact
+    description: Discounts as a percentage of gross revenue — measures promotional pressure.
+    label: "Discount Impact"
+    type: ratio
+    type_params:
+      numerator: total_discounts
+      denominator: total_gross_revenue

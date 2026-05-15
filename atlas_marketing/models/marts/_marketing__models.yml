@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  # BUG #4: fct_campaign_performance has no description — Copilot will flag this.
+  - name: fct_campaign_performance
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: spend_date
+        tests:
+          - not_null
+      - name: roas_tier
+        tests:
+          - accepted_values:
+              values: ['high_performing', 'efficient', 'break_even', 'underperforming']
+
+  - name: fct_customer_acquisition
+    description: >
+      Customer acquisition metrics by channel and cohort month. Intentionally has a
+      broken ref to stg_marketing__leads for the dbt Copilot demo.
+    columns:
+      - name: acquisition_channel
+        tests:
+          - not_null
+      - name: acquisition_month
+        tests:
+          - not_null
+
+  - name: fct_channel_attribution
+    description: >
+      Monthly revenue attribution by last-touch channel. Incremental merge on
+      [attributed_channel, order_month]. Powers the marketing attribution dashboard.
+    columns:
+      - name: attributed_channel
+        tests:
+          - not_null
+      - name: order_month
+        tests:
+          - not_null

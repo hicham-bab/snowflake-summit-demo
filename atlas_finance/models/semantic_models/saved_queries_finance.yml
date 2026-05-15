@@ -1,0 +1,58 @@
+version: 2
+
+saved_queries:
+  - name: monthly_p_and_l
+    description: Monthly P&L summary — gross revenue, net revenue, COGS, gross profit, and margin %.
+    label: "Monthly P&L"
+    query_params:
+      metrics:
+        - finance_gross_revenue
+        - finance_net_revenue
+        - finance_cogs
+        - gross_profit
+        - gross_margin_rate
+        - refund_rate_pct
+        - discount_impact
+      group_by:
+        - TimeDimension('revenue_daily__revenue_date', 'month')
+        - Dimension('revenue_daily__store_channel')
+
+  - name: channel_revenue_ytd
+    description: Year-to-date revenue by channel for the finance board deck.
+    label: "YTD Revenue by Channel"
+    query_params:
+      metrics:
+        - finance_net_revenue
+        - finance_realized_revenue
+        - total_completed_orders
+      group_by:
+        - Dimension('revenue_daily__store_channel')
+        - Dimension('revenue_daily__order_year')
+      where:
+        - "{{ Dimension('revenue_daily__order_year') }} = '2026'"
+
+  - name: cohort_retention_6month
+    description: 6-month retention curves by acquisition channel.
+    label: "6-Month Cohort Retention"
+    query_params:
+      metrics:
+        - cohort_month_1_retention
+        - total_cohort_revenue
+      group_by:
+        - TimeDimension('cohort_retention__cohort_month', 'month')
+        - Dimension('cohort_retention__acquisition_channel')
+        - Dimension('cohort_retention__months_since_acquisition')
+      where:
+        - "{{ Dimension('cohort_retention__months_since_acquisition') }} <= 6"
+
+  - name: customer_ltv_by_segment
+    description: Average and total net LTV by customer segment — for finance modeling.
+    label: "Customer LTV by Segment"
+    query_params:
+      metrics:
+        - avg_customer_net_ltv
+        - total_net_ltv
+        - total_customers_finance
+      group_by:
+        - Dimension('customer_ltv__customer_segment')
+        - Dimension('customer_ltv__customer_value_tier')

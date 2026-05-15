@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fct_inventory_daily
+    description: >
+      Daily inventory position per product per store — incremental merge on
+      composite key [product_id, store_id, snapshot_date]. Shows how Snowflake
+      handles high-cardinality incremental loads efficiently.
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+      - name: store_id
+        tests:
+          - not_null
+      - name: snapshot_date
+        tests:
+          - not_null

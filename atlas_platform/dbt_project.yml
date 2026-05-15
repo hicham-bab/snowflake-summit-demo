@@ -1,0 +1,55 @@
+name: atlas_platform
+version: '1.0.0'
+require-dbt-version: [">=1.9.0"]
+
+profile: atlas_platform
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+snapshot-paths: ["snapshots"]
+docs-paths: ["docs"]
+
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  atlas_platform:
+    generate:
+      +materialized: table
+      +schema: raw
+      +tags: ["generate", "raw_data"]
+    staging:
+      +materialized: view
+      ecommerce:
+        +schema: staging_ecommerce
+        +tags: ["staging", "ecommerce"]
+      marketing:
+        +schema: staging_marketing
+        +tags: ["staging", "marketing"]
+    intermediate:
+      +materialized: ephemeral
+      +tags: ["intermediate"]
+    marts:
+      core:
+        +materialized: table
+        +schema: marts_core
+        +tags: ["mart", "core", "published"]
+        +access: public
+      inventory:
+        +materialized: table
+        +schema: marts_inventory
+        +tags: ["mart", "inventory"]
+    # semantic_models/ contains MetricFlow YAML only — no materialization needed
+
+seeds:
+  atlas_platform:
+    +schema: seeds
+
+vars:
+  start_date: '2025-06-01'
+  end_date: '2026-06-15'
+  platform_database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"

@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="unit_price", model=get_where_subquery(ref('catalog_products'))) }}

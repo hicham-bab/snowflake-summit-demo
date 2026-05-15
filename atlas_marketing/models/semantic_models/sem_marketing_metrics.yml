@@ -1,0 +1,127 @@
+version: 2
+
+semantic_models:
+  - name: campaign_performance
+    description: Semantic model over fct_campaign_performance. Powers marketing efficiency metrics.
+    model: ref('fct_campaign_performance')
+    defaults:
+      agg_time_dimension: spend_date
+
+    entities:
+      - name: campaign
+        type: primary
+        expr: CAST(campaign_id AS VARCHAR) || '_' || CAST(spend_date AS VARCHAR)
+
+    dimensions:
+      - name: spend_date
+        type: time
+        type_params:
+          time_granularity: day
+      - name: spend_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: channel
+        type: categorical
+        label: "Marketing Channel"
+      - name: campaign_type
+        type: categorical
+      - name: roas_tier
+        type: categorical
+        label: "ROAS Performance Tier"
+      - name: campaign_name
+        type: categorical
+
+    measures:
+      - name: total_ad_spend
+        agg: sum
+        expr: spend_usd
+        label: "Total Ad Spend"
+      - name: total_impressions
+        agg: sum
+        expr: impressions
+        label: "Total Impressions"
+      - name: total_clicks
+        agg: sum
+        expr: clicks
+        label: "Total Clicks"
+      - name: total_attributed_revenue
+        agg: sum
+        expr: attributed_net_revenue
+        label: "Attributed Net Revenue"
+      - name: total_attributed_orders
+        agg: sum
+        expr: dbt_attributed_orders
+        label: "Attributed Orders"
+      - name: avg_roas
+        agg: average
+        expr: roas
+        label: "Average ROAS"
+
+  - name: channel_attribution
+    description: Semantic model over fct_channel_attribution. Monthly revenue by channel.
+    model: ref('fct_channel_attribution')
+    defaults:
+      agg_time_dimension: order_month
+
+    entities:
+      - name: channel_month
+        type: primary
+        expr: attributed_channel || '_' || CAST(order_month AS VARCHAR)
+
+    dimensions:
+      - name: order_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: attributed_channel
+        type: categorical
+        label: "Attributed Channel"
+
+    measures:
+      - name: total_channel_revenue
+        agg: sum
+        expr: attributed_net_revenue
+        label: "Channel Revenue"
+      - name: channel_order_count
+        agg: sum
+        expr: attributed_orders
+        label: "Attributed Orders"
+      - name: mobile_revenue
+        agg: sum
+        expr: mobile_revenue
+        label: "Mobile Revenue"
+
+
+metrics:
+  - name: total_marketing_spend
+    description: Total ad spend across all channels and campaigns.
+    label: "Total Marketing Spend"
+    type: simple
+    type_params:
+      measure: total_ad_spend
+
+  - name: blended_roas
+    description: Blended Return on Ad Spend — attributed revenue divided by total spend.
+    label: "Blended ROAS"
+    type: ratio
+    type_params:
+      numerator: total_attributed_revenue
+      denominator: total_ad_spend
+
+  - name: cost_per_order
+    description: Average marketing spend per attributed order.
+    label: "Cost Per Order (CPO)"
+    type: ratio
+    type_params:
+      numerator: total_ad_spend
+      denominator: total_attributed_orders
+
+  - name: paid_social_revenue_share
+    description: Share of attributed revenue from paid social channels.
+    label: "Paid Social Revenue Share"
+    type: derived
+    type_params:
+      expr: "paid_social_revenue / NULLIF(total_channel_revenue, 0)"
+      metrics:
+        - name: total_channel_revenue

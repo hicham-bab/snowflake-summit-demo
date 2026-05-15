@@ -1,0 +1,74 @@
+version: 2
+
+models:
+  - name: raw_customers
+    description: >
+      Synthetic customer records generated via Snowflake GENERATOR (12,000 rows).
+      Covers acquisition dates from 2022 through 2026, with realistic segment
+      distribution: VIP 5%, Premium 20%, Regular 35%, Budget 40%.
+    columns:
+      - name: customer_id
+        description: Surrogate key — sequential integer from GENERATOR.
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_orders
+    description: >
+      Synthetic order records (~300,000) spanning June 2025–June 2026.
+      Date distribution reflects BFCM spikes, holiday seasonality, January
+      slowdown, and spring ramp. 8% cancelled, 7% returned, 85% completed.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+
+  - name: raw_order_items
+    description: >
+      Order line items linked to raw_orders. Product distribution is
+      top-heavy: top 20 SKUs account for ~60% of volume.
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('raw_orders')
+                field: order_id
+
+  - name: raw_returns
+    description: Return records for orders with status = 'returned'. Return window 3–21 days post-order.
+    columns:
+      - name: return_id
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_ad_spend
+    description: Daily ad spend per campaign channel. Includes impressions, clicks, and attributed orders.
+    columns:
+      - name: spend_id
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_events
+    description: >
+      Customer behavioral events (~500,000) covering the full purchase funnel:
+      page_view → product_view → add_to_cart → checkout_started → purchase_completed.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null

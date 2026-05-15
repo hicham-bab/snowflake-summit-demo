@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="category", model=get_where_subquery(ref('catalog_products')), values=["Electronics","Home & Kitchen","Clothing & Apparel","Sports & Outdoors","Beauty & Health","Toys & Games","Food & Beverage","Books & Media"]) }}

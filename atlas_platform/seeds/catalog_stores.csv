@@ -1,0 +1,22 @@
+store_id,store_name,store_type,channel,city,state,region,opened_date,sq_footage,district,is_active,manager_name
+1,Atlas NYC Flagship,physical,in-store,New York,NY,Northeast,2015-03-15,12500,Northeast-1,true,Sarah Chen
+2,Atlas Brooklyn Heights,physical,in-store,Brooklyn,NY,Northeast,2017-06-01,7800,Northeast-1,true,Marcus Johnson
+3,Atlas Boston Back Bay,physical,in-store,Boston,MA,Northeast,2016-09-20,8200,Northeast-2,true,Priya Patel
+4,Atlas Chicago Mag Mile,physical,in-store,Chicago,IL,Midwest,2016-04-10,10200,Midwest-1,true,David Kim
+5,Atlas Chicago Wicker Park,physical,in-store,Chicago,IL,Midwest,2019-08-15,6400,Midwest-1,true,Amanda Torres
+6,Atlas Dallas Uptown,physical,in-store,Dallas,TX,South,2017-11-01,8900,South-1,true,James Williams
+7,Atlas Austin Domain,physical,in-store,Austin,TX,South,2020-02-14,7200,South-1,true,Rachel Green
+8,Atlas Houston Galleria,physical,in-store,Houston,TX,South,2018-05-20,9100,South-2,true,Carlos Rivera
+9,Atlas Atlanta Buckhead,physical,in-store,Atlanta,GA,South,2019-03-08,7600,South-2,true,Lisa Thompson
+10,Atlas Miami Design Dist,physical,in-store,Miami,FL,South,2020-07-01,6800,South-3,true,Roberto Sanchez
+11,Atlas LA Beverly Center,physical,in-store,Los Angeles,CA,West,2015-11-10,11200,West-1,true,Jennifer Park
+12,Atlas LA Silver Lake,physical,in-store,Los Angeles,CA,West,2021-04-25,5800,West-1,true,Tyler Moore
+13,Atlas San Francisco Union Sq,physical,in-store,San Francisco,CA,West,2016-08-30,9400,West-2,true,Amy Chang
+14,Atlas Seattle Capitol Hill,physical,in-store,Seattle,WA,West,2018-01-15,7100,West-2,true,Mike Anderson
+15,Atlas Portland Pearl,physical,in-store,Portland,OR,West,2020-09-10,6200,West-2,true,Kate Sullivan
+16,Atlas Denver LoDo,physical,in-store,Denver,CO,Mountain,2021-06-01,6800,Mountain-1,true,Brian Foster
+17,Atlas Phoenix Scottsdale,physical,in-store,Scottsdale,AZ,Mountain,2022-03-20,7400,Mountain-1,true,Melissa Cruz
+18,Atlas Nashville Gulch,physical,in-store,Nashville,TN,South,2022-08-15,6100,South-4,true,Chris Ward
+19,Atlas Minneapolis Uptown,physical,in-store,Minneapolis,MN,Midwest,2023-05-01,5900,Midwest-2,true,Emily Davis
+20,Atlas Online,digital,online,,,,2014-01-01,,Digital,true,E-Commerce Team
+21,Atlas App Store,digital,mobile,,,,2019-06-01,,Digital,true,Mobile Team

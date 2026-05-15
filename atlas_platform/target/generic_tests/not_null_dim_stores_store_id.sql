@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="store_id", model=get_where_subquery(ref('dim_stores'))) }}

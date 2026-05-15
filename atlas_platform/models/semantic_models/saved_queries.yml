@@ -1,0 +1,53 @@
+version: 2
+
+saved_queries:
+  - name: revenue_by_channel_monthly
+    description: Monthly gross and net revenue broken down by store channel (in-store, online, mobile).
+    label: "Revenue by Channel (Monthly)"
+    query_params:
+      metrics:
+        - total_gross_revenue
+        - total_net_revenue
+        - average_order_value
+        - return_rate
+      group_by:
+        - TimeDimension('orders__order_date', 'month')
+        - Dimension('orders__store_channel')
+      where:
+        - "{{ TimeDimension('orders__order_date', 'month') }} >= '2025-06-01'"
+
+  - name: revenue_by_region_monthly
+    description: Monthly net revenue by geographic region — for regional performance review.
+    label: "Revenue by Region (Monthly)"
+    query_params:
+      metrics:
+        - total_net_revenue
+        - order_count
+        - average_order_value
+      group_by:
+        - TimeDimension('orders__order_date', 'month')
+        - Dimension('orders__store_region')
+
+  - name: customer_segment_performance
+    description: Order metrics sliced by customer segment — used in exec reporting.
+    label: "Revenue by Customer Segment"
+    query_params:
+      metrics:
+        - total_gross_revenue
+        - total_net_revenue
+        - average_order_value
+      group_by:
+        - Dimension('customers__customer_segment')
+        - TimeDimension('orders__order_date', 'month')
+
+  - name: weekly_revenue_trend
+    description: Weekly revenue trend for the ops dashboard — last 52 weeks.
+    label: "Weekly Revenue Trend"
+    query_params:
+      metrics:
+        - total_gross_revenue
+        - total_net_revenue
+        - order_count
+        - return_rate
+      group_by:
+        - TimeDimension('orders__order_date', 'week')

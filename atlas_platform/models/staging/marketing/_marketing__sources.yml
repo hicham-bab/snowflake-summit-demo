@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: marketing_raw
+    description: >
+      Raw marketing data from ad platforms (Meta, Google, TikTok) and email systems (Klaviyo).
+      Synced nightly via Fivetran.
+    database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"
+    schema: raw
+
+    tables:
+      - name: raw_ad_spend
+        description: Daily ad spend by campaign — impressions, clicks, and attributed orders.
+        columns:
+          - name: spend_id
+            tests:
+              - unique
+              - not_null
+          - name: spend_date
+            tests:
+              - not_null
+          - name: campaign_id
+            tests:
+              - not_null
+
+      - name: raw_events
+        description: >
+          Customer behavioral event stream — page_view, product_view, add_to_cart,
+          checkout_started, purchase_completed. Powers funnel analysis.
+        columns:
+          - name: event_id
+            tests:
+              - unique
+              - not_null

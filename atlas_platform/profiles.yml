@@ -1,0 +1,56 @@
+atlas_platform:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'ATLAS_WH') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"
+      schema: public
+      threads: 8
+      client_session_keep_alive: false
+      query_tag: dbt_platform
+    prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE_PROD', 'TRANSFORMER_PROD') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE_PROD', 'ATLAS_PROD_WH') }}"
+      database: ATLAS_PLATFORM
+      schema: public
+      threads: 16
+      query_tag: dbt_platform_prod
+
+atlas_marketing:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'ATLAS_WH') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE_MKT', 'ATLAS_MARKETING') }}"
+      schema: public
+      threads: 4
+      query_tag: dbt_marketing
+
+atlas_finance:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'placeholder.snowflakecomputing.com') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'dbt_atlas') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', 'placeholder') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'ATLAS_WH') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE_FIN', 'ATLAS_FINANCE') }}"
+      schema: public
+      threads: 4
+      query_tag: dbt_finance
