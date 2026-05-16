@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="gross_revenue", model=get_where_subquery(ref('fct_orders'))) }}
