@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="campaign_id", model=get_where_subquery(source('marketing_raw', 'raw_ad_spend'))) }}

@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="date_day", model=get_where_subquery(ref('dim_dates'))) }}
