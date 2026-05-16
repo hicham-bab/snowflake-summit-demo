@@ -1,1 +1,0 @@
-{{ snapshot_scd_customers() }}

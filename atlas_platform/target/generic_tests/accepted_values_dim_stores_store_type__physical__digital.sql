@@ -1,1 +1,0 @@
-{{ test_accepted_values(column_name="store_type", model=get_where_subquery(ref('catalog_stores')), values=["physical","digital"]) }}

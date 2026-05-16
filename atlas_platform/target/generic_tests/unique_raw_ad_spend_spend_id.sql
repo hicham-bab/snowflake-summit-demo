@@ -1,1 +1,0 @@
-{{ test_unique(column_name="spend_id", model=get_where_subquery(ref('raw_ad_spend'))) }}

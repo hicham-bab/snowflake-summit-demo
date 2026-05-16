@@ -1,1 +1,0 @@
-{{ test_relationships(column_name="order_id", field="order_id", model=get_where_subquery(source('ecommerce_raw', 'raw_order_items')), to=source('ecommerce_raw', 'raw_orders')) }}
