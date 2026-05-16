@@ -1,1 +1,0 @@
-{{ test_unique(column_name="sku", model=get_where_subquery(ref('catalog_products'))) }}

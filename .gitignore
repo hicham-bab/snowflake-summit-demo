@@ -1,0 +1,13 @@
+# dbt artifact directories — regenerated on every parse/compile/run
+target/
+dbt_packages/
+logs/
+
+# Environment and secrets
+.env
+.envrc
+*.pem
+*.p8
+
+# OS
+.DS_Store

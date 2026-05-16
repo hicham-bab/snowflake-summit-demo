@@ -1,1 +1,0 @@
-{{ test_unique(column_name="order_item_id", model=get_where_subquery(ref('raw_order_items'))) }}

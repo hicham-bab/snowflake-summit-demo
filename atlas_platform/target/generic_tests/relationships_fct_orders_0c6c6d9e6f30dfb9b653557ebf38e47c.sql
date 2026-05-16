@@ -1,1 +1,0 @@
-{{ test_relationships(column_name="customer_id", field="customer_id", model=get_where_subquery(ref('fct_orders')), to=ref('dim_customers')) }}
