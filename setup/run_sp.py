@@ -24,7 +24,7 @@ DATABASE  = os.getenv("SNOWFLAKE_DATABASE",   "ATLAS_PLATFORM")
 WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE",  "DBT_DEV_WH")
 ROLE      = os.getenv("SNOWFLAKE_ROLE",       "TRANSFORMER")
 KEY_PATH  = os.getenv("SNOWFLAKE_KEY_PATH",
-                      str(Path.home() / ".snowflake/keys/dbt_snowflake_private.pem"))
+                      str(Path.home() / ".snowflake/keys/final_private.pem"))
 
 SP_FILE   = Path(__file__).parent / "sp_store_kpi_daily.sql"
 
