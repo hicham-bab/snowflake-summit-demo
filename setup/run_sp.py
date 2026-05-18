@@ -23,15 +23,17 @@ USER      = os.getenv("SNOWFLAKE_USER",       "HICHAM_BABAHMED")
 DATABASE  = os.getenv("SNOWFLAKE_DATABASE",   "ATLAS_PLATFORM")
 WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE",  "DBT_DEV_WH")
 ROLE      = os.getenv("SNOWFLAKE_ROLE",       "TRANSFORMER")
-KEY_PATH  = os.getenv("SNOWFLAKE_KEY_PATH",
-                      str(Path.home() / ".snowflake/keys/final_private.pem"))
+KEY_PATH       = os.getenv("SNOWFLAKE_KEY_PATH",
+                           str(Path.home() / ".snowflake/keys/final_private.pem"))
+KEY_PASSPHRASE = os.getenv("SNOWFLAKE_KEY_PASSPHRASE", "dbt2026!")
 
 SP_FILE   = Path(__file__).parent / "sp_store_kpi_daily.sql"
 
 
 def get_private_key():
+    passphrase = KEY_PASSPHRASE.encode() if KEY_PASSPHRASE else None
     with open(KEY_PATH, "rb") as f:
-        p_key = load_pem_private_key(f.read(), password=None)
+        p_key = load_pem_private_key(f.read(), password=passphrase)
     return p_key.private_bytes(
         encoding=Encoding.DER,
         format=PrivateFormat.PKCS8,
