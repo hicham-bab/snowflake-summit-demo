@@ -102,10 +102,13 @@ BEGIN
         o.last_order_date,
         DATEDIFF('day', c.acquisition_date, CURRENT_DATE())
                                                         AS days_since_acquisition,
-        DATEDIFF('day', o.last_order_date, CURRENT_DATE())
+        -- BUG 1: operands are flipped — produces negative values,
+        -- so every customer passes the <= 90 check and is marked "active"
+        DATEDIFF('day', CURRENT_DATE(), o.last_order_date)
                                                         AS days_since_last_order,
 
-        -- Value tier (hardcoded thresholds)
+        -- BUG 2: VIP threshold was raised to $2,500 in Q4 planning
+        -- but was never updated here — ~400 customers are mis-tiered
         CASE
             WHEN COALESCE(o.lifetime_net_revenue, 0) >= 2000 THEN 'VIP'
             WHEN COALESCE(o.lifetime_net_revenue, 0) >= 800  THEN 'Premium'
@@ -113,18 +116,21 @@ BEGIN
             ELSE 'Budget'
         END                                             AS customer_value_tier,
 
-        -- Lifecycle stage (hardcoded day thresholds)
+        -- BUG 3: lifecycle stage uses the bugged days_since_last_order above —
+        -- all customers with any order will be classified as "active"
+        -- because negative days always satisfies <= 90
         CASE
             WHEN o.last_order_date IS NULL
                 THEN 'never_purchased'
-            WHEN DATEDIFF('day', o.last_order_date, CURRENT_DATE()) <= 90
+            WHEN DATEDIFF('day', CURRENT_DATE(), o.last_order_date) <= 90
                 THEN 'active'
-            WHEN DATEDIFF('day', o.last_order_date, CURRENT_DATE()) <= 180
+            WHEN DATEDIFF('day', CURRENT_DATE(), o.last_order_date) <= 180
                 THEN 'at_risk'
             ELSE 'churned'
         END                                             AS customer_lifecycle_stage,
 
-        -- Segment label (copied from raw — not recalculated)
+        -- BUG 4: copies raw_segment directly with no validation —
+        -- NULL and unexpected values (e.g. 'n/a', 'unknown') pass through silently
         c.raw_segment                                   AS customer_segment
 
     FROM tmp_customers c
