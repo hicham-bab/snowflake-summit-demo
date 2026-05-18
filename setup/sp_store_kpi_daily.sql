@@ -25,7 +25,7 @@ BEGIN
     DROP TABLE IF EXISTS ATLAS_PLATFORM.PUBLIC.T5;
     DROP TABLE IF EXISTS ATLAS_PLATFORM.PUBLIC.STORE_KPI_DAILY;
 
-    -- orders (raw table uses 'status' not 'order_status')
+    -- orders (raw uses 'status' not 'order_status')
     CREATE TABLE ATLAS_PLATFORM.PUBLIC.T1 AS
     SELECT
         o.store_id,
@@ -36,28 +36,31 @@ BEGIN
     FROM ATLAS_PLATFORM.RAW.RAW_ORDERS o
     WHERE o.order_date >= :d1 AND o.order_date <= :d2;
 
-    -- revenue from items (raw_orders has no revenue columns)
+    -- revenue + category per order line
+    -- (raw_order_items has no category — need join to catalog)
+    -- NOTE: had to add this join in nov because someone asked about categories
+    -- not sure if its still needed
     CREATE TABLE ATLAS_PLATFORM.PUBLIC.T2 AS
     SELECT
         i.order_id,
-        i.category,
+        p.category,
         SUM(i.line_gross_revenue)   AS gross_rev,
         SUM(i.line_net_revenue)     AS net_rev
     FROM ATLAS_PLATFORM.RAW.RAW_ORDER_ITEMS i
+    JOIN ATLAS_PLATFORM.SEEDS.CATALOG_PRODUCTS p ON p.product_id = i.product_id
     WHERE EXISTS (SELECT 1 FROM ATLAS_PLATFORM.PUBLIC.T1 t WHERE t.order_id = i.order_id)
     GROUP BY 1, 2;
 
-    -- revenue per order (all categories combined)
+    -- revenue per order (all categories summed)
     CREATE TABLE ATLAS_PLATFORM.PUBLIC.T3 AS
-    SELECT order_id,
-           SUM(gross_rev)   AS gross_rev,
-           SUM(net_rev)     AS net_rev
+    SELECT
+        order_id,
+        SUM(gross_rev)  AS gross_rev,
+        SUM(net_rev)    AS net_rev
     FROM ATLAS_PLATFORM.PUBLIC.T2
     GROUP BY 1;
 
-    -- top category per order (approx — not per store-day, just per order)
-    -- NOTE: had to add this in nov because someone asked about categories
-    -- not sure if its still needed
+    -- top category per order (approx)
     CREATE TABLE ATLAS_PLATFORM.PUBLIC.T4 AS
     SELECT order_id, category
     FROM (
@@ -66,7 +69,8 @@ BEGIN
         FROM ATLAS_PLATFORM.PUBLIC.T2
     ) WHERE rn = 1;
 
-    -- refunds (from raw_returns, not embedded in raw_orders)
+    -- refunds
+    -- BUG: includes denied returns (return_status = 'denied') — no filter applied
     CREATE TABLE ATLAS_PLATFORM.PUBLIC.T5 AS
     SELECT r.order_id, r.refund_amount
     FROM ATLAS_PLATFORM.RAW.RAW_RETURNS r
@@ -83,25 +87,24 @@ BEGIN
         COUNT(t1.order_id)                                                              tot_orders,
         COUNT(CASE WHEN t1.order_status = 'COMPLETED' THEN 1 END)                      comp_orders,
         COUNT(CASE WHEN t1.order_status = 'RETURNED'  THEN 1 END)                      ret_orders,
-        -- BUG: divides by tot_orders not comp_orders, inflates return rate
-        -- when there are cancelled orders in the mix
+        -- BUG: denominator is tot_orders not comp_orders — inflates return rate
+        -- when cancelled orders are in the mix
         ROUND(COUNT(CASE WHEN t1.order_status = 'RETURNED' THEN 1 END)
             / NULLIF(COUNT(t1.order_id), 0) * 100, 2)                                  ret_rate_pct,
         SUM(CASE WHEN t1.order_status = 'COMPLETED'
                  THEN COALESCE(t3.gross_rev, 0) ELSE 0 END)                            gross_rev,
         SUM(CASE WHEN t1.order_status = 'COMPLETED'
                  THEN COALESCE(t3.net_rev, 0) ELSE 0 END)                              net_rev,
-        -- BUG: refunds summed regardless of order status — includes non-returned orders
+        -- BUG: refunds summed for all orders regardless of status
         SUM(COALESCE(t5.refund_amount, 0))                                              refunds,
-        -- BUG: copy-paste left gross_rev here instead of net_rev
+        -- BUG: copy-paste — uses gross_rev instead of net_rev for realized
         SUM(CASE WHEN t1.order_status = 'COMPLETED'
                  THEN COALESCE(t3.gross_rev, 0) ELSE 0 END)
             - SUM(COALESCE(t5.refund_amount, 0))                                        realized_rev,
         AVG(CASE WHEN t1.order_status = 'COMPLETED'
                  THEN t3.gross_rev END)                                                 aov,
         COUNT(DISTINCT t1.customer_id)                                                  uniq_custs,
-        -- hardcoded: performance tier based on daily net rev
-        -- thresholds picked by jake eyeballing last years data, never revisited
+        -- hardcoded thresholds picked by jake, never revisited
         CASE
             WHEN SUM(CASE WHEN t1.order_status = 'COMPLETED'
                      THEN COALESCE(t3.net_rev, 0) ELSE 0 END) >= 15000 THEN 'A'
