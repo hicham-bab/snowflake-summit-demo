@@ -1,0 +1,11 @@
+payment_method_id,payment_method,payment_category,processor,processing_fee_pct,supports_refund,supports_partial_refund,is_active
+1,credit_card,card,Stripe,2.90,true,true,true
+2,debit_card,card,Stripe,1.50,true,true,true
+3,paypal,digital_wallet,PayPal,3.49,true,true,true
+4,apple_pay,digital_wallet,Stripe,2.90,true,true,true
+5,google_pay,digital_wallet,Stripe,2.90,true,true,true
+6,buy_now_pay_later,bnpl,Affirm,5.99,true,false,true
+7,gift_card,store_credit,Internal,0.00,true,true,true
+8,store_credit,store_credit,Internal,0.00,true,true,true
+9,bank_transfer,bank,Plaid,0.80,true,true,true
+10,crypto,digital_wallet,Coinbase,1.49,false,false,false

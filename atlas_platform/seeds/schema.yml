@@ -56,3 +56,142 @@ seeds:
           - accepted_values:
               arguments:
                 values: ['paid_social', 'paid_search', 'email', 'affiliate']
+
+  - name: catalog_promotions
+    description: Promotional codes and discounts available across channels — 12 active and historical promos covering June 2025 through June 2026.
+    columns:
+      - name: promotion_id
+        tests:
+          - unique
+          - not_null
+      - name: promotion_code
+        tests:
+          - unique
+          - not_null
+      - name: discount_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['percent', 'fixed', 'shipping']
+      - name: channel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['paid_social', 'paid_search', 'email', 'affiliate']
+      - name: is_active
+        tests:
+          - not_null
+
+  - name: raw_customers
+    description: Customer master records — 12,000 synthetic profiles with segments and acquisition metadata.
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_orders
+    description: One row per customer order. ~300K rows covering June 2025–June 2026.
+    columns:
+      - name: order_id
+        description: Unique order identifier.
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: Calendar date the order was placed.
+      - name: customer_id
+        description: FK to raw_customers.
+      - name: store_id
+        description: FK to catalog_stores seed (1–21).
+      - name: status
+        description: completed | cancelled | returned
+      - name: discount_amount
+        description: Total discount applied to the order. Null when no discount.
+      - name: payment_method
+        description: credit_card | debit_card | paypal | apple_pay | google_pay
+      - name: campaign_id
+        description: Attribution campaign. Null for non-attributed orders.
+      - name: traffic_source
+        description: paid_search | paid_social | organic | email | direct | affiliate | referral
+      - name: item_count
+        description: Number of distinct line items on the order.
+      - name: ordered_at
+        description: Full timestamp of order placement.
+
+  - name: raw_order_items
+    description: Line-item detail for each order — product, quantity, and price at time of purchase.
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('raw_orders')
+                field: order_id
+
+  - name: raw_returns
+    description: Return and refund records for orders with status = 'returned'.
+    columns:
+      - name: return_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('raw_orders')
+                field: order_id
+
+  - name: raw_ad_spend
+    description: Daily ad spend by campaign — impressions, clicks, and attributed orders.
+    columns:
+      - name: spend_id
+        tests:
+          - unique
+          - not_null
+      - name: spend_date
+        tests:
+          - not_null
+      - name: campaign_id
+        tests:
+          - not_null
+
+  - name: raw_events
+    description: >
+      Customer behavioral event stream — page_view, product_view, add_to_cart,
+      checkout_started, purchase_completed. Powers funnel analysis. ~500K rows
+      covering June 2025–June 2026.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+
+  - name: catalog_payment_methods
+    description: Reference table for accepted payment methods, processors, and fees.
+    columns:
+      - name: payment_method_id
+        tests:
+          - unique
+          - not_null
+      - name: payment_method
+        tests:
+          - unique
+          - not_null
+      - name: payment_category
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['card', 'digital_wallet', 'bnpl', 'store_credit', 'bank']
+      - name: is_active
+        tests:
+          - not_null

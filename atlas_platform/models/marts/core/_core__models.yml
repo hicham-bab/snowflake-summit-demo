@@ -53,12 +53,50 @@ models:
           - unique
           - not_null
 
+  - name: dim_payment_methods
+    description: Payment method dimension — accepted payment methods, processors, and fees.
+    columns:
+      - name: payment_method_id
+        tests:
+          - unique
+          - not_null
+      - name: payment_method
+        tests:
+          - unique
+          - not_null
+      - name: payment_category
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['card', 'digital_wallet', 'bnpl', 'store_credit', 'bank']
+
+  - name: dim_promotions
+    description: Promotion dimension — 12 active and historical promo codes covering June 2025 through June 2026.
+    columns:
+      - name: promotion_id
+        tests:
+          - unique
+          - not_null
+      - name: promotion_code
+        tests:
+          - unique
+          - not_null
+      - name: discount_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['percent', 'fixed', 'shipping']
+
   - name: dim_dates
     description: >
       Date spine 2022–2027 with standard calendar, Atlas fiscal calendar
-      (Feb–Jan), US retail holidays, and season flags.
+      (Feb–Jan), US retail holidays, and season flags. Also serves as the
+      MetricFlow time spine at daily granularity.
+    time_spine:
+      standard_granularity_column: date_day
     columns:
       - name: date_day
+        granularity: day
         tests:
           - unique
           - not_null
@@ -126,3 +164,80 @@ models:
               arguments:
                 to: ref('dim_products')
                 field: product_id
+
+  - name: fct_store_performance
+    description: >
+      Incremental store-day performance fact migrated from SP_STORE_KPI_DAILY.
+      One row per active store per reporting date, with order counts, revenue,
+      return KPIs, customer reach, performance tier, and top completed-order
+      category.
+    columns:
+      - name: store_id
+        description: Store identifier for the daily performance row.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_stores')
+                field: store_id
+      - name: order_date
+        description: Calendar date for the store performance metrics.
+        tests:
+          - not_null
+      - name: store_name
+        description: Store display name for the daily performance row.
+      - name: channel
+        description: Sales channel for the store, such as in-store, online, or mobile.
+      - name: region
+        description: Geographic region for the store.
+      - name: total_orders
+        description: Count of orders placed for the store on the date.
+        tests:
+          - not_null
+      - name: completed_orders
+        description: Count of completed orders for the store on the date.
+        tests:
+          - not_null
+      - name: returned_orders
+        description: Count of returned orders for the store on the date.
+        tests:
+          - not_null
+      - name: unique_customers
+        description: Count of distinct customers who placed orders at the store on the date.
+      - name: gross_revenue
+        description: Gross revenue from completed orders for the store on the date.
+        tests:
+          - not_null
+      - name: net_revenue
+        description: Net revenue from completed orders for the store on the date.
+        tests:
+          - not_null
+      - name: realized_revenue
+        description: Revenue after approved refunds, sourced from fct_orders.
+        tests:
+          - not_null
+      - name: refund_amount
+        description: Total refund amount associated with returned orders for the store on the date.
+      - name: average_order_value
+        description: Gross revenue from completed orders divided by completed order count.
+      - name: return_rate_pct
+        description: Returned orders as a percentage of total orders.
+      - name: performance_tier
+        description: Daily revenue tier based on net revenue thresholds.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['A', 'B', 'C', 'D']
+      - name: top_category
+        description: Highest grossing completed-order product category for the store-date.
+      - name: dbt_updated_at
+        description: Timestamp when dbt built the row.
+        tests:
+          - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - store_id
+              - order_date

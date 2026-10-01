@@ -3,7 +3,7 @@
 }}
 
 WITH source AS (
-    SELECT * FROM {{ source('ecommerce_raw', 'raw_returns') }}
+    SELECT * FROM {{ ref('raw_returns') }}
 ),
 
 renamed AS (

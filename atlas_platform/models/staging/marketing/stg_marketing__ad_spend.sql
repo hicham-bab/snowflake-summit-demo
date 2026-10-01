@@ -3,7 +3,7 @@
 }}
 
 WITH source AS (
-    SELECT * FROM {{ source('marketing_raw', 'raw_ad_spend') }}
+    SELECT * FROM {{ ref('raw_ad_spend') }}
 ),
 
 renamed AS (

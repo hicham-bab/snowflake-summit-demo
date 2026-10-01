@@ -2,8 +2,12 @@ name: atlas_platform
 version: '1.0.0'
 require-dbt-version: [">=1.9.0"]
 
+dbt-cloud:
+    project-id: 17339
 profile: atlas_platform
 
+flags:
+  manage_state: true
 model-paths: ["models"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
@@ -17,11 +21,8 @@ clean-targets:
   - dbt_packages
 
 models:
+  +static_analysis: strict
   atlas_platform:
-    generate:
-      +materialized: table
-      +schema: raw
-      +tags: ["generate", "raw_data"]
     staging:
       +materialized: view
       ecommerce:
