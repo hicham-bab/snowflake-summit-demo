@@ -1,869 +1,869 @@
 spend_id,campaign_id,campaign_name,channel,campaign_type,spend_date,spend_usd,impressions,clicks,attributed_orders,_loaded_at
-1,1,Summer Splash 2025,paid_social,awareness,2025-06-01,1716.45,17359,953,94,2026-06-16T00:00:00Z
-2,1,Summer Splash 2025,paid_social,awareness,2025-06-02,1578.06,57024,859,86,2026-06-16T00:00:00Z
-3,1,Summer Splash 2025,paid_social,awareness,2025-06-03,1370.52,21931,2235,21,2026-06-16T00:00:00Z
-4,1,Summer Splash 2025,paid_social,awareness,2025-06-04,1625.88,21626,2440,89,2026-06-16T00:00:00Z
-5,1,Summer Splash 2025,paid_social,awareness,2025-06-05,1434.93,69905,576,53,2026-06-16T00:00:00Z
-6,1,Summer Splash 2025,paid_social,awareness,2025-06-06,1838.61,18908,670,113,2026-06-16T00:00:00Z
-7,1,Summer Splash 2025,paid_social,awareness,2025-06-07,1476.50,60534,459,57,2026-06-16T00:00:00Z
-8,1,Summer Splash 2025,paid_social,awareness,2025-06-08,1993.89,76168,1404,100,2026-06-16T00:00:00Z
-9,1,Summer Splash 2025,paid_social,awareness,2025-06-09,1341.50,23418,1328,112,2026-06-16T00:00:00Z
-10,1,Summer Splash 2025,paid_social,awareness,2025-06-10,1477.78,70812,1191,119,2026-06-16T00:00:00Z
-11,1,Summer Splash 2025,paid_social,awareness,2025-06-11,1980.18,63144,719,86,2026-06-16T00:00:00Z
-12,1,Summer Splash 2025,paid_social,awareness,2025-06-12,1822.67,35924,1953,21,2026-06-16T00:00:00Z
-13,1,Summer Splash 2025,paid_social,awareness,2025-06-13,1248.91,39969,2295,91,2026-06-16T00:00:00Z
-14,1,Summer Splash 2025,paid_social,awareness,2025-06-14,1349.30,46194,1161,85,2026-06-16T00:00:00Z
-15,1,Summer Splash 2025,paid_social,awareness,2025-06-15,1998.61,39461,1054,24,2026-06-16T00:00:00Z
-16,1,Summer Splash 2025,paid_social,awareness,2025-06-16,1605.10,53300,1531,108,2026-06-16T00:00:00Z
-17,1,Summer Splash 2025,paid_social,awareness,2025-06-17,1259.68,24918,2197,74,2026-06-16T00:00:00Z
-18,1,Summer Splash 2025,paid_social,awareness,2025-06-18,1334.17,70849,2091,21,2026-06-16T00:00:00Z
-19,1,Summer Splash 2025,paid_social,awareness,2025-06-19,1729.84,74598,750,19,2026-06-16T00:00:00Z
-20,1,Summer Splash 2025,paid_social,awareness,2025-06-20,1646.73,40223,1825,57,2026-06-16T00:00:00Z
-21,1,Summer Splash 2025,paid_social,awareness,2025-06-21,2015.18,48133,1966,87,2026-06-16T00:00:00Z
-22,1,Summer Splash 2025,paid_social,awareness,2025-06-22,1213.51,72660,1725,99,2026-06-16T00:00:00Z
-23,1,Summer Splash 2025,paid_social,awareness,2025-06-23,1894.45,68480,1830,118,2026-06-16T00:00:00Z
-24,1,Summer Splash 2025,paid_social,awareness,2025-06-24,1622.63,22683,1827,120,2026-06-16T00:00:00Z
-25,1,Summer Splash 2025,paid_social,awareness,2025-06-25,1195.53,17246,1709,115,2026-06-16T00:00:00Z
-26,1,Summer Splash 2025,paid_social,awareness,2025-06-26,1515.15,26554,584,50,2026-06-16T00:00:00Z
-27,1,Summer Splash 2025,paid_social,awareness,2025-06-27,1462.07,24609,882,79,2026-06-16T00:00:00Z
-28,1,Summer Splash 2025,paid_social,awareness,2025-06-28,1795.57,36610,687,35,2026-06-16T00:00:00Z
-29,1,Summer Splash 2025,paid_social,awareness,2025-06-29,1983.78,60286,838,42,2026-06-16T00:00:00Z
-30,1,Summer Splash 2025,paid_social,awareness,2025-06-30,1415.40,75116,675,115,2026-06-16T00:00:00Z
-31,2,Back to School Bash,paid_search,conversion,2025-07-15,1106.66,11623,1033,33,2026-06-16T00:00:00Z
-32,2,Back to School Bash,paid_search,conversion,2025-07-16,1554.27,6631,498,89,2026-06-16T00:00:00Z
-33,2,Back to School Bash,paid_search,conversion,2025-07-17,1642.80,21954,463,41,2026-06-16T00:00:00Z
-34,2,Back to School Bash,paid_search,conversion,2025-07-18,1336.47,5322,1329,63,2026-06-16T00:00:00Z
-35,2,Back to School Bash,paid_search,conversion,2025-07-19,1214.10,6988,1465,41,2026-06-16T00:00:00Z
-36,2,Back to School Bash,paid_search,conversion,2025-07-20,1155.40,21760,979,137,2026-06-16T00:00:00Z
-37,2,Back to School Bash,paid_search,conversion,2025-07-21,1622.05,18510,1275,120,2026-06-16T00:00:00Z
-38,2,Back to School Bash,paid_search,conversion,2025-07-22,1114.60,20226,419,60,2026-06-16T00:00:00Z
-39,2,Back to School Bash,paid_search,conversion,2025-07-23,1573.98,13817,1133,69,2026-06-16T00:00:00Z
-40,2,Back to School Bash,paid_search,conversion,2025-07-24,1027.33,16035,1398,91,2026-06-16T00:00:00Z
-41,2,Back to School Bash,paid_search,conversion,2025-07-25,1671.69,20730,653,118,2026-06-16T00:00:00Z
-42,2,Back to School Bash,paid_search,conversion,2025-07-26,1010.19,18857,957,96,2026-06-16T00:00:00Z
-43,2,Back to School Bash,paid_search,conversion,2025-07-27,1127.41,6012,246,64,2026-06-16T00:00:00Z
-44,2,Back to School Bash,paid_search,conversion,2025-07-28,1326.38,24348,855,84,2026-06-16T00:00:00Z
-45,2,Back to School Bash,paid_search,conversion,2025-07-29,1356.13,16107,1471,66,2026-06-16T00:00:00Z
-46,2,Back to School Bash,paid_search,conversion,2025-07-30,1324.44,7728,1047,118,2026-06-16T00:00:00Z
-47,2,Back to School Bash,paid_search,conversion,2025-07-31,1398.25,13006,287,59,2026-06-16T00:00:00Z
-48,2,Back to School Bash,paid_search,conversion,2025-08-01,1612.64,16561,1433,117,2026-06-16T00:00:00Z
-49,2,Back to School Bash,paid_search,conversion,2025-08-02,1084.41,17946,899,83,2026-06-16T00:00:00Z
-50,2,Back to School Bash,paid_search,conversion,2025-08-03,1134.31,20098,307,75,2026-06-16T00:00:00Z
-51,2,Back to School Bash,paid_search,conversion,2025-08-04,1509.06,6936,849,79,2026-06-16T00:00:00Z
-52,2,Back to School Bash,paid_search,conversion,2025-08-05,1420.72,24763,1048,90,2026-06-16T00:00:00Z
-53,2,Back to School Bash,paid_search,conversion,2025-08-06,1353.38,13314,331,98,2026-06-16T00:00:00Z
-54,2,Back to School Bash,paid_search,conversion,2025-08-07,1002.52,8594,884,59,2026-06-16T00:00:00Z
-55,2,Back to School Bash,paid_search,conversion,2025-08-08,1404.89,10080,581,65,2026-06-16T00:00:00Z
-56,2,Back to School Bash,paid_search,conversion,2025-08-09,1400.59,20025,1162,85,2026-06-16T00:00:00Z
-57,2,Back to School Bash,paid_search,conversion,2025-08-10,1138.71,24773,1478,65,2026-06-16T00:00:00Z
-58,2,Back to School Bash,paid_search,conversion,2025-08-11,1027.98,12497,1031,106,2026-06-16T00:00:00Z
-59,2,Back to School Bash,paid_search,conversion,2025-08-12,1664.66,8778,487,127,2026-06-16T00:00:00Z
-60,2,Back to School Bash,paid_search,conversion,2025-08-13,1339.94,22999,306,94,2026-06-16T00:00:00Z
-61,2,Back to School Bash,paid_search,conversion,2025-08-14,1072.04,20057,647,133,2026-06-16T00:00:00Z
-62,2,Back to School Bash,paid_search,conversion,2025-08-15,1600.52,19591,1332,109,2026-06-16T00:00:00Z
-63,2,Back to School Bash,paid_search,conversion,2025-08-16,1014.87,7846,1413,99,2026-06-16T00:00:00Z
-64,2,Back to School Bash,paid_search,conversion,2025-08-17,1090.55,13894,1245,130,2026-06-16T00:00:00Z
-65,2,Back to School Bash,paid_search,conversion,2025-08-18,979.65,23081,1141,26,2026-06-16T00:00:00Z
-66,2,Back to School Bash,paid_search,conversion,2025-08-19,1228.28,23509,820,38,2026-06-16T00:00:00Z
-67,2,Back to School Bash,paid_search,conversion,2025-08-20,1047.57,18391,571,53,2026-06-16T00:00:00Z
-68,2,Back to School Bash,paid_search,conversion,2025-08-21,1409.30,19074,679,127,2026-06-16T00:00:00Z
-69,2,Back to School Bash,paid_search,conversion,2025-08-22,1467.66,17898,1456,51,2026-06-16T00:00:00Z
-70,2,Back to School Bash,paid_search,conversion,2025-08-23,1234.46,18494,1100,59,2026-06-16T00:00:00Z
-71,2,Back to School Bash,paid_search,conversion,2025-08-24,1683.26,12178,1271,83,2026-06-16T00:00:00Z
-72,2,Back to School Bash,paid_search,conversion,2025-08-25,1412.97,12437,856,97,2026-06-16T00:00:00Z
-73,2,Back to School Bash,paid_search,conversion,2025-08-26,1462.91,8074,379,22,2026-06-16T00:00:00Z
-74,2,Back to School Bash,paid_search,conversion,2025-08-27,1361.80,14633,572,96,2026-06-16T00:00:00Z
-75,2,Back to School Bash,paid_search,conversion,2025-08-28,1012.81,20236,1438,35,2026-06-16T00:00:00Z
-76,2,Back to School Bash,paid_search,conversion,2025-08-29,1320.20,20485,1256,146,2026-06-16T00:00:00Z
-77,2,Back to School Bash,paid_search,conversion,2025-08-30,1390.31,11114,1426,86,2026-06-16T00:00:00Z
-78,2,Back to School Bash,paid_search,conversion,2025-08-31,1245.68,16588,1487,131,2026-06-16T00:00:00Z
-79,3,Back to School Email Series,email,retention,2025-07-20,194.12,8864,4033,126,2026-06-16T00:00:00Z
-80,3,Back to School Email Series,email,retention,2025-07-21,288.43,36031,5621,161,2026-06-16T00:00:00Z
-81,3,Back to School Email Series,email,retention,2025-07-22,218.80,35388,2504,181,2026-06-16T00:00:00Z
-82,3,Back to School Email Series,email,retention,2025-07-23,192.04,21245,5446,120,2026-06-16T00:00:00Z
-83,3,Back to School Email Series,email,retention,2025-07-24,233.46,9542,5160,80,2026-06-16T00:00:00Z
-84,3,Back to School Email Series,email,retention,2025-07-25,235.22,20935,2289,147,2026-06-16T00:00:00Z
-85,3,Back to School Email Series,email,retention,2025-07-26,278.09,21100,916,99,2026-06-16T00:00:00Z
-86,3,Back to School Email Series,email,retention,2025-07-27,253.57,8612,4780,114,2026-06-16T00:00:00Z
-87,3,Back to School Email Series,email,retention,2025-07-28,169.18,11071,2352,123,2026-06-16T00:00:00Z
-88,3,Back to School Email Series,email,retention,2025-07-29,214.24,8075,5315,133,2026-06-16T00:00:00Z
-89,3,Back to School Email Series,email,retention,2025-07-30,237.70,40401,844,134,2026-06-16T00:00:00Z
-90,3,Back to School Email Series,email,retention,2025-07-31,245.18,34824,5029,135,2026-06-16T00:00:00Z
-91,3,Back to School Email Series,email,retention,2025-08-01,182.30,25300,2630,49,2026-06-16T00:00:00Z
-92,3,Back to School Email Series,email,retention,2025-08-02,202.52,22140,4967,59,2026-06-16T00:00:00Z
-93,3,Back to School Email Series,email,retention,2025-08-03,219.56,22437,4312,95,2026-06-16T00:00:00Z
-94,3,Back to School Email Series,email,retention,2025-08-04,188.31,34123,4470,44,2026-06-16T00:00:00Z
-95,3,Back to School Email Series,email,retention,2025-08-05,205.51,39923,3232,107,2026-06-16T00:00:00Z
-96,3,Back to School Email Series,email,retention,2025-08-06,268.20,29110,5029,130,2026-06-16T00:00:00Z
-97,3,Back to School Email Series,email,retention,2025-08-07,228.45,44984,1663,166,2026-06-16T00:00:00Z
-98,3,Back to School Email Series,email,retention,2025-08-08,256.59,17443,3412,81,2026-06-16T00:00:00Z
-99,3,Back to School Email Series,email,retention,2025-08-09,263.85,30237,1987,32,2026-06-16T00:00:00Z
-100,3,Back to School Email Series,email,retention,2025-08-10,269.97,39992,3654,164,2026-06-16T00:00:00Z
-101,3,Back to School Email Series,email,retention,2025-08-11,172.50,37902,2795,157,2026-06-16T00:00:00Z
-102,3,Back to School Email Series,email,retention,2025-08-12,286.15,22088,4629,200,2026-06-16T00:00:00Z
-103,3,Back to School Email Series,email,retention,2025-08-13,217.44,10462,1065,39,2026-06-16T00:00:00Z
-104,3,Back to School Email Series,email,retention,2025-08-14,169.56,23880,2134,165,2026-06-16T00:00:00Z
-105,3,Back to School Email Series,email,retention,2025-08-15,289.27,43420,1770,91,2026-06-16T00:00:00Z
-106,3,Back to School Email Series,email,retention,2025-08-16,188.90,40903,2963,74,2026-06-16T00:00:00Z
-107,3,Back to School Email Series,email,retention,2025-08-17,213.30,36652,4223,60,2026-06-16T00:00:00Z
-108,3,Back to School Email Series,email,retention,2025-08-18,290.95,25754,5657,117,2026-06-16T00:00:00Z
-109,3,Back to School Email Series,email,retention,2025-08-19,220.10,31722,5260,146,2026-06-16T00:00:00Z
-110,3,Back to School Email Series,email,retention,2025-08-20,193.98,13073,3339,39,2026-06-16T00:00:00Z
-111,3,Back to School Email Series,email,retention,2025-08-21,168.83,24451,5449,176,2026-06-16T00:00:00Z
-112,3,Back to School Email Series,email,retention,2025-08-22,230.03,15230,861,123,2026-06-16T00:00:00Z
-113,3,Back to School Email Series,email,retention,2025-08-23,171.48,43591,1943,77,2026-06-16T00:00:00Z
-114,3,Back to School Email Series,email,retention,2025-08-24,222.40,13588,3341,55,2026-06-16T00:00:00Z
-115,3,Back to School Email Series,email,retention,2025-08-25,288.69,16082,888,136,2026-06-16T00:00:00Z
-116,4,Fall Fashion Launch,paid_social,brand,2025-09-01,1617.76,67399,2202,44,2026-06-16T00:00:00Z
-117,4,Fall Fashion Launch,paid_social,brand,2025-09-02,1642.29,19323,2084,39,2026-06-16T00:00:00Z
-118,4,Fall Fashion Launch,paid_social,brand,2025-09-03,1496.02,47930,2270,71,2026-06-16T00:00:00Z
-119,4,Fall Fashion Launch,paid_social,brand,2025-09-04,1059.93,19217,1840,17,2026-06-16T00:00:00Z
-120,4,Fall Fashion Launch,paid_social,brand,2025-09-05,1113.56,74519,813,115,2026-06-16T00:00:00Z
-121,4,Fall Fashion Launch,paid_social,brand,2025-09-06,932.63,26581,642,117,2026-06-16T00:00:00Z
-122,4,Fall Fashion Launch,paid_social,brand,2025-09-07,989.78,41111,1700,39,2026-06-16T00:00:00Z
-123,4,Fall Fashion Launch,paid_social,brand,2025-09-08,1556.47,65371,2412,111,2026-06-16T00:00:00Z
-124,4,Fall Fashion Launch,paid_social,brand,2025-09-09,1330.14,25926,1270,76,2026-06-16T00:00:00Z
-125,4,Fall Fashion Launch,paid_social,brand,2025-09-10,1199.94,52639,1026,66,2026-06-16T00:00:00Z
-126,4,Fall Fashion Launch,paid_social,brand,2025-09-11,1211.20,49384,2144,114,2026-06-16T00:00:00Z
-127,4,Fall Fashion Launch,paid_social,brand,2025-09-12,1190.55,53255,635,75,2026-06-16T00:00:00Z
-128,4,Fall Fashion Launch,paid_social,brand,2025-09-13,1581.92,56547,630,106,2026-06-16T00:00:00Z
-129,4,Fall Fashion Launch,paid_social,brand,2025-09-14,1210.13,59860,1856,112,2026-06-16T00:00:00Z
-130,4,Fall Fashion Launch,paid_social,brand,2025-09-15,944.56,44533,799,98,2026-06-16T00:00:00Z
-131,4,Fall Fashion Launch,paid_social,brand,2025-09-16,1501.27,17689,468,108,2026-06-16T00:00:00Z
-132,4,Fall Fashion Launch,paid_social,brand,2025-09-17,1293.55,75976,559,102,2026-06-16T00:00:00Z
-133,4,Fall Fashion Launch,paid_social,brand,2025-09-18,1414.18,46287,1487,79,2026-06-16T00:00:00Z
-134,4,Fall Fashion Launch,paid_social,brand,2025-09-19,1242.38,74172,673,62,2026-06-16T00:00:00Z
-135,4,Fall Fashion Launch,paid_social,brand,2025-09-20,994.76,50122,765,64,2026-06-16T00:00:00Z
-136,4,Fall Fashion Launch,paid_social,brand,2025-09-21,1438.51,22308,967,56,2026-06-16T00:00:00Z
-137,4,Fall Fashion Launch,paid_social,brand,2025-09-22,1138.36,41172,2407,38,2026-06-16T00:00:00Z
-138,4,Fall Fashion Launch,paid_social,brand,2025-09-23,989.85,58464,997,114,2026-06-16T00:00:00Z
-139,4,Fall Fashion Launch,paid_social,brand,2025-09-24,1248.38,69275,1971,25,2026-06-16T00:00:00Z
-140,4,Fall Fashion Launch,paid_social,brand,2025-09-25,1611.99,25110,1811,30,2026-06-16T00:00:00Z
-141,4,Fall Fashion Launch,paid_social,brand,2025-09-26,1136.35,65402,553,97,2026-06-16T00:00:00Z
-142,4,Fall Fashion Launch,paid_social,brand,2025-09-27,1217.80,35221,566,79,2026-06-16T00:00:00Z
-143,4,Fall Fashion Launch,paid_social,brand,2025-09-28,1093.07,68987,883,62,2026-06-16T00:00:00Z
-144,4,Fall Fashion Launch,paid_social,brand,2025-09-29,1178.21,33367,2228,114,2026-06-16T00:00:00Z
-145,4,Fall Fashion Launch,paid_social,brand,2025-09-30,1019.44,35676,1188,61,2026-06-16T00:00:00Z
-146,4,Fall Fashion Launch,paid_social,brand,2025-10-01,979.93,47900,1873,78,2026-06-16T00:00:00Z
-147,4,Fall Fashion Launch,paid_social,brand,2025-10-02,1550.07,65991,1205,88,2026-06-16T00:00:00Z
-148,4,Fall Fashion Launch,paid_social,brand,2025-10-03,1162.09,36382,619,104,2026-06-16T00:00:00Z
-149,4,Fall Fashion Launch,paid_social,brand,2025-10-04,1310.85,39920,2051,96,2026-06-16T00:00:00Z
-150,4,Fall Fashion Launch,paid_social,brand,2025-10-05,1612.12,27079,1025,80,2026-06-16T00:00:00Z
-151,4,Fall Fashion Launch,paid_social,brand,2025-10-06,1641.79,69418,2243,83,2026-06-16T00:00:00Z
-152,4,Fall Fashion Launch,paid_social,brand,2025-10-07,1539.37,52391,2351,88,2026-06-16T00:00:00Z
-153,4,Fall Fashion Launch,paid_social,brand,2025-10-08,1537.88,20350,2293,87,2026-06-16T00:00:00Z
-154,4,Fall Fashion Launch,paid_social,brand,2025-10-09,1216.95,56059,1954,99,2026-06-16T00:00:00Z
-155,4,Fall Fashion Launch,paid_social,brand,2025-10-10,1487.81,37556,619,55,2026-06-16T00:00:00Z
-156,4,Fall Fashion Launch,paid_social,brand,2025-10-11,1373.08,23534,640,31,2026-06-16T00:00:00Z
-157,4,Fall Fashion Launch,paid_social,brand,2025-10-12,938.06,71228,953,48,2026-06-16T00:00:00Z
-158,4,Fall Fashion Launch,paid_social,brand,2025-10-13,1614.75,69066,2148,116,2026-06-16T00:00:00Z
-159,4,Fall Fashion Launch,paid_social,brand,2025-10-14,1048.55,36465,1744,36,2026-06-16T00:00:00Z
-160,4,Fall Fashion Launch,paid_social,brand,2025-10-15,1138.26,53816,2297,59,2026-06-16T00:00:00Z
-161,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-15,877.16,79109,633,97,2026-06-16T00:00:00Z
-162,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-16,842.89,19636,672,104,2026-06-16T00:00:00Z
-163,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-17,964.08,59470,2048,106,2026-06-16T00:00:00Z
-164,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-18,806.43,48683,486,22,2026-06-16T00:00:00Z
-165,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-19,951.15,53841,1794,108,2026-06-16T00:00:00Z
-166,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-20,1064.18,55677,995,97,2026-06-16T00:00:00Z
-167,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-21,989.52,71703,1305,74,2026-06-16T00:00:00Z
-168,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-22,876.36,29004,2049,40,2026-06-16T00:00:00Z
-169,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-23,689.64,15272,1196,15,2026-06-16T00:00:00Z
-170,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-24,763.97,71787,1018,51,2026-06-16T00:00:00Z
-171,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-25,942.02,36862,1661,93,2026-06-16T00:00:00Z
-172,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-26,665.10,49902,1582,71,2026-06-16T00:00:00Z
-173,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-27,860.59,42236,1322,85,2026-06-16T00:00:00Z
-174,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-28,912.92,28445,1759,112,2026-06-16T00:00:00Z
-175,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-29,916.63,23476,1799,46,2026-06-16T00:00:00Z
-176,5,TikTok Gen Z Campaign,paid_social,awareness,2025-09-30,635.05,16677,978,86,2026-06-16T00:00:00Z
-177,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-01,851.92,37902,1921,53,2026-06-16T00:00:00Z
-178,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-02,784.36,70096,671,86,2026-06-16T00:00:00Z
-179,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-03,1050.33,40382,1276,116,2026-06-16T00:00:00Z
-180,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-04,823.33,61743,1726,91,2026-06-16T00:00:00Z
-181,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-05,1004.96,53838,1685,75,2026-06-16T00:00:00Z
-182,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-06,741.93,39918,1888,70,2026-06-16T00:00:00Z
-183,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-07,716.46,67965,1347,20,2026-06-16T00:00:00Z
-184,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-08,632.72,20955,562,35,2026-06-16T00:00:00Z
-185,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-09,921.88,68823,518,23,2026-06-16T00:00:00Z
-186,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-10,966.99,54718,626,72,2026-06-16T00:00:00Z
-187,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-11,905.59,34910,733,107,2026-06-16T00:00:00Z
-188,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-12,808.25,57964,684,67,2026-06-16T00:00:00Z
-189,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-13,783.60,19603,1764,85,2026-06-16T00:00:00Z
-190,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-14,761.62,15087,1677,25,2026-06-16T00:00:00Z
-191,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-15,945.85,39614,2249,69,2026-06-16T00:00:00Z
-192,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-16,943.47,19427,963,91,2026-06-16T00:00:00Z
-193,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-17,836.33,15167,2194,92,2026-06-16T00:00:00Z
-194,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-18,875.83,76299,663,102,2026-06-16T00:00:00Z
-195,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-19,681.59,17185,668,77,2026-06-16T00:00:00Z
-196,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-20,1087.05,17363,2417,92,2026-06-16T00:00:00Z
-197,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-21,849.52,20703,1650,51,2026-06-16T00:00:00Z
-198,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-22,664.88,55412,1290,89,2026-06-16T00:00:00Z
-199,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-23,931.10,65672,1256,58,2026-06-16T00:00:00Z
-200,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-24,1030.41,71830,1652,66,2026-06-16T00:00:00Z
-201,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-25,632.55,50287,2322,37,2026-06-16T00:00:00Z
-202,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-26,915.20,23124,1839,22,2026-06-16T00:00:00Z
-203,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-27,956.08,61699,1720,26,2026-06-16T00:00:00Z
-204,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-28,1072.73,48803,2070,29,2026-06-16T00:00:00Z
-205,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-29,874.97,28506,1626,46,2026-06-16T00:00:00Z
-206,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-30,766.99,79596,784,33,2026-06-16T00:00:00Z
-207,5,TikTok Gen Z Campaign,paid_social,awareness,2025-10-31,703.45,40254,1739,20,2026-06-16T00:00:00Z
-208,6,Halloween Deals Blitz,paid_search,conversion,2025-10-15,1799.71,14377,537,35,2026-06-16T00:00:00Z
-209,6,Halloween Deals Blitz,paid_search,conversion,2025-10-16,2024.31,5427,531,38,2026-06-16T00:00:00Z
-210,6,Halloween Deals Blitz,paid_search,conversion,2025-10-17,1846.02,7617,393,30,2026-06-16T00:00:00Z
-211,6,Halloween Deals Blitz,paid_search,conversion,2025-10-18,1736.05,11001,984,78,2026-06-16T00:00:00Z
-212,6,Halloween Deals Blitz,paid_search,conversion,2025-10-19,2061.41,21751,1473,45,2026-06-16T00:00:00Z
-213,6,Halloween Deals Blitz,paid_search,conversion,2025-10-20,1356.54,8135,987,49,2026-06-16T00:00:00Z
-214,6,Halloween Deals Blitz,paid_search,conversion,2025-10-21,1241.10,14277,1262,23,2026-06-16T00:00:00Z
-215,6,Halloween Deals Blitz,paid_search,conversion,2025-10-22,2181.72,13801,332,119,2026-06-16T00:00:00Z
-216,6,Halloween Deals Blitz,paid_search,conversion,2025-10-23,1443.47,17188,1006,26,2026-06-16T00:00:00Z
-217,6,Halloween Deals Blitz,paid_search,conversion,2025-10-24,1454.43,9619,1414,79,2026-06-16T00:00:00Z
-218,6,Halloween Deals Blitz,paid_search,conversion,2025-10-25,2089.10,14294,414,61,2026-06-16T00:00:00Z
-219,6,Halloween Deals Blitz,paid_search,conversion,2025-10-26,1902.07,20338,1079,126,2026-06-16T00:00:00Z
-220,6,Halloween Deals Blitz,paid_search,conversion,2025-10-27,1558.15,9853,234,113,2026-06-16T00:00:00Z
-221,6,Halloween Deals Blitz,paid_search,conversion,2025-10-28,1266.34,22844,1461,27,2026-06-16T00:00:00Z
-222,6,Halloween Deals Blitz,paid_search,conversion,2025-10-29,1725.60,7180,560,72,2026-06-16T00:00:00Z
-223,6,Halloween Deals Blitz,paid_search,conversion,2025-10-30,1492.48,17539,1072,147,2026-06-16T00:00:00Z
-224,6,Halloween Deals Blitz,paid_search,conversion,2025-10-31,1267.36,6841,864,68,2026-06-16T00:00:00Z
-225,7,Halloween Email Blast,email,retention,2025-10-20,318.97,25975,2988,166,2026-06-16T00:00:00Z
-226,7,Halloween Email Blast,email,retention,2025-10-21,429.23,44260,4907,160,2026-06-16T00:00:00Z
-227,7,Halloween Email Blast,email,retention,2025-10-22,456.97,40775,3909,200,2026-06-16T00:00:00Z
-228,7,Halloween Email Blast,email,retention,2025-10-23,552.30,25883,4084,80,2026-06-16T00:00:00Z
-229,7,Halloween Email Blast,email,retention,2025-10-24,329.36,36871,3684,87,2026-06-16T00:00:00Z
-230,7,Halloween Email Blast,email,retention,2025-10-25,415.57,42878,3884,79,2026-06-16T00:00:00Z
-231,7,Halloween Email Blast,email,retention,2025-10-26,340.52,26768,2400,189,2026-06-16T00:00:00Z
-232,7,Halloween Email Blast,email,retention,2025-10-27,468.02,14214,2768,148,2026-06-16T00:00:00Z
-233,7,Halloween Email Blast,email,retention,2025-10-28,528.10,30084,2915,47,2026-06-16T00:00:00Z
-234,7,Halloween Email Blast,email,retention,2025-10-29,508.56,16197,5029,97,2026-06-16T00:00:00Z
-235,7,Halloween Email Blast,email,retention,2025-10-30,518.00,10789,3828,88,2026-06-16T00:00:00Z
-236,7,Halloween Email Blast,email,retention,2025-10-31,355.10,39729,3498,184,2026-06-16T00:00:00Z
-237,8,Black Friday Preview,email,retention,2025-11-01,600.95,32407,4326,61,2026-06-16T00:00:00Z
-238,8,Black Friday Preview,email,retention,2025-11-02,643.19,25845,1699,104,2026-06-16T00:00:00Z
-239,8,Black Friday Preview,email,retention,2025-11-03,645.06,41269,3551,150,2026-06-16T00:00:00Z
-240,8,Black Friday Preview,email,retention,2025-11-04,781.26,30667,893,165,2026-06-16T00:00:00Z
-241,8,Black Friday Preview,email,retention,2025-11-05,529.91,32452,3020,191,2026-06-16T00:00:00Z
-242,8,Black Friday Preview,email,retention,2025-11-06,693.96,23155,5683,62,2026-06-16T00:00:00Z
-243,8,Black Friday Preview,email,retention,2025-11-07,570.08,32782,1913,184,2026-06-16T00:00:00Z
-244,8,Black Friday Preview,email,retention,2025-11-08,533.50,37244,1925,33,2026-06-16T00:00:00Z
-245,8,Black Friday Preview,email,retention,2025-11-09,600.00,31697,1247,87,2026-06-16T00:00:00Z
-246,8,Black Friday Preview,email,retention,2025-11-10,792.79,28566,2639,52,2026-06-16T00:00:00Z
-247,8,Black Friday Preview,email,retention,2025-11-11,582.21,35327,1236,151,2026-06-16T00:00:00Z
-248,8,Black Friday Preview,email,retention,2025-11-12,782.88,29325,1897,138,2026-06-16T00:00:00Z
-249,8,Black Friday Preview,email,retention,2025-11-13,713.25,19180,2968,118,2026-06-16T00:00:00Z
-250,8,Black Friday Preview,email,retention,2025-11-14,782.73,38589,3081,145,2026-06-16T00:00:00Z
-251,8,Black Friday Preview,email,retention,2025-11-15,520.17,11646,873,61,2026-06-16T00:00:00Z
-252,8,Black Friday Preview,email,retention,2025-11-16,650.09,41492,4858,195,2026-06-16T00:00:00Z
-253,8,Black Friday Preview,email,retention,2025-11-17,580.52,9107,1894,172,2026-06-16T00:00:00Z
-254,8,Black Friday Preview,email,retention,2025-11-18,539.40,24305,3582,48,2026-06-16T00:00:00Z
-255,8,Black Friday Preview,email,retention,2025-11-19,578.26,37511,3990,45,2026-06-16T00:00:00Z
-256,8,Black Friday Preview,email,retention,2025-11-20,703.12,13696,874,47,2026-06-16T00:00:00Z
-257,9,Black Friday Doorbusters,paid_search,conversion,2025-11-25,20347.01,13264,1445,127,2026-06-16T00:00:00Z
-258,9,Black Friday Doorbusters,paid_search,conversion,2025-11-26,20603.59,7982,1416,109,2026-06-16T00:00:00Z
-259,9,Black Friday Doorbusters,paid_search,conversion,2025-11-27,20204.57,6829,1467,42,2026-06-16T00:00:00Z
-260,9,Black Friday Doorbusters,paid_search,conversion,2025-11-28,13869.17,16522,547,141,2026-06-16T00:00:00Z
-261,9,Black Friday Doorbusters,paid_search,conversion,2025-11-29,15014.88,18456,1451,93,2026-06-16T00:00:00Z
-262,9,Black Friday Doorbusters,paid_search,conversion,2025-11-30,15442.49,24555,754,27,2026-06-16T00:00:00Z
-263,10,Black Friday Social Push,paid_social,conversion,2025-11-25,13568.77,30402,538,103,2026-06-16T00:00:00Z
-264,10,Black Friday Social Push,paid_social,conversion,2025-11-26,13672.81,71934,512,99,2026-06-16T00:00:00Z
-265,10,Black Friday Social Push,paid_social,conversion,2025-11-27,11531.03,46417,1649,67,2026-06-16T00:00:00Z
-266,10,Black Friday Social Push,paid_social,conversion,2025-11-28,14546.93,30277,2087,44,2026-06-16T00:00:00Z
-267,10,Black Friday Social Push,paid_social,conversion,2025-11-29,14217.78,61743,1142,21,2026-06-16T00:00:00Z
-268,10,Black Friday Social Push,paid_social,conversion,2025-11-30,15400.39,70132,2424,27,2026-06-16T00:00:00Z
-269,11,Cyber Monday Deals,paid_search,conversion,2025-12-01,137880.21,22134,377,132,2026-06-16T00:00:00Z
-270,12,Cyber Monday TikTok,paid_social,conversion,2025-12-01,48500.50,17461,2264,96,2026-06-16T00:00:00Z
-271,13,Holiday Gift Guide Email,email,retention,2025-12-01,774.57,10231,3291,34,2026-06-16T00:00:00Z
-272,13,Holiday Gift Guide Email,email,retention,2025-12-02,984.42,29818,4698,139,2026-06-16T00:00:00Z
-273,13,Holiday Gift Guide Email,email,retention,2025-12-03,817.02,41083,5866,65,2026-06-16T00:00:00Z
-274,13,Holiday Gift Guide Email,email,retention,2025-12-04,841.88,35398,5831,102,2026-06-16T00:00:00Z
-275,13,Holiday Gift Guide Email,email,retention,2025-12-05,978.12,28486,4151,67,2026-06-16T00:00:00Z
-276,13,Holiday Gift Guide Email,email,retention,2025-12-06,643.68,11739,862,65,2026-06-16T00:00:00Z
-277,13,Holiday Gift Guide Email,email,retention,2025-12-07,846.68,20805,3917,64,2026-06-16T00:00:00Z
-278,13,Holiday Gift Guide Email,email,retention,2025-12-08,679.52,18875,1400,31,2026-06-16T00:00:00Z
-279,13,Holiday Gift Guide Email,email,retention,2025-12-09,697.32,44932,3057,117,2026-06-16T00:00:00Z
-280,13,Holiday Gift Guide Email,email,retention,2025-12-10,787.97,8236,5969,95,2026-06-16T00:00:00Z
-281,13,Holiday Gift Guide Email,email,retention,2025-12-11,1002.83,14009,4586,58,2026-06-16T00:00:00Z
-282,13,Holiday Gift Guide Email,email,retention,2025-12-12,899.68,44637,2126,141,2026-06-16T00:00:00Z
-283,13,Holiday Gift Guide Email,email,retention,2025-12-13,739.39,43349,5120,113,2026-06-16T00:00:00Z
-284,13,Holiday Gift Guide Email,email,retention,2025-12-14,971.46,9662,4568,148,2026-06-16T00:00:00Z
-285,13,Holiday Gift Guide Email,email,retention,2025-12-15,830.47,41914,5647,55,2026-06-16T00:00:00Z
-286,13,Holiday Gift Guide Email,email,retention,2025-12-16,656.22,28815,1238,31,2026-06-16T00:00:00Z
-287,13,Holiday Gift Guide Email,email,retention,2025-12-17,1004.84,38495,2555,156,2026-06-16T00:00:00Z
-288,13,Holiday Gift Guide Email,email,retention,2025-12-18,912.94,20038,5362,63,2026-06-16T00:00:00Z
-289,13,Holiday Gift Guide Email,email,retention,2025-12-19,946.36,24868,1629,75,2026-06-16T00:00:00Z
-290,13,Holiday Gift Guide Email,email,retention,2025-12-20,655.44,35305,3380,95,2026-06-16T00:00:00Z
-291,14,Holiday Last Minute Push,paid_search,conversion,2025-12-15,12460.60,7852,1042,128,2026-06-16T00:00:00Z
-292,14,Holiday Last Minute Push,paid_search,conversion,2025-12-16,11633.98,5105,492,118,2026-06-16T00:00:00Z
-293,14,Holiday Last Minute Push,paid_search,conversion,2025-12-17,9428.14,17493,952,76,2026-06-16T00:00:00Z
-294,14,Holiday Last Minute Push,paid_search,conversion,2025-12-18,12148.30,5882,1147,92,2026-06-16T00:00:00Z
-295,14,Holiday Last Minute Push,paid_search,conversion,2025-12-19,8339.52,22741,1200,83,2026-06-16T00:00:00Z
-296,14,Holiday Last Minute Push,paid_search,conversion,2025-12-20,12169.34,18706,1481,32,2026-06-16T00:00:00Z
-297,14,Holiday Last Minute Push,paid_search,conversion,2025-12-21,8731.61,6810,880,55,2026-06-16T00:00:00Z
-298,14,Holiday Last Minute Push,paid_search,conversion,2025-12-22,9313.23,7202,944,121,2026-06-16T00:00:00Z
-299,14,Holiday Last Minute Push,paid_search,conversion,2025-12-23,12335.87,13119,1248,60,2026-06-16T00:00:00Z
-300,15,New Year New You,paid_social,awareness,2026-01-01,2018.55,61814,1967,45,2026-06-16T00:00:00Z
-301,15,New Year New You,paid_social,awareness,2026-01-02,1566.95,27901,1503,16,2026-06-16T00:00:00Z
-302,15,New Year New You,paid_social,awareness,2026-01-03,1575.50,76633,2282,30,2026-06-16T00:00:00Z
-303,15,New Year New You,paid_social,awareness,2026-01-04,1961.96,75393,1527,104,2026-06-16T00:00:00Z
-304,15,New Year New You,paid_social,awareness,2026-01-05,2052.62,52249,1268,111,2026-06-16T00:00:00Z
-305,15,New Year New You,paid_social,awareness,2026-01-06,2063.69,19205,2069,61,2026-06-16T00:00:00Z
-306,15,New Year New You,paid_social,awareness,2026-01-07,1350.63,72756,1689,80,2026-06-16T00:00:00Z
-307,15,New Year New You,paid_social,awareness,2026-01-08,2024.26,75330,2170,100,2026-06-16T00:00:00Z
-308,15,New Year New You,paid_social,awareness,2026-01-09,1696.82,30214,2139,66,2026-06-16T00:00:00Z
-309,15,New Year New You,paid_social,awareness,2026-01-10,1807.79,60122,411,76,2026-06-16T00:00:00Z
-310,15,New Year New You,paid_social,awareness,2026-01-11,1233.88,68301,1183,73,2026-06-16T00:00:00Z
-311,15,New Year New You,paid_social,awareness,2026-01-12,2086.09,16502,919,47,2026-06-16T00:00:00Z
-312,15,New Year New You,paid_social,awareness,2026-01-13,1985.69,56628,1204,19,2026-06-16T00:00:00Z
-313,15,New Year New You,paid_social,awareness,2026-01-14,1919.28,19295,938,23,2026-06-16T00:00:00Z
-314,15,New Year New You,paid_social,awareness,2026-01-15,1292.90,23488,1404,48,2026-06-16T00:00:00Z
-315,15,New Year New You,paid_social,awareness,2026-01-16,1440.35,28888,931,48,2026-06-16T00:00:00Z
-316,15,New Year New You,paid_social,awareness,2026-01-17,1640.37,16534,1004,59,2026-06-16T00:00:00Z
-317,15,New Year New You,paid_social,awareness,2026-01-18,1732.83,15569,1908,68,2026-06-16T00:00:00Z
-318,15,New Year New You,paid_social,awareness,2026-01-19,1505.46,39533,470,32,2026-06-16T00:00:00Z
-319,15,New Year New You,paid_social,awareness,2026-01-20,1229.96,48953,902,42,2026-06-16T00:00:00Z
-320,15,New Year New You,paid_social,awareness,2026-01-21,1230.87,59897,1303,27,2026-06-16T00:00:00Z
-321,15,New Year New You,paid_social,awareness,2026-01-22,1909.17,17448,563,74,2026-06-16T00:00:00Z
-322,15,New Year New You,paid_social,awareness,2026-01-23,1427.21,70191,1219,105,2026-06-16T00:00:00Z
-323,15,New Year New You,paid_social,awareness,2026-01-24,1576.37,17935,874,60,2026-06-16T00:00:00Z
-324,15,New Year New You,paid_social,awareness,2026-01-25,1176.29,21249,1883,85,2026-06-16T00:00:00Z
-325,15,New Year New You,paid_social,awareness,2026-01-26,1852.00,32943,780,112,2026-06-16T00:00:00Z
-326,15,New Year New You,paid_social,awareness,2026-01-27,1231.88,61678,429,55,2026-06-16T00:00:00Z
-327,15,New Year New You,paid_social,awareness,2026-01-28,1959.26,35964,1511,30,2026-06-16T00:00:00Z
-328,15,New Year New You,paid_social,awareness,2026-01-29,1204.19,23443,534,49,2026-06-16T00:00:00Z
-329,15,New Year New You,paid_social,awareness,2026-01-30,1621.90,75849,497,47,2026-06-16T00:00:00Z
-330,15,New Year New You,paid_social,awareness,2026-01-31,1432.17,62298,710,108,2026-06-16T00:00:00Z
-331,16,January Fitness Email,email,retention,2026-01-05,644.26,9275,3971,92,2026-06-16T00:00:00Z
-332,16,January Fitness Email,email,retention,2026-01-06,643.07,43789,1012,139,2026-06-16T00:00:00Z
-333,16,January Fitness Email,email,retention,2026-01-07,511.21,10495,4190,165,2026-06-16T00:00:00Z
-334,16,January Fitness Email,email,retention,2026-01-08,696.51,9539,1055,196,2026-06-16T00:00:00Z
-335,16,January Fitness Email,email,retention,2026-01-09,614.03,35135,3053,195,2026-06-16T00:00:00Z
-336,16,January Fitness Email,email,retention,2026-01-10,687.34,30638,4579,142,2026-06-16T00:00:00Z
-337,16,January Fitness Email,email,retention,2026-01-11,593.46,13081,4924,48,2026-06-16T00:00:00Z
-338,16,January Fitness Email,email,retention,2026-01-12,735.12,44111,4622,130,2026-06-16T00:00:00Z
-339,16,January Fitness Email,email,retention,2026-01-13,701.16,9453,4402,96,2026-06-16T00:00:00Z
-340,16,January Fitness Email,email,retention,2026-01-14,546.18,18384,5125,49,2026-06-16T00:00:00Z
-341,16,January Fitness Email,email,retention,2026-01-15,524.53,18790,4086,200,2026-06-16T00:00:00Z
-342,16,January Fitness Email,email,retention,2026-01-16,472.82,29327,1541,158,2026-06-16T00:00:00Z
-343,16,January Fitness Email,email,retention,2026-01-17,641.56,42866,5635,112,2026-06-16T00:00:00Z
-344,16,January Fitness Email,email,retention,2026-01-18,633.23,12639,3210,127,2026-06-16T00:00:00Z
-345,16,January Fitness Email,email,retention,2026-01-19,743.38,34515,3407,54,2026-06-16T00:00:00Z
-346,16,January Fitness Email,email,retention,2026-01-20,475.69,24652,4872,163,2026-06-16T00:00:00Z
-347,17,Valentine's Day Campaign,paid_social,conversion,2026-02-01,3296.32,21222,1115,117,2026-06-16T00:00:00Z
-348,17,Valentine's Day Campaign,paid_social,conversion,2026-02-02,3460.52,38270,1060,74,2026-06-16T00:00:00Z
-349,17,Valentine's Day Campaign,paid_social,conversion,2026-02-03,3625.53,27424,2288,115,2026-06-16T00:00:00Z
-350,17,Valentine's Day Campaign,paid_social,conversion,2026-02-04,4443.43,41973,1532,120,2026-06-16T00:00:00Z
-351,17,Valentine's Day Campaign,paid_social,conversion,2026-02-05,3328.54,24805,2360,33,2026-06-16T00:00:00Z
-352,17,Valentine's Day Campaign,paid_social,conversion,2026-02-06,4489.45,77866,466,27,2026-06-16T00:00:00Z
-353,17,Valentine's Day Campaign,paid_social,conversion,2026-02-07,2819.34,15350,1896,50,2026-06-16T00:00:00Z
-354,17,Valentine's Day Campaign,paid_social,conversion,2026-02-08,3094.75,37400,2434,27,2026-06-16T00:00:00Z
-355,17,Valentine's Day Campaign,paid_social,conversion,2026-02-09,3675.32,24906,648,98,2026-06-16T00:00:00Z
-356,17,Valentine's Day Campaign,paid_social,conversion,2026-02-10,4801.63,41032,1123,55,2026-06-16T00:00:00Z
-357,17,Valentine's Day Campaign,paid_social,conversion,2026-02-11,2879.10,73829,1207,16,2026-06-16T00:00:00Z
-358,17,Valentine's Day Campaign,paid_social,conversion,2026-02-12,4259.19,36593,1668,61,2026-06-16T00:00:00Z
-359,17,Valentine's Day Campaign,paid_social,conversion,2026-02-13,4453.49,18772,2446,44,2026-06-16T00:00:00Z
-360,17,Valentine's Day Campaign,paid_social,conversion,2026-02-14,4893.87,73755,2415,75,2026-06-16T00:00:00Z
-361,18,Valentine's Gift Finder Email,email,conversion,2026-02-05,795.52,27603,4628,67,2026-06-16T00:00:00Z
-362,18,Valentine's Gift Finder Email,email,conversion,2026-02-06,638.93,39960,5405,191,2026-06-16T00:00:00Z
-363,18,Valentine's Gift Finder Email,email,conversion,2026-02-07,1000.92,42978,2521,133,2026-06-16T00:00:00Z
-364,18,Valentine's Gift Finder Email,email,conversion,2026-02-08,895.90,35075,2203,196,2026-06-16T00:00:00Z
-365,18,Valentine's Gift Finder Email,email,conversion,2026-02-09,942.32,37887,4233,134,2026-06-16T00:00:00Z
-366,18,Valentine's Gift Finder Email,email,conversion,2026-02-10,599.72,34873,2546,83,2026-06-16T00:00:00Z
-367,18,Valentine's Gift Finder Email,email,conversion,2026-02-11,778.00,42870,3707,174,2026-06-16T00:00:00Z
-368,18,Valentine's Gift Finder Email,email,conversion,2026-02-12,807.76,26324,5215,164,2026-06-16T00:00:00Z
-369,18,Valentine's Gift Finder Email,email,conversion,2026-02-13,819.96,40233,3949,57,2026-06-16T00:00:00Z
-370,19,Spring Refresh Launch,paid_social,awareness,2026-03-01,2064.79,25573,986,72,2026-06-16T00:00:00Z
-371,19,Spring Refresh Launch,paid_social,awareness,2026-03-02,2414.14,37284,1681,60,2026-06-16T00:00:00Z
-372,19,Spring Refresh Launch,paid_social,awareness,2026-03-03,2061.26,53836,1921,101,2026-06-16T00:00:00Z
-373,19,Spring Refresh Launch,paid_social,awareness,2026-03-04,1977.17,67156,920,41,2026-06-16T00:00:00Z
-374,19,Spring Refresh Launch,paid_social,awareness,2026-03-05,1645.41,17283,1805,118,2026-06-16T00:00:00Z
-375,19,Spring Refresh Launch,paid_social,awareness,2026-03-06,1726.98,45910,620,45,2026-06-16T00:00:00Z
-376,19,Spring Refresh Launch,paid_social,awareness,2026-03-07,1593.74,28239,1657,90,2026-06-16T00:00:00Z
-377,19,Spring Refresh Launch,paid_social,awareness,2026-03-08,1547.37,63920,1583,70,2026-06-16T00:00:00Z
-378,19,Spring Refresh Launch,paid_social,awareness,2026-03-09,1627.11,62608,1844,33,2026-06-16T00:00:00Z
-379,19,Spring Refresh Launch,paid_social,awareness,2026-03-10,2141.33,37674,1527,64,2026-06-16T00:00:00Z
-380,19,Spring Refresh Launch,paid_social,awareness,2026-03-11,2463.62,59311,2425,59,2026-06-16T00:00:00Z
-381,19,Spring Refresh Launch,paid_social,awareness,2026-03-12,2316.39,26194,1362,72,2026-06-16T00:00:00Z
-382,19,Spring Refresh Launch,paid_social,awareness,2026-03-13,1538.38,65936,524,66,2026-06-16T00:00:00Z
-383,19,Spring Refresh Launch,paid_social,awareness,2026-03-14,2031.33,68942,2368,120,2026-06-16T00:00:00Z
-384,19,Spring Refresh Launch,paid_social,awareness,2026-03-15,1726.00,78784,696,99,2026-06-16T00:00:00Z
-385,19,Spring Refresh Launch,paid_social,awareness,2026-03-16,2401.51,30480,759,71,2026-06-16T00:00:00Z
-386,19,Spring Refresh Launch,paid_social,awareness,2026-03-17,1655.10,38066,1835,18,2026-06-16T00:00:00Z
-387,19,Spring Refresh Launch,paid_social,awareness,2026-03-18,2020.73,32489,1621,24,2026-06-16T00:00:00Z
-388,19,Spring Refresh Launch,paid_social,awareness,2026-03-19,1790.84,18795,1105,15,2026-06-16T00:00:00Z
-389,19,Spring Refresh Launch,paid_social,awareness,2026-03-20,1647.33,26314,2326,74,2026-06-16T00:00:00Z
-390,19,Spring Refresh Launch,paid_social,awareness,2026-03-21,1893.60,67213,1362,59,2026-06-16T00:00:00Z
-391,19,Spring Refresh Launch,paid_social,awareness,2026-03-22,1454.12,16113,1123,118,2026-06-16T00:00:00Z
-392,19,Spring Refresh Launch,paid_social,awareness,2026-03-23,1627.12,57922,1906,71,2026-06-16T00:00:00Z
-393,19,Spring Refresh Launch,paid_social,awareness,2026-03-24,1916.78,20726,2215,49,2026-06-16T00:00:00Z
-394,19,Spring Refresh Launch,paid_social,awareness,2026-03-25,1601.16,67911,435,83,2026-06-16T00:00:00Z
-395,19,Spring Refresh Launch,paid_social,awareness,2026-03-26,1562.78,73342,2254,19,2026-06-16T00:00:00Z
-396,19,Spring Refresh Launch,paid_social,awareness,2026-03-27,1979.39,29990,1480,94,2026-06-16T00:00:00Z
-397,19,Spring Refresh Launch,paid_social,awareness,2026-03-28,1906.05,77099,1332,57,2026-06-16T00:00:00Z
-398,19,Spring Refresh Launch,paid_social,awareness,2026-03-29,2278.46,65088,2114,104,2026-06-16T00:00:00Z
-399,19,Spring Refresh Launch,paid_social,awareness,2026-03-30,1546.27,19502,2361,89,2026-06-16T00:00:00Z
-400,19,Spring Refresh Launch,paid_social,awareness,2026-03-31,1805.47,66938,1806,40,2026-06-16T00:00:00Z
-401,20,Spring Search Campaign,paid_search,conversion,2026-03-01,2040.62,11489,623,107,2026-06-16T00:00:00Z
-402,20,Spring Search Campaign,paid_search,conversion,2026-03-02,2688.65,22462,225,24,2026-06-16T00:00:00Z
-403,20,Spring Search Campaign,paid_search,conversion,2026-03-03,2625.56,21845,702,144,2026-06-16T00:00:00Z
-404,20,Spring Search Campaign,paid_search,conversion,2026-03-04,1647.83,22471,1220,96,2026-06-16T00:00:00Z
-405,20,Spring Search Campaign,paid_search,conversion,2026-03-05,1959.23,17944,1330,146,2026-06-16T00:00:00Z
-406,20,Spring Search Campaign,paid_search,conversion,2026-03-06,2138.55,9082,399,72,2026-06-16T00:00:00Z
-407,20,Spring Search Campaign,paid_search,conversion,2026-03-07,2040.73,17917,1455,110,2026-06-16T00:00:00Z
-408,20,Spring Search Campaign,paid_search,conversion,2026-03-08,2209.36,22494,1284,84,2026-06-16T00:00:00Z
-409,20,Spring Search Campaign,paid_search,conversion,2026-03-09,1939.78,10905,1135,59,2026-06-16T00:00:00Z
-410,20,Spring Search Campaign,paid_search,conversion,2026-03-10,2256.18,5216,753,103,2026-06-16T00:00:00Z
-411,20,Spring Search Campaign,paid_search,conversion,2026-03-11,2056.95,21359,274,120,2026-06-16T00:00:00Z
-412,20,Spring Search Campaign,paid_search,conversion,2026-03-12,2552.71,23063,1454,134,2026-06-16T00:00:00Z
-413,20,Spring Search Campaign,paid_search,conversion,2026-03-13,2056.95,14765,681,48,2026-06-16T00:00:00Z
-414,20,Spring Search Campaign,paid_search,conversion,2026-03-14,2192.68,21935,830,145,2026-06-16T00:00:00Z
-415,20,Spring Search Campaign,paid_search,conversion,2026-03-15,1902.04,10207,434,76,2026-06-16T00:00:00Z
-416,20,Spring Search Campaign,paid_search,conversion,2026-03-16,1671.48,22470,1080,149,2026-06-16T00:00:00Z
-417,20,Spring Search Campaign,paid_search,conversion,2026-03-17,2655.25,8359,225,87,2026-06-16T00:00:00Z
-418,20,Spring Search Campaign,paid_search,conversion,2026-03-18,2572.37,11177,727,144,2026-06-16T00:00:00Z
-419,20,Spring Search Campaign,paid_search,conversion,2026-03-19,1941.79,11735,390,78,2026-06-16T00:00:00Z
-420,20,Spring Search Campaign,paid_search,conversion,2026-03-20,2328.04,9618,403,76,2026-06-16T00:00:00Z
-421,20,Spring Search Campaign,paid_search,conversion,2026-03-21,2808.22,7590,1090,26,2026-06-16T00:00:00Z
-422,20,Spring Search Campaign,paid_search,conversion,2026-03-22,2438.45,21074,812,82,2026-06-16T00:00:00Z
-423,20,Spring Search Campaign,paid_search,conversion,2026-03-23,2186.78,6995,286,28,2026-06-16T00:00:00Z
-424,20,Spring Search Campaign,paid_search,conversion,2026-03-24,2619.46,11106,703,72,2026-06-16T00:00:00Z
-425,20,Spring Search Campaign,paid_search,conversion,2026-03-25,1668.78,22803,480,130,2026-06-16T00:00:00Z
-426,20,Spring Search Campaign,paid_search,conversion,2026-03-26,2240.10,22637,400,98,2026-06-16T00:00:00Z
-427,20,Spring Search Campaign,paid_search,conversion,2026-03-27,2333.83,18132,1286,131,2026-06-16T00:00:00Z
-428,20,Spring Search Campaign,paid_search,conversion,2026-03-28,2565.38,17389,341,110,2026-06-16T00:00:00Z
-429,20,Spring Search Campaign,paid_search,conversion,2026-03-29,2744.95,5995,413,83,2026-06-16T00:00:00Z
-430,20,Spring Search Campaign,paid_search,conversion,2026-03-30,2311.02,17805,1030,55,2026-06-16T00:00:00Z
-431,20,Spring Search Campaign,paid_search,conversion,2026-03-31,1860.88,24482,1146,83,2026-06-16T00:00:00Z
-432,21,St Patrick's Sale,email,retention,2026-03-14,921.08,11066,1677,164,2026-06-16T00:00:00Z
-433,21,St Patrick's Sale,email,retention,2026-03-15,1317.08,14634,4109,123,2026-06-16T00:00:00Z
-434,21,St Patrick's Sale,email,retention,2026-03-16,1383.74,23654,4533,144,2026-06-16T00:00:00Z
-435,21,St Patrick's Sale,email,retention,2026-03-17,1383.87,30808,2905,48,2026-06-16T00:00:00Z
-436,22,Earth Day Green Products,paid_social,brand,2026-04-15,3439.20,31546,745,27,2026-06-16T00:00:00Z
-437,22,Earth Day Green Products,paid_social,brand,2026-04-16,3655.07,66261,1151,41,2026-06-16T00:00:00Z
-438,22,Earth Day Green Products,paid_social,brand,2026-04-17,3069.58,62710,1769,53,2026-06-16T00:00:00Z
-439,22,Earth Day Green Products,paid_social,brand,2026-04-18,3617.53,21681,1829,42,2026-06-16T00:00:00Z
-440,22,Earth Day Green Products,paid_social,brand,2026-04-19,2504.21,35511,2442,68,2026-06-16T00:00:00Z
-441,22,Earth Day Green Products,paid_social,brand,2026-04-20,2517.14,64429,1375,78,2026-06-16T00:00:00Z
-442,22,Earth Day Green Products,paid_social,brand,2026-04-21,2352.64,38495,2161,75,2026-06-16T00:00:00Z
-443,22,Earth Day Green Products,paid_social,brand,2026-04-22,3236.56,24479,1047,103,2026-06-16T00:00:00Z
-444,23,Mother's Day Preview,email,retention,2026-04-25,959.05,43997,4082,123,2026-06-16T00:00:00Z
-445,23,Mother's Day Preview,email,retention,2026-04-26,1129.95,8941,4670,165,2026-06-16T00:00:00Z
-446,23,Mother's Day Preview,email,retention,2026-04-27,1172.93,29330,1660,46,2026-06-16T00:00:00Z
-447,23,Mother's Day Preview,email,retention,2026-04-28,854.17,20847,1092,63,2026-06-16T00:00:00Z
-448,23,Mother's Day Preview,email,retention,2026-04-29,1098.76,13282,4671,199,2026-06-16T00:00:00Z
-449,23,Mother's Day Preview,email,retention,2026-04-30,1171.10,38433,3489,37,2026-06-16T00:00:00Z
-450,23,Mother's Day Preview,email,retention,2026-05-01,995.40,37013,1199,53,2026-06-16T00:00:00Z
-451,23,Mother's Day Preview,email,retention,2026-05-02,1277.11,9203,4977,84,2026-06-16T00:00:00Z
-452,23,Mother's Day Preview,email,retention,2026-05-03,1179.36,23436,4840,60,2026-06-16T00:00:00Z
-453,23,Mother's Day Preview,email,retention,2026-05-04,1437.91,40891,5397,146,2026-06-16T00:00:00Z
-454,24,Mother's Day Search,paid_search,conversion,2026-05-01,5004.29,21794,941,36,2026-06-16T00:00:00Z
-455,24,Mother's Day Search,paid_search,conversion,2026-05-02,6898.57,17567,777,22,2026-06-16T00:00:00Z
-456,24,Mother's Day Search,paid_search,conversion,2026-05-03,5735.03,14351,424,90,2026-06-16T00:00:00Z
-457,24,Mother's Day Search,paid_search,conversion,2026-05-04,6152.66,12650,662,43,2026-06-16T00:00:00Z
-458,24,Mother's Day Search,paid_search,conversion,2026-05-05,5817.78,14580,725,112,2026-06-16T00:00:00Z
-459,24,Mother's Day Search,paid_search,conversion,2026-05-06,7060.35,17234,560,74,2026-06-16T00:00:00Z
-460,24,Mother's Day Search,paid_search,conversion,2026-05-07,4527.31,17269,464,29,2026-06-16T00:00:00Z
-461,24,Mother's Day Search,paid_search,conversion,2026-05-08,6791.23,6851,764,128,2026-06-16T00:00:00Z
-462,24,Mother's Day Search,paid_search,conversion,2026-05-09,6028.00,16916,935,121,2026-06-16T00:00:00Z
-463,24,Mother's Day Search,paid_search,conversion,2026-05-10,6798.66,13400,403,93,2026-06-16T00:00:00Z
-464,24,Mother's Day Search,paid_search,conversion,2026-05-11,7450.57,19674,856,116,2026-06-16T00:00:00Z
-465,24,Mother's Day Search,paid_search,conversion,2026-05-12,5571.07,10044,762,54,2026-06-16T00:00:00Z
-466,25,Mother's Day Social,paid_social,conversion,2026-05-01,7164.58,71836,1570,101,2026-06-16T00:00:00Z
-467,25,Mother's Day Social,paid_social,conversion,2026-05-02,7371.70,33797,2113,92,2026-06-16T00:00:00Z
-468,25,Mother's Day Social,paid_social,conversion,2026-05-03,4735.47,50545,2156,71,2026-06-16T00:00:00Z
-469,25,Mother's Day Social,paid_social,conversion,2026-05-04,6567.13,26370,2300,24,2026-06-16T00:00:00Z
-470,25,Mother's Day Social,paid_social,conversion,2026-05-05,6684.37,48181,1803,19,2026-06-16T00:00:00Z
-471,25,Mother's Day Social,paid_social,conversion,2026-05-06,5393.76,22713,830,110,2026-06-16T00:00:00Z
-472,25,Mother's Day Social,paid_social,conversion,2026-05-07,4687.39,28849,690,58,2026-06-16T00:00:00Z
-473,25,Mother's Day Social,paid_social,conversion,2026-05-08,7081.22,54166,489,120,2026-06-16T00:00:00Z
-474,25,Mother's Day Social,paid_social,conversion,2026-05-09,6599.97,17760,1047,98,2026-06-16T00:00:00Z
-475,25,Mother's Day Social,paid_social,conversion,2026-05-10,6147.88,61593,1096,45,2026-06-16T00:00:00Z
-476,25,Mother's Day Social,paid_social,conversion,2026-05-11,5166.95,15819,1306,78,2026-06-16T00:00:00Z
-477,26,Summer Preview Launch,paid_social,awareness,2026-05-20,1681.96,26805,572,116,2026-06-16T00:00:00Z
-478,26,Summer Preview Launch,paid_social,awareness,2026-05-21,2170.66,17345,2126,83,2026-06-16T00:00:00Z
-479,26,Summer Preview Launch,paid_social,awareness,2026-05-22,2008.51,46544,2051,19,2026-06-16T00:00:00Z
-480,26,Summer Preview Launch,paid_social,awareness,2026-05-23,1903.55,41459,636,50,2026-06-16T00:00:00Z
-481,26,Summer Preview Launch,paid_social,awareness,2026-05-24,2413.00,39747,2128,104,2026-06-16T00:00:00Z
-482,26,Summer Preview Launch,paid_social,awareness,2026-05-25,1615.56,39456,1357,67,2026-06-16T00:00:00Z
-483,26,Summer Preview Launch,paid_social,awareness,2026-05-26,2149.73,53972,1851,71,2026-06-16T00:00:00Z
-484,26,Summer Preview Launch,paid_social,awareness,2026-05-27,1914.63,72567,2168,18,2026-06-16T00:00:00Z
-485,26,Summer Preview Launch,paid_social,awareness,2026-05-28,1728.60,56108,1266,67,2026-06-16T00:00:00Z
-486,26,Summer Preview Launch,paid_social,awareness,2026-05-29,1572.16,27004,1258,74,2026-06-16T00:00:00Z
-487,26,Summer Preview Launch,paid_social,awareness,2026-05-30,2504.25,76386,1554,75,2026-06-16T00:00:00Z
-488,26,Summer Preview Launch,paid_social,awareness,2026-05-31,1797.73,23984,1332,86,2026-06-16T00:00:00Z
-489,26,Summer Preview Launch,paid_social,awareness,2026-06-01,1743.57,46780,1363,120,2026-06-16T00:00:00Z
-490,26,Summer Preview Launch,paid_social,awareness,2026-06-02,2514.11,49004,1560,96,2026-06-16T00:00:00Z
-491,26,Summer Preview Launch,paid_social,awareness,2026-06-03,1988.79,29772,1171,101,2026-06-16T00:00:00Z
-492,26,Summer Preview Launch,paid_social,awareness,2026-06-04,2577.90,20374,1693,65,2026-06-16T00:00:00Z
-493,26,Summer Preview Launch,paid_social,awareness,2026-06-05,2320.81,75917,828,75,2026-06-16T00:00:00Z
-494,26,Summer Preview Launch,paid_social,awareness,2026-06-06,1638.39,55539,2363,47,2026-06-16T00:00:00Z
-495,26,Summer Preview Launch,paid_social,awareness,2026-06-07,1809.95,27280,1804,72,2026-06-16T00:00:00Z
-496,26,Summer Preview Launch,paid_social,awareness,2026-06-08,2359.72,19577,807,31,2026-06-16T00:00:00Z
-497,26,Summer Preview Launch,paid_social,awareness,2026-06-09,2325.32,17707,672,77,2026-06-16T00:00:00Z
-498,26,Summer Preview Launch,paid_social,awareness,2026-06-10,2391.09,24383,2278,77,2026-06-16T00:00:00Z
-499,26,Summer Preview Launch,paid_social,awareness,2026-06-11,2621.05,39156,620,29,2026-06-16T00:00:00Z
-500,26,Summer Preview Launch,paid_social,awareness,2026-06-12,2458.57,79782,664,33,2026-06-16T00:00:00Z
-501,26,Summer Preview Launch,paid_social,awareness,2026-06-13,1648.58,16234,731,26,2026-06-16T00:00:00Z
-502,26,Summer Preview Launch,paid_social,awareness,2026-06-14,2625.28,63930,1668,26,2026-06-16T00:00:00Z
-503,26,Summer Preview Launch,paid_social,awareness,2026-06-15,2626.05,61966,1831,90,2026-06-16T00:00:00Z
-504,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-01,473.47,9727,624,17,2026-06-16T00:00:00Z
-505,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-02,347.83,6200,546,52,2026-06-16T00:00:00Z
-506,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-03,405.85,4634,429,27,2026-06-16T00:00:00Z
-507,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-04,380.87,11063,768,24,2026-06-16T00:00:00Z
-508,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-05,321.78,7647,644,27,2026-06-16T00:00:00Z
-509,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-06,446.81,8117,785,11,2026-06-16T00:00:00Z
-510,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-07,459.49,3288,158,48,2026-06-16T00:00:00Z
-511,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-08,498.62,5536,600,58,2026-06-16T00:00:00Z
-512,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-09,391.73,4435,215,51,2026-06-16T00:00:00Z
-513,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-10,307.43,2397,491,43,2026-06-16T00:00:00Z
-514,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-11,507.41,11501,145,58,2026-06-16T00:00:00Z
-515,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-12,361.46,8271,299,28,2026-06-16T00:00:00Z
-516,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-13,362.02,5801,344,35,2026-06-16T00:00:00Z
-517,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-14,419.95,7165,460,51,2026-06-16T00:00:00Z
-518,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-15,356.32,8511,745,32,2026-06-16T00:00:00Z
-519,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-16,427.13,8048,636,25,2026-06-16T00:00:00Z
-520,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-17,487.00,8398,706,38,2026-06-16T00:00:00Z
-521,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-18,374.52,4126,142,20,2026-06-16T00:00:00Z
-522,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-19,447.95,8003,657,32,2026-06-16T00:00:00Z
-523,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-20,311.97,11733,670,48,2026-06-16T00:00:00Z
-524,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-21,364.38,3404,450,37,2026-06-16T00:00:00Z
-525,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-22,405.74,11101,464,26,2026-06-16T00:00:00Z
-526,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-23,435.89,10465,243,41,2026-06-16T00:00:00Z
-527,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-24,461.79,10096,577,42,2026-06-16T00:00:00Z
-528,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-25,295.00,6358,337,47,2026-06-16T00:00:00Z
-529,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-26,314.46,5863,356,30,2026-06-16T00:00:00Z
-530,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-27,374.27,11733,112,35,2026-06-16T00:00:00Z
-531,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-28,499.49,5352,632,33,2026-06-16T00:00:00Z
-532,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-29,394.60,7300,657,14,2026-06-16T00:00:00Z
-533,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-30,426.99,4189,146,36,2026-06-16T00:00:00Z
-534,27,Affiliate Partner Program Q3,affiliate,partnership,2025-07-31,308.99,10009,588,10,2026-06-16T00:00:00Z
-535,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-01,369.66,10929,745,11,2026-06-16T00:00:00Z
-536,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-02,298.58,3869,410,15,2026-06-16T00:00:00Z
-537,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-03,307.78,9165,591,13,2026-06-16T00:00:00Z
-538,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-04,466.47,3823,540,59,2026-06-16T00:00:00Z
-539,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-05,465.15,2325,344,43,2026-06-16T00:00:00Z
-540,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-06,505.43,10950,766,21,2026-06-16T00:00:00Z
-541,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-07,312.53,4160,392,17,2026-06-16T00:00:00Z
-542,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-08,441.01,11379,403,43,2026-06-16T00:00:00Z
-543,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-09,371.99,7525,562,39,2026-06-16T00:00:00Z
-544,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-10,513.53,6414,596,51,2026-06-16T00:00:00Z
-545,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-11,430.87,8973,403,6,2026-06-16T00:00:00Z
-546,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-12,467.35,6120,271,46,2026-06-16T00:00:00Z
-547,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-13,495.23,11670,592,10,2026-06-16T00:00:00Z
-548,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-14,300.87,9334,727,33,2026-06-16T00:00:00Z
-549,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-15,484.28,9020,777,38,2026-06-16T00:00:00Z
-550,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-16,361.30,5303,672,21,2026-06-16T00:00:00Z
-551,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-17,306.74,8013,581,25,2026-06-16T00:00:00Z
-552,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-18,493.73,8360,701,31,2026-06-16T00:00:00Z
-553,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-19,454.42,3404,181,48,2026-06-16T00:00:00Z
-554,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-20,312.41,9916,523,16,2026-06-16T00:00:00Z
-555,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-21,286.09,2905,157,51,2026-06-16T00:00:00Z
-556,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-22,366.96,8827,798,16,2026-06-16T00:00:00Z
-557,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-23,495.17,5388,729,31,2026-06-16T00:00:00Z
-558,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-24,393.36,6011,569,5,2026-06-16T00:00:00Z
-559,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-25,409.55,3048,213,46,2026-06-16T00:00:00Z
-560,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-26,360.88,11696,684,14,2026-06-16T00:00:00Z
-561,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-27,381.21,9763,126,50,2026-06-16T00:00:00Z
-562,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-28,293.70,10276,137,16,2026-06-16T00:00:00Z
-563,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-29,472.72,11578,561,5,2026-06-16T00:00:00Z
-564,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-30,367.04,4178,517,57,2026-06-16T00:00:00Z
-565,27,Affiliate Partner Program Q3,affiliate,partnership,2025-08-31,459.62,3479,145,8,2026-06-16T00:00:00Z
-566,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-01,289.56,8851,552,16,2026-06-16T00:00:00Z
-567,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-02,496.50,2452,730,39,2026-06-16T00:00:00Z
-568,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-03,337.75,9267,340,21,2026-06-16T00:00:00Z
-569,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-04,361.74,2165,770,14,2026-06-16T00:00:00Z
-570,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-05,323.57,7351,638,52,2026-06-16T00:00:00Z
-571,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-06,380.93,11963,744,5,2026-06-16T00:00:00Z
-572,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-07,364.07,11472,602,58,2026-06-16T00:00:00Z
-573,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-08,347.65,2672,675,41,2026-06-16T00:00:00Z
-574,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-09,349.26,9571,553,40,2026-06-16T00:00:00Z
-575,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-10,397.39,5582,629,7,2026-06-16T00:00:00Z
-576,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-11,488.92,9122,197,17,2026-06-16T00:00:00Z
-577,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-12,476.41,3995,116,34,2026-06-16T00:00:00Z
-578,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-13,450.60,4346,666,49,2026-06-16T00:00:00Z
-579,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-14,428.50,4250,447,6,2026-06-16T00:00:00Z
-580,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-15,446.01,9433,104,55,2026-06-16T00:00:00Z
-581,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-16,442.58,4443,486,39,2026-06-16T00:00:00Z
-582,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-17,390.55,3189,774,30,2026-06-16T00:00:00Z
-583,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-18,421.39,6409,785,9,2026-06-16T00:00:00Z
-584,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-19,441.52,6010,189,28,2026-06-16T00:00:00Z
-585,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-20,432.22,11807,271,23,2026-06-16T00:00:00Z
-586,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-21,427.40,6795,304,32,2026-06-16T00:00:00Z
-587,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-22,287.39,3681,443,8,2026-06-16T00:00:00Z
-588,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-23,473.77,4765,265,56,2026-06-16T00:00:00Z
-589,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-24,305.68,5276,476,14,2026-06-16T00:00:00Z
-590,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-25,348.00,9243,705,5,2026-06-16T00:00:00Z
-591,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-26,470.48,8989,428,31,2026-06-16T00:00:00Z
-592,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-27,406.13,5207,125,47,2026-06-16T00:00:00Z
-593,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-28,506.98,2936,410,58,2026-06-16T00:00:00Z
-594,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-29,373.71,10831,387,20,2026-06-16T00:00:00Z
-595,27,Affiliate Partner Program Q3,affiliate,partnership,2025-09-30,306.97,11740,445,50,2026-06-16T00:00:00Z
-596,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-01,506.06,5490,438,37,2026-06-16T00:00:00Z
-597,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-02,558.94,7563,732,47,2026-06-16T00:00:00Z
-598,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-03,493.36,9636,664,7,2026-06-16T00:00:00Z
-599,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-04,545.65,10593,137,37,2026-06-16T00:00:00Z
-600,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-05,547.06,4866,728,46,2026-06-16T00:00:00Z
-601,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-06,584.27,9558,420,38,2026-06-16T00:00:00Z
-602,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-07,699.63,8388,301,57,2026-06-16T00:00:00Z
-603,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-08,416.53,4156,490,60,2026-06-16T00:00:00Z
-604,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-09,504.17,9932,376,34,2026-06-16T00:00:00Z
-605,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-10,645.94,2193,194,5,2026-06-16T00:00:00Z
-606,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-11,665.99,10391,229,26,2026-06-16T00:00:00Z
-607,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-12,574.08,5996,281,59,2026-06-16T00:00:00Z
-608,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-13,587.93,2249,202,32,2026-06-16T00:00:00Z
-609,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-14,508.10,4588,385,12,2026-06-16T00:00:00Z
-610,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-15,556.45,8709,115,12,2026-06-16T00:00:00Z
-611,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-16,479.64,10349,131,60,2026-06-16T00:00:00Z
-612,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-17,434.94,8342,484,33,2026-06-16T00:00:00Z
-613,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-18,480.59,6734,664,54,2026-06-16T00:00:00Z
-614,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-19,621.97,11128,259,10,2026-06-16T00:00:00Z
-615,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-20,517.32,7013,357,50,2026-06-16T00:00:00Z
-616,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-21,686.39,3921,281,15,2026-06-16T00:00:00Z
-617,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-22,566.20,3307,442,40,2026-06-16T00:00:00Z
-618,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-23,544.29,7499,793,58,2026-06-16T00:00:00Z
-619,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-24,627.18,2685,205,42,2026-06-16T00:00:00Z
-620,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-25,582.56,6270,200,12,2026-06-16T00:00:00Z
-621,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-26,525.89,6939,476,13,2026-06-16T00:00:00Z
-622,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-27,506.45,4547,247,16,2026-06-16T00:00:00Z
-623,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-28,598.79,7221,513,57,2026-06-16T00:00:00Z
-624,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-29,409.17,7653,131,9,2026-06-16T00:00:00Z
-625,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-30,662.34,6996,764,7,2026-06-16T00:00:00Z
-626,28,Affiliate Partner Program Q4,affiliate,partnership,2025-10-31,443.54,10380,617,12,2026-06-16T00:00:00Z
-627,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-01,672.43,9686,379,28,2026-06-16T00:00:00Z
-628,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-02,588.98,11993,277,7,2026-06-16T00:00:00Z
-629,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-03,565.97,3776,480,29,2026-06-16T00:00:00Z
-630,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-04,686.21,4681,656,25,2026-06-16T00:00:00Z
-631,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-05,566.19,3871,619,29,2026-06-16T00:00:00Z
-632,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-06,577.74,4504,299,9,2026-06-16T00:00:00Z
-633,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-07,582.96,8831,385,28,2026-06-16T00:00:00Z
-634,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-08,416.81,6026,261,44,2026-06-16T00:00:00Z
-635,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-09,494.87,4369,681,22,2026-06-16T00:00:00Z
-636,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-10,633.68,4194,541,9,2026-06-16T00:00:00Z
-637,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-11,403.44,9755,266,50,2026-06-16T00:00:00Z
-638,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-12,672.47,2809,564,48,2026-06-16T00:00:00Z
-639,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-13,452.50,5212,552,36,2026-06-16T00:00:00Z
-640,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-14,413.25,4649,298,48,2026-06-16T00:00:00Z
-641,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-15,484.16,2766,535,22,2026-06-16T00:00:00Z
-642,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-16,405.76,2935,195,54,2026-06-16T00:00:00Z
-643,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-17,521.66,9127,547,33,2026-06-16T00:00:00Z
-644,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-18,527.08,5933,786,38,2026-06-16T00:00:00Z
-645,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-19,506.93,2852,346,42,2026-06-16T00:00:00Z
-646,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-20,472.93,3710,249,25,2026-06-16T00:00:00Z
-647,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-21,669.44,5911,559,42,2026-06-16T00:00:00Z
-648,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-22,582.38,9081,496,16,2026-06-16T00:00:00Z
-649,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-23,609.63,6522,573,30,2026-06-16T00:00:00Z
-650,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-24,514.35,9845,425,25,2026-06-16T00:00:00Z
-651,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-25,619.62,4602,528,7,2026-06-16T00:00:00Z
-652,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-26,574.01,5684,395,25,2026-06-16T00:00:00Z
-653,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-27,598.59,10764,318,43,2026-06-16T00:00:00Z
-654,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-28,635.53,9651,365,17,2026-06-16T00:00:00Z
-655,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-29,694.67,5413,289,29,2026-06-16T00:00:00Z
-656,28,Affiliate Partner Program Q4,affiliate,partnership,2025-11-30,399.24,11213,681,29,2026-06-16T00:00:00Z
-657,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-01,551.60,2520,296,23,2026-06-16T00:00:00Z
-658,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-02,559.13,11153,476,51,2026-06-16T00:00:00Z
-659,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-03,549.27,8538,245,15,2026-06-16T00:00:00Z
-660,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-04,602.57,8693,613,10,2026-06-16T00:00:00Z
-661,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-05,409.83,8470,691,39,2026-06-16T00:00:00Z
-662,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-06,633.08,2990,725,18,2026-06-16T00:00:00Z
-663,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-07,413.27,9710,279,31,2026-06-16T00:00:00Z
-664,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-08,447.73,10156,552,9,2026-06-16T00:00:00Z
-665,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-09,574.19,3959,159,40,2026-06-16T00:00:00Z
-666,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-10,486.81,11096,189,18,2026-06-16T00:00:00Z
-667,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-11,578.03,7203,308,21,2026-06-16T00:00:00Z
-668,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-12,589.94,7711,501,7,2026-06-16T00:00:00Z
-669,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-13,440.25,6971,572,12,2026-06-16T00:00:00Z
-670,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-14,558.43,2648,622,41,2026-06-16T00:00:00Z
-671,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-15,593.92,7295,546,28,2026-06-16T00:00:00Z
-672,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-16,668.27,2657,531,50,2026-06-16T00:00:00Z
-673,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-17,636.93,8388,650,56,2026-06-16T00:00:00Z
-674,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-18,634.76,5227,367,46,2026-06-16T00:00:00Z
-675,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-19,578.88,9733,237,14,2026-06-16T00:00:00Z
-676,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-20,621.69,8969,672,35,2026-06-16T00:00:00Z
-677,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-21,423.39,11302,317,13,2026-06-16T00:00:00Z
-678,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-22,632.43,5500,385,32,2026-06-16T00:00:00Z
-679,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-23,585.40,4995,473,16,2026-06-16T00:00:00Z
-680,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-24,689.61,11847,752,55,2026-06-16T00:00:00Z
-681,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-25,521.63,6426,529,41,2026-06-16T00:00:00Z
-682,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-26,598.54,11986,767,18,2026-06-16T00:00:00Z
-683,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-27,443.80,6954,717,48,2026-06-16T00:00:00Z
-684,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-28,603.46,6157,375,28,2026-06-16T00:00:00Z
-685,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-29,584.00,6924,223,34,2026-06-16T00:00:00Z
-686,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-30,658.09,11428,103,52,2026-06-16T00:00:00Z
-687,28,Affiliate Partner Program Q4,affiliate,partnership,2025-12-31,699.97,7964,592,43,2026-06-16T00:00:00Z
-688,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-01,491.03,8277,750,48,2026-06-16T00:00:00Z
-689,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-02,579.24,6397,723,39,2026-06-16T00:00:00Z
-690,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-03,364.79,7295,755,34,2026-06-16T00:00:00Z
-691,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-04,577.69,10091,782,27,2026-06-16T00:00:00Z
-692,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-05,454.90,10142,544,8,2026-06-16T00:00:00Z
-693,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-06,558.64,2569,640,39,2026-06-16T00:00:00Z
-694,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-07,522.33,7093,706,49,2026-06-16T00:00:00Z
-695,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-08,580.30,3098,169,60,2026-06-16T00:00:00Z
-696,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-09,392.97,5881,785,30,2026-06-16T00:00:00Z
-697,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-10,389.88,6798,513,13,2026-06-16T00:00:00Z
-698,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-11,453.82,9831,476,56,2026-06-16T00:00:00Z
-699,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-12,616.63,9725,391,54,2026-06-16T00:00:00Z
-700,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-13,376.31,11818,176,40,2026-06-16T00:00:00Z
-701,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-14,382.01,11932,357,43,2026-06-16T00:00:00Z
-702,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-15,546.86,6394,687,26,2026-06-16T00:00:00Z
-703,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-16,517.73,3965,682,5,2026-06-16T00:00:00Z
-704,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-17,494.86,6278,107,48,2026-06-16T00:00:00Z
-705,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-18,419.06,7657,766,41,2026-06-16T00:00:00Z
-706,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-19,455.49,3129,644,26,2026-06-16T00:00:00Z
-707,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-20,486.42,11350,228,60,2026-06-16T00:00:00Z
-708,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-21,598.50,4546,502,15,2026-06-16T00:00:00Z
-709,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-22,360.14,11498,669,11,2026-06-16T00:00:00Z
-710,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-23,503.82,3448,555,13,2026-06-16T00:00:00Z
-711,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-24,407.21,8392,272,22,2026-06-16T00:00:00Z
-712,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-25,550.08,9234,279,55,2026-06-16T00:00:00Z
-713,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-26,515.51,7992,377,31,2026-06-16T00:00:00Z
-714,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-27,508.13,3047,289,16,2026-06-16T00:00:00Z
-715,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-28,488.91,7948,128,29,2026-06-16T00:00:00Z
-716,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-29,355.29,9400,781,14,2026-06-16T00:00:00Z
-717,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-30,600.26,8105,725,34,2026-06-16T00:00:00Z
-718,29,Affiliate Partner Program Q1,affiliate,partnership,2026-01-31,547.30,4745,699,60,2026-06-16T00:00:00Z
-719,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-01,457.66,10850,182,30,2026-06-16T00:00:00Z
-720,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-02,560.08,10501,690,49,2026-06-16T00:00:00Z
-721,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-03,584.53,8119,306,18,2026-06-16T00:00:00Z
-722,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-04,576.77,10506,734,18,2026-06-16T00:00:00Z
-723,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-05,411.75,6141,399,54,2026-06-16T00:00:00Z
-724,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-06,520.31,9487,198,56,2026-06-16T00:00:00Z
-725,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-07,357.42,2607,712,29,2026-06-16T00:00:00Z
-726,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-08,428.65,11829,764,39,2026-06-16T00:00:00Z
-727,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-09,393.29,2506,355,55,2026-06-16T00:00:00Z
-728,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-10,567.08,5041,431,32,2026-06-16T00:00:00Z
-729,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-11,526.73,6677,319,39,2026-06-16T00:00:00Z
-730,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-12,545.69,11589,238,53,2026-06-16T00:00:00Z
-731,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-13,356.95,6145,667,30,2026-06-16T00:00:00Z
-732,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-14,517.26,6685,549,11,2026-06-16T00:00:00Z
-733,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-15,453.52,3475,360,22,2026-06-16T00:00:00Z
-734,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-16,358.86,11349,715,25,2026-06-16T00:00:00Z
-735,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-17,442.84,5113,280,37,2026-06-16T00:00:00Z
-736,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-18,533.65,9015,423,49,2026-06-16T00:00:00Z
-737,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-19,561.14,3402,302,56,2026-06-16T00:00:00Z
-738,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-20,532.86,9491,402,43,2026-06-16T00:00:00Z
-739,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-21,628.93,11866,736,29,2026-06-16T00:00:00Z
-740,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-22,353.69,5928,437,5,2026-06-16T00:00:00Z
-741,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-23,439.34,8254,683,57,2026-06-16T00:00:00Z
-742,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-24,517.43,11233,419,23,2026-06-16T00:00:00Z
-743,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-25,366.19,9785,632,36,2026-06-16T00:00:00Z
-744,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-26,469.65,6741,320,5,2026-06-16T00:00:00Z
-745,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-27,479.66,3061,680,22,2026-06-16T00:00:00Z
-746,29,Affiliate Partner Program Q1,affiliate,partnership,2026-02-28,390.20,7865,456,46,2026-06-16T00:00:00Z
-747,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-01,410.60,4288,677,51,2026-06-16T00:00:00Z
-748,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-02,606.47,6590,707,40,2026-06-16T00:00:00Z
-749,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-03,443.97,4818,489,59,2026-06-16T00:00:00Z
-750,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-04,400.99,8303,323,19,2026-06-16T00:00:00Z
-751,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-05,577.70,5097,556,6,2026-06-16T00:00:00Z
-752,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-06,603.11,10268,167,32,2026-06-16T00:00:00Z
-753,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-07,417.71,6478,734,46,2026-06-16T00:00:00Z
-754,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-08,512.33,11561,604,29,2026-06-16T00:00:00Z
-755,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-09,612.25,6601,458,41,2026-06-16T00:00:00Z
-756,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-10,353.81,6981,203,9,2026-06-16T00:00:00Z
-757,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-11,432.18,9841,233,34,2026-06-16T00:00:00Z
-758,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-12,615.77,9411,665,59,2026-06-16T00:00:00Z
-759,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-13,550.83,6982,466,53,2026-06-16T00:00:00Z
-760,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-14,365.87,8796,195,54,2026-06-16T00:00:00Z
-761,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-15,548.12,6663,756,30,2026-06-16T00:00:00Z
-762,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-16,617.35,3529,681,21,2026-06-16T00:00:00Z
-763,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-17,628.88,8739,422,25,2026-06-16T00:00:00Z
-764,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-18,510.73,9786,506,6,2026-06-16T00:00:00Z
-765,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-19,399.84,5858,495,58,2026-06-16T00:00:00Z
-766,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-20,408.33,7428,761,52,2026-06-16T00:00:00Z
-767,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-21,470.83,5348,174,33,2026-06-16T00:00:00Z
-768,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-22,609.86,6990,475,21,2026-06-16T00:00:00Z
-769,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-23,586.76,11526,709,52,2026-06-16T00:00:00Z
-770,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-24,557.64,3334,521,51,2026-06-16T00:00:00Z
-771,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-25,444.39,4131,280,57,2026-06-16T00:00:00Z
-772,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-26,449.63,7662,504,13,2026-06-16T00:00:00Z
-773,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-27,498.13,10980,210,29,2026-06-16T00:00:00Z
-774,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-28,572.11,11149,529,57,2026-06-16T00:00:00Z
-775,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-29,468.44,10160,315,48,2026-06-16T00:00:00Z
-776,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-30,421.76,3882,551,26,2026-06-16T00:00:00Z
-777,29,Affiliate Partner Program Q1,affiliate,partnership,2026-03-31,547.45,2951,133,53,2026-06-16T00:00:00Z
-778,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-01,421.32,4158,742,49,2026-06-16T00:00:00Z
-779,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-02,424.80,5270,378,35,2026-06-16T00:00:00Z
-780,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-03,738.58,10660,186,20,2026-06-16T00:00:00Z
-781,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-04,620.74,2229,394,40,2026-06-16T00:00:00Z
-782,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-05,436.39,11827,485,52,2026-06-16T00:00:00Z
-783,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-06,537.08,9800,247,18,2026-06-16T00:00:00Z
-784,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-07,541.85,5466,509,36,2026-06-16T00:00:00Z
-785,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-08,468.80,10772,321,60,2026-06-16T00:00:00Z
-786,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-09,554.89,5232,330,56,2026-06-16T00:00:00Z
-787,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-10,453.92,7768,219,38,2026-06-16T00:00:00Z
-788,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-11,740.51,6190,396,34,2026-06-16T00:00:00Z
-789,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-12,612.64,10671,625,6,2026-06-16T00:00:00Z
-790,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-13,741.04,5497,485,54,2026-06-16T00:00:00Z
-791,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-14,612.99,2449,394,17,2026-06-16T00:00:00Z
-792,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-15,502.88,11720,233,7,2026-06-16T00:00:00Z
-793,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-16,733.98,7865,483,16,2026-06-16T00:00:00Z
-794,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-17,737.27,9387,785,22,2026-06-16T00:00:00Z
-795,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-18,488.35,5172,575,13,2026-06-16T00:00:00Z
-796,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-19,496.03,5537,515,9,2026-06-16T00:00:00Z
-797,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-20,657.76,2112,509,45,2026-06-16T00:00:00Z
-798,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-21,472.21,3289,625,34,2026-06-16T00:00:00Z
-799,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-22,670.57,7531,443,60,2026-06-16T00:00:00Z
-800,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-23,670.35,2457,609,5,2026-06-16T00:00:00Z
-801,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-24,419.55,10875,117,21,2026-06-16T00:00:00Z
-802,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-25,684.07,4908,669,39,2026-06-16T00:00:00Z
-803,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-26,717.52,8380,238,22,2026-06-16T00:00:00Z
-804,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-27,595.11,2959,431,17,2026-06-16T00:00:00Z
-805,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-28,457.83,5663,468,19,2026-06-16T00:00:00Z
-806,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-29,472.85,2409,186,26,2026-06-16T00:00:00Z
-807,30,Affiliate Partner Program Q2,affiliate,partnership,2026-04-30,497.11,8457,638,54,2026-06-16T00:00:00Z
-808,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-01,559.77,3981,160,57,2026-06-16T00:00:00Z
-809,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-02,682.25,6232,524,40,2026-06-16T00:00:00Z
-810,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-03,646.25,9197,251,19,2026-06-16T00:00:00Z
-811,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-04,705.62,10865,317,39,2026-06-16T00:00:00Z
-812,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-05,721.13,4427,572,34,2026-06-16T00:00:00Z
-813,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-06,426.52,7058,223,53,2026-06-16T00:00:00Z
-814,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-07,526.10,3431,640,30,2026-06-16T00:00:00Z
-815,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-08,614.78,10267,662,47,2026-06-16T00:00:00Z
-816,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-09,580.92,10974,693,39,2026-06-16T00:00:00Z
-817,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-10,506.39,4596,117,28,2026-06-16T00:00:00Z
-818,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-11,556.58,5891,738,16,2026-06-16T00:00:00Z
-819,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-12,702.86,6652,397,8,2026-06-16T00:00:00Z
-820,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-13,519.72,10511,599,39,2026-06-16T00:00:00Z
-821,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-14,459.95,8459,376,39,2026-06-16T00:00:00Z
-822,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-15,562.07,8955,180,26,2026-06-16T00:00:00Z
-823,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-16,548.61,8694,341,49,2026-06-16T00:00:00Z
-824,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-17,602.30,8994,616,11,2026-06-16T00:00:00Z
-825,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-18,488.27,2328,653,11,2026-06-16T00:00:00Z
-826,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-19,426.29,2591,551,15,2026-06-16T00:00:00Z
-827,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-20,475.15,2391,144,59,2026-06-16T00:00:00Z
-828,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-21,644.10,9679,315,57,2026-06-16T00:00:00Z
-829,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-22,683.55,8695,722,34,2026-06-16T00:00:00Z
-830,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-23,567.53,11839,715,49,2026-06-16T00:00:00Z
-831,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-24,538.00,5562,419,57,2026-06-16T00:00:00Z
-832,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-25,579.01,6264,144,25,2026-06-16T00:00:00Z
-833,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-26,605.75,6566,170,49,2026-06-16T00:00:00Z
-834,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-27,543.95,3329,637,26,2026-06-16T00:00:00Z
-835,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-28,555.31,7305,740,57,2026-06-16T00:00:00Z
-836,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-29,599.73,8192,669,45,2026-06-16T00:00:00Z
-837,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-30,574.70,8803,122,20,2026-06-16T00:00:00Z
-838,30,Affiliate Partner Program Q2,affiliate,partnership,2026-05-31,506.92,5118,673,11,2026-06-16T00:00:00Z
-839,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-01,479.06,2867,428,27,2026-06-16T00:00:00Z
-840,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-02,504.14,11457,175,11,2026-06-16T00:00:00Z
-841,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-03,703.20,8421,723,8,2026-06-16T00:00:00Z
-842,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-04,476.58,4686,340,9,2026-06-16T00:00:00Z
-843,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-05,481.40,2321,777,40,2026-06-16T00:00:00Z
-844,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-06,712.34,9559,326,31,2026-06-16T00:00:00Z
-845,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-07,453.08,3392,591,31,2026-06-16T00:00:00Z
-846,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-08,684.53,8367,484,30,2026-06-16T00:00:00Z
-847,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-09,486.40,8200,114,6,2026-06-16T00:00:00Z
-848,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-10,730.54,2375,162,40,2026-06-16T00:00:00Z
-849,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-11,685.98,7400,360,44,2026-06-16T00:00:00Z
-850,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-12,616.15,5102,549,48,2026-06-16T00:00:00Z
-851,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-13,684.73,3872,757,51,2026-06-16T00:00:00Z
-852,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-14,623.69,8611,249,60,2026-06-16T00:00:00Z
-853,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-15,569.27,3318,438,23,2026-06-16T00:00:00Z
-854,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-16,653.36,4664,605,20,2026-06-16T00:00:00Z
-855,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-17,728.45,9630,127,22,2026-06-16T00:00:00Z
-856,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-18,608.86,8250,301,39,2026-06-16T00:00:00Z
-857,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-19,563.25,5873,480,53,2026-06-16T00:00:00Z
-858,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-20,687.36,5668,416,36,2026-06-16T00:00:00Z
-859,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-21,556.05,3182,583,10,2026-06-16T00:00:00Z
-860,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-22,683.93,10561,785,40,2026-06-16T00:00:00Z
-861,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-23,583.10,11629,324,25,2026-06-16T00:00:00Z
-862,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-24,566.33,5639,526,15,2026-06-16T00:00:00Z
-863,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-25,724.77,8466,123,54,2026-06-16T00:00:00Z
-864,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-26,450.36,10603,393,28,2026-06-16T00:00:00Z
-865,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-27,542.21,10408,211,56,2026-06-16T00:00:00Z
-866,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-28,436.68,4903,599,26,2026-06-16T00:00:00Z
-867,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-29,444.78,10264,451,20,2026-06-16T00:00:00Z
-868,30,Affiliate Partner Program Q2,affiliate,partnership,2026-06-30,720.68,2339,668,60,2026-06-16T00:00:00Z
+1,1,Summer Splash 2025,paid_social,awareness,2026-06-01,1716.45,17359,953,94,2026-10-01T00:00:00Z
+2,1,Summer Splash 2025,paid_social,awareness,2026-06-02,1578.06,57024,859,86,2026-10-01T00:00:00Z
+3,1,Summer Splash 2025,paid_social,awareness,2026-06-03,1370.52,21931,2235,21,2026-10-01T00:00:00Z
+4,1,Summer Splash 2025,paid_social,awareness,2026-06-04,1625.88,21626,2440,89,2026-10-01T00:00:00Z
+5,1,Summer Splash 2025,paid_social,awareness,2026-06-05,1434.93,69905,576,53,2026-10-01T00:00:00Z
+6,1,Summer Splash 2025,paid_social,awareness,2026-06-06,1838.61,18908,670,113,2026-10-01T00:00:00Z
+7,1,Summer Splash 2025,paid_social,awareness,2026-06-07,1476.50,60534,459,57,2026-10-01T00:00:00Z
+8,1,Summer Splash 2025,paid_social,awareness,2026-06-08,1993.89,76168,1404,100,2026-10-01T00:00:00Z
+9,1,Summer Splash 2025,paid_social,awareness,2026-06-09,1341.50,23418,1328,112,2026-10-01T00:00:00Z
+10,1,Summer Splash 2025,paid_social,awareness,2026-06-10,1477.78,70812,1191,119,2026-10-01T00:00:00Z
+11,1,Summer Splash 2025,paid_social,awareness,2026-06-11,1980.18,63144,719,86,2026-10-01T00:00:00Z
+12,1,Summer Splash 2025,paid_social,awareness,2026-06-12,1822.67,35924,1953,21,2026-10-01T00:00:00Z
+13,1,Summer Splash 2025,paid_social,awareness,2026-06-13,1248.91,39969,2295,91,2026-10-01T00:00:00Z
+14,1,Summer Splash 2025,paid_social,awareness,2026-06-14,1349.30,46194,1161,85,2026-10-01T00:00:00Z
+15,1,Summer Splash 2025,paid_social,awareness,2026-06-15,1998.61,39461,1054,24,2026-10-01T00:00:00Z
+16,1,Summer Splash 2025,paid_social,awareness,2026-06-16,1605.10,53300,1531,108,2026-10-01T00:00:00Z
+17,1,Summer Splash 2025,paid_social,awareness,2026-06-17,1259.68,24918,2197,74,2026-10-01T00:00:00Z
+18,1,Summer Splash 2025,paid_social,awareness,2026-06-18,1334.17,70849,2091,21,2026-10-01T00:00:00Z
+19,1,Summer Splash 2025,paid_social,awareness,2026-06-19,1729.84,74598,750,19,2026-10-01T00:00:00Z
+20,1,Summer Splash 2025,paid_social,awareness,2026-06-20,1646.73,40223,1825,57,2026-10-01T00:00:00Z
+21,1,Summer Splash 2025,paid_social,awareness,2026-06-21,2015.18,48133,1966,87,2026-10-01T00:00:00Z
+22,1,Summer Splash 2025,paid_social,awareness,2026-06-22,1213.51,72660,1725,99,2026-10-01T00:00:00Z
+23,1,Summer Splash 2025,paid_social,awareness,2026-06-23,1894.45,68480,1830,118,2026-10-01T00:00:00Z
+24,1,Summer Splash 2025,paid_social,awareness,2026-06-24,1622.63,22683,1827,120,2026-10-01T00:00:00Z
+25,1,Summer Splash 2025,paid_social,awareness,2026-06-25,1195.53,17246,1709,115,2026-10-01T00:00:00Z
+26,1,Summer Splash 2025,paid_social,awareness,2026-06-26,1515.15,26554,584,50,2026-10-01T00:00:00Z
+27,1,Summer Splash 2025,paid_social,awareness,2026-06-27,1462.07,24609,882,79,2026-10-01T00:00:00Z
+28,1,Summer Splash 2025,paid_social,awareness,2026-06-28,1795.57,36610,687,35,2026-10-01T00:00:00Z
+29,1,Summer Splash 2025,paid_social,awareness,2026-06-29,1983.78,60286,838,42,2026-10-01T00:00:00Z
+30,1,Summer Splash 2025,paid_social,awareness,2026-06-30,1415.40,75116,675,115,2026-10-01T00:00:00Z
+31,2,Back to School Bash,paid_search,conversion,2026-07-15,1106.66,11623,1033,33,2026-10-01T00:00:00Z
+32,2,Back to School Bash,paid_search,conversion,2026-07-16,1554.27,6631,498,89,2026-10-01T00:00:00Z
+33,2,Back to School Bash,paid_search,conversion,2026-07-17,1642.80,21954,463,41,2026-10-01T00:00:00Z
+34,2,Back to School Bash,paid_search,conversion,2026-07-18,1336.47,5322,1329,63,2026-10-01T00:00:00Z
+35,2,Back to School Bash,paid_search,conversion,2026-07-19,1214.10,6988,1465,41,2026-10-01T00:00:00Z
+36,2,Back to School Bash,paid_search,conversion,2026-07-20,1155.40,21760,979,137,2026-10-01T00:00:00Z
+37,2,Back to School Bash,paid_search,conversion,2026-07-21,1622.05,18510,1275,120,2026-10-01T00:00:00Z
+38,2,Back to School Bash,paid_search,conversion,2026-07-22,1114.60,20226,419,60,2026-10-01T00:00:00Z
+39,2,Back to School Bash,paid_search,conversion,2026-07-23,1573.98,13817,1133,69,2026-10-01T00:00:00Z
+40,2,Back to School Bash,paid_search,conversion,2026-07-24,1027.33,16035,1398,91,2026-10-01T00:00:00Z
+41,2,Back to School Bash,paid_search,conversion,2026-07-25,1671.69,20730,653,118,2026-10-01T00:00:00Z
+42,2,Back to School Bash,paid_search,conversion,2026-07-26,1010.19,18857,957,96,2026-10-01T00:00:00Z
+43,2,Back to School Bash,paid_search,conversion,2026-07-27,1127.41,6012,246,64,2026-10-01T00:00:00Z
+44,2,Back to School Bash,paid_search,conversion,2026-07-28,1326.38,24348,855,84,2026-10-01T00:00:00Z
+45,2,Back to School Bash,paid_search,conversion,2026-07-29,1356.13,16107,1471,66,2026-10-01T00:00:00Z
+46,2,Back to School Bash,paid_search,conversion,2026-07-30,1324.44,7728,1047,118,2026-10-01T00:00:00Z
+47,2,Back to School Bash,paid_search,conversion,2026-07-31,1398.25,13006,287,59,2026-10-01T00:00:00Z
+48,2,Back to School Bash,paid_search,conversion,2026-08-01,1612.64,16561,1433,117,2026-10-01T00:00:00Z
+49,2,Back to School Bash,paid_search,conversion,2026-08-02,1084.41,17946,899,83,2026-10-01T00:00:00Z
+50,2,Back to School Bash,paid_search,conversion,2026-08-03,1134.31,20098,307,75,2026-10-01T00:00:00Z
+51,2,Back to School Bash,paid_search,conversion,2026-08-04,1509.06,6936,849,79,2026-10-01T00:00:00Z
+52,2,Back to School Bash,paid_search,conversion,2026-08-05,1420.72,24763,1048,90,2026-10-01T00:00:00Z
+53,2,Back to School Bash,paid_search,conversion,2026-08-06,1353.38,13314,331,98,2026-10-01T00:00:00Z
+54,2,Back to School Bash,paid_search,conversion,2026-08-07,1002.52,8594,884,59,2026-10-01T00:00:00Z
+55,2,Back to School Bash,paid_search,conversion,2026-08-08,1404.89,10080,581,65,2026-10-01T00:00:00Z
+56,2,Back to School Bash,paid_search,conversion,2026-08-09,1400.59,20025,1162,85,2026-10-01T00:00:00Z
+57,2,Back to School Bash,paid_search,conversion,2026-08-10,1138.71,24773,1478,65,2026-10-01T00:00:00Z
+58,2,Back to School Bash,paid_search,conversion,2026-08-11,1027.98,12497,1031,106,2026-10-01T00:00:00Z
+59,2,Back to School Bash,paid_search,conversion,2026-08-12,1664.66,8778,487,127,2026-10-01T00:00:00Z
+60,2,Back to School Bash,paid_search,conversion,2026-08-13,1339.94,22999,306,94,2026-10-01T00:00:00Z
+61,2,Back to School Bash,paid_search,conversion,2026-08-14,1072.04,20057,647,133,2026-10-01T00:00:00Z
+62,2,Back to School Bash,paid_search,conversion,2026-08-15,1600.52,19591,1332,109,2026-10-01T00:00:00Z
+63,2,Back to School Bash,paid_search,conversion,2026-08-16,1014.87,7846,1413,99,2026-10-01T00:00:00Z
+64,2,Back to School Bash,paid_search,conversion,2026-08-17,1090.55,13894,1245,130,2026-10-01T00:00:00Z
+65,2,Back to School Bash,paid_search,conversion,2026-08-18,979.65,23081,1141,26,2026-10-01T00:00:00Z
+66,2,Back to School Bash,paid_search,conversion,2026-08-19,1228.28,23509,820,38,2026-10-01T00:00:00Z
+67,2,Back to School Bash,paid_search,conversion,2026-08-20,1047.57,18391,571,53,2026-10-01T00:00:00Z
+68,2,Back to School Bash,paid_search,conversion,2026-08-21,1409.30,19074,679,127,2026-10-01T00:00:00Z
+69,2,Back to School Bash,paid_search,conversion,2026-08-22,1467.66,17898,1456,51,2026-10-01T00:00:00Z
+70,2,Back to School Bash,paid_search,conversion,2026-08-23,1234.46,18494,1100,59,2026-10-01T00:00:00Z
+71,2,Back to School Bash,paid_search,conversion,2026-08-24,1683.26,12178,1271,83,2026-10-01T00:00:00Z
+72,2,Back to School Bash,paid_search,conversion,2026-08-25,1412.97,12437,856,97,2026-10-01T00:00:00Z
+73,2,Back to School Bash,paid_search,conversion,2026-08-26,1462.91,8074,379,22,2026-10-01T00:00:00Z
+74,2,Back to School Bash,paid_search,conversion,2026-08-27,1361.80,14633,572,96,2026-10-01T00:00:00Z
+75,2,Back to School Bash,paid_search,conversion,2026-08-28,1012.81,20236,1438,35,2026-10-01T00:00:00Z
+76,2,Back to School Bash,paid_search,conversion,2026-08-29,1320.20,20485,1256,146,2026-10-01T00:00:00Z
+77,2,Back to School Bash,paid_search,conversion,2026-08-30,1390.31,11114,1426,86,2026-10-01T00:00:00Z
+78,2,Back to School Bash,paid_search,conversion,2026-08-31,1245.68,16588,1487,131,2026-10-01T00:00:00Z
+79,3,Back to School Email Series,email,retention,2026-07-20,194.12,8864,4033,126,2026-10-01T00:00:00Z
+80,3,Back to School Email Series,email,retention,2026-07-21,288.43,36031,5621,161,2026-10-01T00:00:00Z
+81,3,Back to School Email Series,email,retention,2026-07-22,218.80,35388,2504,181,2026-10-01T00:00:00Z
+82,3,Back to School Email Series,email,retention,2026-07-23,192.04,21245,5446,120,2026-10-01T00:00:00Z
+83,3,Back to School Email Series,email,retention,2026-07-24,233.46,9542,5160,80,2026-10-01T00:00:00Z
+84,3,Back to School Email Series,email,retention,2026-07-25,235.22,20935,2289,147,2026-10-01T00:00:00Z
+85,3,Back to School Email Series,email,retention,2026-07-26,278.09,21100,916,99,2026-10-01T00:00:00Z
+86,3,Back to School Email Series,email,retention,2026-07-27,253.57,8612,4780,114,2026-10-01T00:00:00Z
+87,3,Back to School Email Series,email,retention,2026-07-28,169.18,11071,2352,123,2026-10-01T00:00:00Z
+88,3,Back to School Email Series,email,retention,2026-07-29,214.24,8075,5315,133,2026-10-01T00:00:00Z
+89,3,Back to School Email Series,email,retention,2026-07-30,237.70,40401,844,134,2026-10-01T00:00:00Z
+90,3,Back to School Email Series,email,retention,2026-07-31,245.18,34824,5029,135,2026-10-01T00:00:00Z
+91,3,Back to School Email Series,email,retention,2026-08-01,182.30,25300,2630,49,2026-10-01T00:00:00Z
+92,3,Back to School Email Series,email,retention,2026-08-02,202.52,22140,4967,59,2026-10-01T00:00:00Z
+93,3,Back to School Email Series,email,retention,2026-08-03,219.56,22437,4312,95,2026-10-01T00:00:00Z
+94,3,Back to School Email Series,email,retention,2026-08-04,188.31,34123,4470,44,2026-10-01T00:00:00Z
+95,3,Back to School Email Series,email,retention,2026-08-05,205.51,39923,3232,107,2026-10-01T00:00:00Z
+96,3,Back to School Email Series,email,retention,2026-08-06,268.20,29110,5029,130,2026-10-01T00:00:00Z
+97,3,Back to School Email Series,email,retention,2026-08-07,228.45,44984,1663,166,2026-10-01T00:00:00Z
+98,3,Back to School Email Series,email,retention,2026-08-08,256.59,17443,3412,81,2026-10-01T00:00:00Z
+99,3,Back to School Email Series,email,retention,2026-08-09,263.85,30237,1987,32,2026-10-01T00:00:00Z
+100,3,Back to School Email Series,email,retention,2026-08-10,269.97,39992,3654,164,2026-10-01T00:00:00Z
+101,3,Back to School Email Series,email,retention,2026-08-11,172.50,37902,2795,157,2026-10-01T00:00:00Z
+102,3,Back to School Email Series,email,retention,2026-08-12,286.15,22088,4629,200,2026-10-01T00:00:00Z
+103,3,Back to School Email Series,email,retention,2026-08-13,217.44,10462,1065,39,2026-10-01T00:00:00Z
+104,3,Back to School Email Series,email,retention,2026-08-14,169.56,23880,2134,165,2026-10-01T00:00:00Z
+105,3,Back to School Email Series,email,retention,2026-08-15,289.27,43420,1770,91,2026-10-01T00:00:00Z
+106,3,Back to School Email Series,email,retention,2026-08-16,188.90,40903,2963,74,2026-10-01T00:00:00Z
+107,3,Back to School Email Series,email,retention,2026-08-17,213.30,36652,4223,60,2026-10-01T00:00:00Z
+108,3,Back to School Email Series,email,retention,2026-08-18,290.95,25754,5657,117,2026-10-01T00:00:00Z
+109,3,Back to School Email Series,email,retention,2026-08-19,220.10,31722,5260,146,2026-10-01T00:00:00Z
+110,3,Back to School Email Series,email,retention,2026-08-20,193.98,13073,3339,39,2026-10-01T00:00:00Z
+111,3,Back to School Email Series,email,retention,2026-08-21,168.83,24451,5449,176,2026-10-01T00:00:00Z
+112,3,Back to School Email Series,email,retention,2026-08-22,230.03,15230,861,123,2026-10-01T00:00:00Z
+113,3,Back to School Email Series,email,retention,2026-08-23,171.48,43591,1943,77,2026-10-01T00:00:00Z
+114,3,Back to School Email Series,email,retention,2026-08-24,222.40,13588,3341,55,2026-10-01T00:00:00Z
+115,3,Back to School Email Series,email,retention,2026-08-25,288.69,16082,888,136,2026-10-01T00:00:00Z
+116,4,Fall Fashion Launch,paid_social,brand,2026-09-01,1617.76,67399,2202,44,2026-10-01T00:00:00Z
+117,4,Fall Fashion Launch,paid_social,brand,2026-09-02,1642.29,19323,2084,39,2026-10-01T00:00:00Z
+118,4,Fall Fashion Launch,paid_social,brand,2026-09-03,1496.02,47930,2270,71,2026-10-01T00:00:00Z
+119,4,Fall Fashion Launch,paid_social,brand,2026-09-04,1059.93,19217,1840,17,2026-10-01T00:00:00Z
+120,4,Fall Fashion Launch,paid_social,brand,2026-09-05,1113.56,74519,813,115,2026-10-01T00:00:00Z
+121,4,Fall Fashion Launch,paid_social,brand,2026-09-06,932.63,26581,642,117,2026-10-01T00:00:00Z
+122,4,Fall Fashion Launch,paid_social,brand,2026-09-07,989.78,41111,1700,39,2026-10-01T00:00:00Z
+123,4,Fall Fashion Launch,paid_social,brand,2026-09-08,1556.47,65371,2412,111,2026-10-01T00:00:00Z
+124,4,Fall Fashion Launch,paid_social,brand,2026-09-09,1330.14,25926,1270,76,2026-10-01T00:00:00Z
+125,4,Fall Fashion Launch,paid_social,brand,2026-09-10,1199.94,52639,1026,66,2026-10-01T00:00:00Z
+126,4,Fall Fashion Launch,paid_social,brand,2026-09-11,1211.20,49384,2144,114,2026-10-01T00:00:00Z
+127,4,Fall Fashion Launch,paid_social,brand,2026-09-12,1190.55,53255,635,75,2026-10-01T00:00:00Z
+128,4,Fall Fashion Launch,paid_social,brand,2026-09-13,1581.92,56547,630,106,2026-10-01T00:00:00Z
+129,4,Fall Fashion Launch,paid_social,brand,2026-09-14,1210.13,59860,1856,112,2026-10-01T00:00:00Z
+130,4,Fall Fashion Launch,paid_social,brand,2026-09-15,944.56,44533,799,98,2026-10-01T00:00:00Z
+131,4,Fall Fashion Launch,paid_social,brand,2026-09-16,1501.27,17689,468,108,2026-10-01T00:00:00Z
+132,4,Fall Fashion Launch,paid_social,brand,2026-09-17,1293.55,75976,559,102,2026-10-01T00:00:00Z
+133,4,Fall Fashion Launch,paid_social,brand,2026-09-18,1414.18,46287,1487,79,2026-10-01T00:00:00Z
+134,4,Fall Fashion Launch,paid_social,brand,2026-09-19,1242.38,74172,673,62,2026-10-01T00:00:00Z
+135,4,Fall Fashion Launch,paid_social,brand,2026-09-20,994.76,50122,765,64,2026-10-01T00:00:00Z
+136,4,Fall Fashion Launch,paid_social,brand,2026-09-21,1438.51,22308,967,56,2026-10-01T00:00:00Z
+137,4,Fall Fashion Launch,paid_social,brand,2026-09-22,1138.36,41172,2407,38,2026-10-01T00:00:00Z
+138,4,Fall Fashion Launch,paid_social,brand,2026-09-23,989.85,58464,997,114,2026-10-01T00:00:00Z
+139,4,Fall Fashion Launch,paid_social,brand,2026-09-24,1248.38,69275,1971,25,2026-10-01T00:00:00Z
+140,4,Fall Fashion Launch,paid_social,brand,2026-09-25,1611.99,25110,1811,30,2026-10-01T00:00:00Z
+141,4,Fall Fashion Launch,paid_social,brand,2026-09-26,1136.35,65402,553,97,2026-10-01T00:00:00Z
+142,4,Fall Fashion Launch,paid_social,brand,2026-09-27,1217.80,35221,566,79,2026-10-01T00:00:00Z
+143,4,Fall Fashion Launch,paid_social,brand,2026-09-28,1093.07,68987,883,62,2026-10-01T00:00:00Z
+144,4,Fall Fashion Launch,paid_social,brand,2026-09-29,1178.21,33367,2228,114,2026-10-01T00:00:00Z
+145,4,Fall Fashion Launch,paid_social,brand,2026-09-30,1019.44,35676,1188,61,2026-10-01T00:00:00Z
+146,4,Fall Fashion Launch,paid_social,brand,2026-10-01,979.93,47900,1873,78,2026-10-01T00:00:00Z
+147,4,Fall Fashion Launch,paid_social,brand,2026-10-02,1550.07,65991,1205,88,2026-10-01T00:00:00Z
+148,4,Fall Fashion Launch,paid_social,brand,2026-10-03,1162.09,36382,619,104,2026-10-01T00:00:00Z
+149,4,Fall Fashion Launch,paid_social,brand,2026-10-04,1310.85,39920,2051,96,2026-10-01T00:00:00Z
+150,4,Fall Fashion Launch,paid_social,brand,2026-10-05,1612.12,27079,1025,80,2026-10-01T00:00:00Z
+151,4,Fall Fashion Launch,paid_social,brand,2026-10-06,1641.79,69418,2243,83,2026-10-01T00:00:00Z
+152,4,Fall Fashion Launch,paid_social,brand,2026-10-07,1539.37,52391,2351,88,2026-10-01T00:00:00Z
+153,4,Fall Fashion Launch,paid_social,brand,2026-10-08,1537.88,20350,2293,87,2026-10-01T00:00:00Z
+154,4,Fall Fashion Launch,paid_social,brand,2026-10-09,1216.95,56059,1954,99,2026-10-01T00:00:00Z
+155,4,Fall Fashion Launch,paid_social,brand,2026-10-10,1487.81,37556,619,55,2026-10-01T00:00:00Z
+156,4,Fall Fashion Launch,paid_social,brand,2026-10-11,1373.08,23534,640,31,2026-10-01T00:00:00Z
+157,4,Fall Fashion Launch,paid_social,brand,2026-10-12,938.06,71228,953,48,2026-10-01T00:00:00Z
+158,4,Fall Fashion Launch,paid_social,brand,2026-10-13,1614.75,69066,2148,116,2026-10-01T00:00:00Z
+159,4,Fall Fashion Launch,paid_social,brand,2026-10-14,1048.55,36465,1744,36,2026-10-01T00:00:00Z
+160,4,Fall Fashion Launch,paid_social,brand,2026-10-15,1138.26,53816,2297,59,2026-10-01T00:00:00Z
+161,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-15,877.16,79109,633,97,2026-10-01T00:00:00Z
+162,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-16,842.89,19636,672,104,2026-10-01T00:00:00Z
+163,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-17,964.08,59470,2048,106,2026-10-01T00:00:00Z
+164,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-18,806.43,48683,486,22,2026-10-01T00:00:00Z
+165,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-19,951.15,53841,1794,108,2026-10-01T00:00:00Z
+166,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-20,1064.18,55677,995,97,2026-10-01T00:00:00Z
+167,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-21,989.52,71703,1305,74,2026-10-01T00:00:00Z
+168,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-22,876.36,29004,2049,40,2026-10-01T00:00:00Z
+169,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-23,689.64,15272,1196,15,2026-10-01T00:00:00Z
+170,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-24,763.97,71787,1018,51,2026-10-01T00:00:00Z
+171,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-25,942.02,36862,1661,93,2026-10-01T00:00:00Z
+172,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-26,665.10,49902,1582,71,2026-10-01T00:00:00Z
+173,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-27,860.59,42236,1322,85,2026-10-01T00:00:00Z
+174,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-28,912.92,28445,1759,112,2026-10-01T00:00:00Z
+175,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-29,916.63,23476,1799,46,2026-10-01T00:00:00Z
+176,5,TikTok Gen Z Campaign,paid_social,awareness,2026-09-30,635.05,16677,978,86,2026-10-01T00:00:00Z
+177,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-01,851.92,37902,1921,53,2026-10-01T00:00:00Z
+178,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-02,784.36,70096,671,86,2026-10-01T00:00:00Z
+179,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-03,1050.33,40382,1276,116,2026-10-01T00:00:00Z
+180,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-04,823.33,61743,1726,91,2026-10-01T00:00:00Z
+181,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-05,1004.96,53838,1685,75,2026-10-01T00:00:00Z
+182,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-06,741.93,39918,1888,70,2026-10-01T00:00:00Z
+183,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-07,716.46,67965,1347,20,2026-10-01T00:00:00Z
+184,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-08,632.72,20955,562,35,2026-10-01T00:00:00Z
+185,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-09,921.88,68823,518,23,2026-10-01T00:00:00Z
+186,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-10,966.99,54718,626,72,2026-10-01T00:00:00Z
+187,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-11,905.59,34910,733,107,2026-10-01T00:00:00Z
+188,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-12,808.25,57964,684,67,2026-10-01T00:00:00Z
+189,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-13,783.60,19603,1764,85,2026-10-01T00:00:00Z
+190,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-14,761.62,15087,1677,25,2026-10-01T00:00:00Z
+191,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-15,945.85,39614,2249,69,2026-10-01T00:00:00Z
+192,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-16,943.47,19427,963,91,2026-10-01T00:00:00Z
+193,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-17,836.33,15167,2194,92,2026-10-01T00:00:00Z
+194,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-18,875.83,76299,663,102,2026-10-01T00:00:00Z
+195,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-19,681.59,17185,668,77,2026-10-01T00:00:00Z
+196,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-20,1087.05,17363,2417,92,2026-10-01T00:00:00Z
+197,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-21,849.52,20703,1650,51,2026-10-01T00:00:00Z
+198,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-22,664.88,55412,1290,89,2026-10-01T00:00:00Z
+199,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-23,931.10,65672,1256,58,2026-10-01T00:00:00Z
+200,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-24,1030.41,71830,1652,66,2026-10-01T00:00:00Z
+201,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-25,632.55,50287,2322,37,2026-10-01T00:00:00Z
+202,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-26,915.20,23124,1839,22,2026-10-01T00:00:00Z
+203,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-27,956.08,61699,1720,26,2026-10-01T00:00:00Z
+204,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-28,1072.73,48803,2070,29,2026-10-01T00:00:00Z
+205,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-29,874.97,28506,1626,46,2026-10-01T00:00:00Z
+206,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-30,766.99,79596,784,33,2026-10-01T00:00:00Z
+207,5,TikTok Gen Z Campaign,paid_social,awareness,2026-10-31,703.45,40254,1739,20,2026-10-01T00:00:00Z
+208,6,Halloween Deals Blitz,paid_search,conversion,2026-10-15,1799.71,14377,537,35,2026-10-01T00:00:00Z
+209,6,Halloween Deals Blitz,paid_search,conversion,2026-10-16,2024.31,5427,531,38,2026-10-01T00:00:00Z
+210,6,Halloween Deals Blitz,paid_search,conversion,2026-10-17,1846.02,7617,393,30,2026-10-01T00:00:00Z
+211,6,Halloween Deals Blitz,paid_search,conversion,2026-10-18,1736.05,11001,984,78,2026-10-01T00:00:00Z
+212,6,Halloween Deals Blitz,paid_search,conversion,2026-10-19,2061.41,21751,1473,45,2026-10-01T00:00:00Z
+213,6,Halloween Deals Blitz,paid_search,conversion,2026-10-20,1356.54,8135,987,49,2026-10-01T00:00:00Z
+214,6,Halloween Deals Blitz,paid_search,conversion,2026-10-21,1241.10,14277,1262,23,2026-10-01T00:00:00Z
+215,6,Halloween Deals Blitz,paid_search,conversion,2026-10-22,2181.72,13801,332,119,2026-10-01T00:00:00Z
+216,6,Halloween Deals Blitz,paid_search,conversion,2026-10-23,1443.47,17188,1006,26,2026-10-01T00:00:00Z
+217,6,Halloween Deals Blitz,paid_search,conversion,2026-10-24,1454.43,9619,1414,79,2026-10-01T00:00:00Z
+218,6,Halloween Deals Blitz,paid_search,conversion,2026-10-25,2089.10,14294,414,61,2026-10-01T00:00:00Z
+219,6,Halloween Deals Blitz,paid_search,conversion,2026-10-26,1902.07,20338,1079,126,2026-10-01T00:00:00Z
+220,6,Halloween Deals Blitz,paid_search,conversion,2026-10-27,1558.15,9853,234,113,2026-10-01T00:00:00Z
+221,6,Halloween Deals Blitz,paid_search,conversion,2026-10-28,1266.34,22844,1461,27,2026-10-01T00:00:00Z
+222,6,Halloween Deals Blitz,paid_search,conversion,2026-10-29,1725.60,7180,560,72,2026-10-01T00:00:00Z
+223,6,Halloween Deals Blitz,paid_search,conversion,2026-10-30,1492.48,17539,1072,147,2026-10-01T00:00:00Z
+224,6,Halloween Deals Blitz,paid_search,conversion,2026-10-31,1267.36,6841,864,68,2026-10-01T00:00:00Z
+225,7,Halloween Email Blast,email,retention,2026-10-20,318.97,25975,2988,166,2026-10-01T00:00:00Z
+226,7,Halloween Email Blast,email,retention,2026-10-21,429.23,44260,4907,160,2026-10-01T00:00:00Z
+227,7,Halloween Email Blast,email,retention,2026-10-22,456.97,40775,3909,200,2026-10-01T00:00:00Z
+228,7,Halloween Email Blast,email,retention,2026-10-23,552.30,25883,4084,80,2026-10-01T00:00:00Z
+229,7,Halloween Email Blast,email,retention,2026-10-24,329.36,36871,3684,87,2026-10-01T00:00:00Z
+230,7,Halloween Email Blast,email,retention,2026-10-25,415.57,42878,3884,79,2026-10-01T00:00:00Z
+231,7,Halloween Email Blast,email,retention,2026-10-26,340.52,26768,2400,189,2026-10-01T00:00:00Z
+232,7,Halloween Email Blast,email,retention,2026-10-27,468.02,14214,2768,148,2026-10-01T00:00:00Z
+233,7,Halloween Email Blast,email,retention,2026-10-28,528.10,30084,2915,47,2026-10-01T00:00:00Z
+234,7,Halloween Email Blast,email,retention,2026-10-29,508.56,16197,5029,97,2026-10-01T00:00:00Z
+235,7,Halloween Email Blast,email,retention,2026-10-30,518.00,10789,3828,88,2026-10-01T00:00:00Z
+236,7,Halloween Email Blast,email,retention,2026-10-31,355.10,39729,3498,184,2026-10-01T00:00:00Z
+237,8,Black Friday Preview,email,retention,2026-11-01,600.95,32407,4326,61,2026-10-01T00:00:00Z
+238,8,Black Friday Preview,email,retention,2026-11-02,643.19,25845,1699,104,2026-10-01T00:00:00Z
+239,8,Black Friday Preview,email,retention,2026-11-03,645.06,41269,3551,150,2026-10-01T00:00:00Z
+240,8,Black Friday Preview,email,retention,2026-11-04,781.26,30667,893,165,2026-10-01T00:00:00Z
+241,8,Black Friday Preview,email,retention,2026-11-05,529.91,32452,3020,191,2026-10-01T00:00:00Z
+242,8,Black Friday Preview,email,retention,2026-11-06,693.96,23155,5683,62,2026-10-01T00:00:00Z
+243,8,Black Friday Preview,email,retention,2026-11-07,570.08,32782,1913,184,2026-10-01T00:00:00Z
+244,8,Black Friday Preview,email,retention,2026-11-08,533.50,37244,1925,33,2026-10-01T00:00:00Z
+245,8,Black Friday Preview,email,retention,2026-11-09,600.00,31697,1247,87,2026-10-01T00:00:00Z
+246,8,Black Friday Preview,email,retention,2026-11-10,792.79,28566,2639,52,2026-10-01T00:00:00Z
+247,8,Black Friday Preview,email,retention,2026-11-11,582.21,35327,1236,151,2026-10-01T00:00:00Z
+248,8,Black Friday Preview,email,retention,2026-11-12,782.88,29325,1897,138,2026-10-01T00:00:00Z
+249,8,Black Friday Preview,email,retention,2026-11-13,713.25,19180,2968,118,2026-10-01T00:00:00Z
+250,8,Black Friday Preview,email,retention,2026-11-14,782.73,38589,3081,145,2026-10-01T00:00:00Z
+251,8,Black Friday Preview,email,retention,2026-11-15,520.17,11646,873,61,2026-10-01T00:00:00Z
+252,8,Black Friday Preview,email,retention,2026-11-16,650.09,41492,4858,195,2026-10-01T00:00:00Z
+253,8,Black Friday Preview,email,retention,2026-11-17,580.52,9107,1894,172,2026-10-01T00:00:00Z
+254,8,Black Friday Preview,email,retention,2026-11-18,539.40,24305,3582,48,2026-10-01T00:00:00Z
+255,8,Black Friday Preview,email,retention,2026-11-19,578.26,37511,3990,45,2026-10-01T00:00:00Z
+256,8,Black Friday Preview,email,retention,2026-11-20,703.12,13696,874,47,2026-10-01T00:00:00Z
+257,9,Black Friday Doorbusters,paid_search,conversion,2026-11-25,20347.01,13264,1445,127,2026-10-01T00:00:00Z
+258,9,Black Friday Doorbusters,paid_search,conversion,2026-11-26,20603.59,7982,1416,109,2026-10-01T00:00:00Z
+259,9,Black Friday Doorbusters,paid_search,conversion,2026-11-27,20204.57,6829,1467,42,2026-10-01T00:00:00Z
+260,9,Black Friday Doorbusters,paid_search,conversion,2026-11-28,13869.17,16522,547,141,2026-10-01T00:00:00Z
+261,9,Black Friday Doorbusters,paid_search,conversion,2026-11-29,15014.88,18456,1451,93,2026-10-01T00:00:00Z
+262,9,Black Friday Doorbusters,paid_search,conversion,2026-11-30,15442.49,24555,754,27,2026-10-01T00:00:00Z
+263,10,Black Friday Social Push,paid_social,conversion,2026-11-25,13568.77,30402,538,103,2026-10-01T00:00:00Z
+264,10,Black Friday Social Push,paid_social,conversion,2026-11-26,13672.81,71934,512,99,2026-10-01T00:00:00Z
+265,10,Black Friday Social Push,paid_social,conversion,2026-11-27,11531.03,46417,1649,67,2026-10-01T00:00:00Z
+266,10,Black Friday Social Push,paid_social,conversion,2026-11-28,14546.93,30277,2087,44,2026-10-01T00:00:00Z
+267,10,Black Friday Social Push,paid_social,conversion,2026-11-29,14217.78,61743,1142,21,2026-10-01T00:00:00Z
+268,10,Black Friday Social Push,paid_social,conversion,2026-11-30,15400.39,70132,2424,27,2026-10-01T00:00:00Z
+269,11,Cyber Monday Deals,paid_search,conversion,2026-12-01,137880.21,22134,377,132,2026-10-01T00:00:00Z
+270,12,Cyber Monday TikTok,paid_social,conversion,2026-12-01,48500.50,17461,2264,96,2026-10-01T00:00:00Z
+271,13,Holiday Gift Guide Email,email,retention,2026-12-01,774.57,10231,3291,34,2026-10-01T00:00:00Z
+272,13,Holiday Gift Guide Email,email,retention,2026-12-02,984.42,29818,4698,139,2026-10-01T00:00:00Z
+273,13,Holiday Gift Guide Email,email,retention,2026-12-03,817.02,41083,5866,65,2026-10-01T00:00:00Z
+274,13,Holiday Gift Guide Email,email,retention,2026-12-04,841.88,35398,5831,102,2026-10-01T00:00:00Z
+275,13,Holiday Gift Guide Email,email,retention,2026-12-05,978.12,28486,4151,67,2026-10-01T00:00:00Z
+276,13,Holiday Gift Guide Email,email,retention,2026-12-06,643.68,11739,862,65,2026-10-01T00:00:00Z
+277,13,Holiday Gift Guide Email,email,retention,2026-12-07,846.68,20805,3917,64,2026-10-01T00:00:00Z
+278,13,Holiday Gift Guide Email,email,retention,2026-12-08,679.52,18875,1400,31,2026-10-01T00:00:00Z
+279,13,Holiday Gift Guide Email,email,retention,2026-12-09,697.32,44932,3057,117,2026-10-01T00:00:00Z
+280,13,Holiday Gift Guide Email,email,retention,2026-12-10,787.97,8236,5969,95,2026-10-01T00:00:00Z
+281,13,Holiday Gift Guide Email,email,retention,2026-12-11,1002.83,14009,4586,58,2026-10-01T00:00:00Z
+282,13,Holiday Gift Guide Email,email,retention,2026-12-12,899.68,44637,2126,141,2026-10-01T00:00:00Z
+283,13,Holiday Gift Guide Email,email,retention,2026-12-13,739.39,43349,5120,113,2026-10-01T00:00:00Z
+284,13,Holiday Gift Guide Email,email,retention,2026-12-14,971.46,9662,4568,148,2026-10-01T00:00:00Z
+285,13,Holiday Gift Guide Email,email,retention,2026-12-15,830.47,41914,5647,55,2026-10-01T00:00:00Z
+286,13,Holiday Gift Guide Email,email,retention,2026-12-16,656.22,28815,1238,31,2026-10-01T00:00:00Z
+287,13,Holiday Gift Guide Email,email,retention,2026-12-17,1004.84,38495,2555,156,2026-10-01T00:00:00Z
+288,13,Holiday Gift Guide Email,email,retention,2026-12-18,912.94,20038,5362,63,2026-10-01T00:00:00Z
+289,13,Holiday Gift Guide Email,email,retention,2026-12-19,946.36,24868,1629,75,2026-10-01T00:00:00Z
+290,13,Holiday Gift Guide Email,email,retention,2026-12-20,655.44,35305,3380,95,2026-10-01T00:00:00Z
+291,14,Holiday Last Minute Push,paid_search,conversion,2026-12-15,12460.60,7852,1042,128,2026-10-01T00:00:00Z
+292,14,Holiday Last Minute Push,paid_search,conversion,2026-12-16,11633.98,5105,492,118,2026-10-01T00:00:00Z
+293,14,Holiday Last Minute Push,paid_search,conversion,2026-12-17,9428.14,17493,952,76,2026-10-01T00:00:00Z
+294,14,Holiday Last Minute Push,paid_search,conversion,2026-12-18,12148.30,5882,1147,92,2026-10-01T00:00:00Z
+295,14,Holiday Last Minute Push,paid_search,conversion,2026-12-19,8339.52,22741,1200,83,2026-10-01T00:00:00Z
+296,14,Holiday Last Minute Push,paid_search,conversion,2026-12-20,12169.34,18706,1481,32,2026-10-01T00:00:00Z
+297,14,Holiday Last Minute Push,paid_search,conversion,2026-12-21,8731.61,6810,880,55,2026-10-01T00:00:00Z
+298,14,Holiday Last Minute Push,paid_search,conversion,2026-12-22,9313.23,7202,944,121,2026-10-01T00:00:00Z
+299,14,Holiday Last Minute Push,paid_search,conversion,2026-12-23,12335.87,13119,1248,60,2026-10-01T00:00:00Z
+300,15,New Year New You,paid_social,awareness,2027-01-01,2018.55,61814,1967,45,2026-10-01T00:00:00Z
+301,15,New Year New You,paid_social,awareness,2027-01-02,1566.95,27901,1503,16,2026-10-01T00:00:00Z
+302,15,New Year New You,paid_social,awareness,2027-01-03,1575.50,76633,2282,30,2026-10-01T00:00:00Z
+303,15,New Year New You,paid_social,awareness,2027-01-04,1961.96,75393,1527,104,2026-10-01T00:00:00Z
+304,15,New Year New You,paid_social,awareness,2027-01-05,2052.62,52249,1268,111,2026-10-01T00:00:00Z
+305,15,New Year New You,paid_social,awareness,2027-01-06,2063.69,19205,2069,61,2026-10-01T00:00:00Z
+306,15,New Year New You,paid_social,awareness,2027-01-07,1350.63,72756,1689,80,2026-10-01T00:00:00Z
+307,15,New Year New You,paid_social,awareness,2027-01-08,2024.26,75330,2170,100,2026-10-01T00:00:00Z
+308,15,New Year New You,paid_social,awareness,2027-01-09,1696.82,30214,2139,66,2026-10-01T00:00:00Z
+309,15,New Year New You,paid_social,awareness,2027-01-10,1807.79,60122,411,76,2026-10-01T00:00:00Z
+310,15,New Year New You,paid_social,awareness,2027-01-11,1233.88,68301,1183,73,2026-10-01T00:00:00Z
+311,15,New Year New You,paid_social,awareness,2027-01-12,2086.09,16502,919,47,2026-10-01T00:00:00Z
+312,15,New Year New You,paid_social,awareness,2027-01-13,1985.69,56628,1204,19,2026-10-01T00:00:00Z
+313,15,New Year New You,paid_social,awareness,2027-01-14,1919.28,19295,938,23,2026-10-01T00:00:00Z
+314,15,New Year New You,paid_social,awareness,2027-01-15,1292.90,23488,1404,48,2026-10-01T00:00:00Z
+315,15,New Year New You,paid_social,awareness,2027-01-16,1440.35,28888,931,48,2026-10-01T00:00:00Z
+316,15,New Year New You,paid_social,awareness,2027-01-17,1640.37,16534,1004,59,2026-10-01T00:00:00Z
+317,15,New Year New You,paid_social,awareness,2027-01-18,1732.83,15569,1908,68,2026-10-01T00:00:00Z
+318,15,New Year New You,paid_social,awareness,2027-01-19,1505.46,39533,470,32,2026-10-01T00:00:00Z
+319,15,New Year New You,paid_social,awareness,2027-01-20,1229.96,48953,902,42,2026-10-01T00:00:00Z
+320,15,New Year New You,paid_social,awareness,2027-01-21,1230.87,59897,1303,27,2026-10-01T00:00:00Z
+321,15,New Year New You,paid_social,awareness,2027-01-22,1909.17,17448,563,74,2026-10-01T00:00:00Z
+322,15,New Year New You,paid_social,awareness,2027-01-23,1427.21,70191,1219,105,2026-10-01T00:00:00Z
+323,15,New Year New You,paid_social,awareness,2027-01-24,1576.37,17935,874,60,2026-10-01T00:00:00Z
+324,15,New Year New You,paid_social,awareness,2027-01-25,1176.29,21249,1883,85,2026-10-01T00:00:00Z
+325,15,New Year New You,paid_social,awareness,2027-01-26,1852.00,32943,780,112,2026-10-01T00:00:00Z
+326,15,New Year New You,paid_social,awareness,2027-01-27,1231.88,61678,429,55,2026-10-01T00:00:00Z
+327,15,New Year New You,paid_social,awareness,2027-01-28,1959.26,35964,1511,30,2026-10-01T00:00:00Z
+328,15,New Year New You,paid_social,awareness,2027-01-29,1204.19,23443,534,49,2026-10-01T00:00:00Z
+329,15,New Year New You,paid_social,awareness,2027-01-30,1621.90,75849,497,47,2026-10-01T00:00:00Z
+330,15,New Year New You,paid_social,awareness,2027-01-31,1432.17,62298,710,108,2026-10-01T00:00:00Z
+331,16,January Fitness Email,email,retention,2027-01-05,644.26,9275,3971,92,2026-10-01T00:00:00Z
+332,16,January Fitness Email,email,retention,2027-01-06,643.07,43789,1012,139,2026-10-01T00:00:00Z
+333,16,January Fitness Email,email,retention,2027-01-07,511.21,10495,4190,165,2026-10-01T00:00:00Z
+334,16,January Fitness Email,email,retention,2027-01-08,696.51,9539,1055,196,2026-10-01T00:00:00Z
+335,16,January Fitness Email,email,retention,2027-01-09,614.03,35135,3053,195,2026-10-01T00:00:00Z
+336,16,January Fitness Email,email,retention,2027-01-10,687.34,30638,4579,142,2026-10-01T00:00:00Z
+337,16,January Fitness Email,email,retention,2027-01-11,593.46,13081,4924,48,2026-10-01T00:00:00Z
+338,16,January Fitness Email,email,retention,2027-01-12,735.12,44111,4622,130,2026-10-01T00:00:00Z
+339,16,January Fitness Email,email,retention,2027-01-13,701.16,9453,4402,96,2026-10-01T00:00:00Z
+340,16,January Fitness Email,email,retention,2027-01-14,546.18,18384,5125,49,2026-10-01T00:00:00Z
+341,16,January Fitness Email,email,retention,2027-01-15,524.53,18790,4086,200,2026-10-01T00:00:00Z
+342,16,January Fitness Email,email,retention,2027-01-16,472.82,29327,1541,158,2026-10-01T00:00:00Z
+343,16,January Fitness Email,email,retention,2027-01-17,641.56,42866,5635,112,2026-10-01T00:00:00Z
+344,16,January Fitness Email,email,retention,2027-01-18,633.23,12639,3210,127,2026-10-01T00:00:00Z
+345,16,January Fitness Email,email,retention,2027-01-19,743.38,34515,3407,54,2026-10-01T00:00:00Z
+346,16,January Fitness Email,email,retention,2027-01-20,475.69,24652,4872,163,2026-10-01T00:00:00Z
+347,17,Valentine's Day Campaign,paid_social,conversion,2027-02-01,3296.32,21222,1115,117,2026-10-01T00:00:00Z
+348,17,Valentine's Day Campaign,paid_social,conversion,2027-02-02,3460.52,38270,1060,74,2026-10-01T00:00:00Z
+349,17,Valentine's Day Campaign,paid_social,conversion,2027-02-03,3625.53,27424,2288,115,2026-10-01T00:00:00Z
+350,17,Valentine's Day Campaign,paid_social,conversion,2027-02-04,4443.43,41973,1532,120,2026-10-01T00:00:00Z
+351,17,Valentine's Day Campaign,paid_social,conversion,2027-02-05,3328.54,24805,2360,33,2026-10-01T00:00:00Z
+352,17,Valentine's Day Campaign,paid_social,conversion,2027-02-06,4489.45,77866,466,27,2026-10-01T00:00:00Z
+353,17,Valentine's Day Campaign,paid_social,conversion,2027-02-07,2819.34,15350,1896,50,2026-10-01T00:00:00Z
+354,17,Valentine's Day Campaign,paid_social,conversion,2027-02-08,3094.75,37400,2434,27,2026-10-01T00:00:00Z
+355,17,Valentine's Day Campaign,paid_social,conversion,2027-02-09,3675.32,24906,648,98,2026-10-01T00:00:00Z
+356,17,Valentine's Day Campaign,paid_social,conversion,2027-02-10,4801.63,41032,1123,55,2026-10-01T00:00:00Z
+357,17,Valentine's Day Campaign,paid_social,conversion,2027-02-11,2879.10,73829,1207,16,2026-10-01T00:00:00Z
+358,17,Valentine's Day Campaign,paid_social,conversion,2027-02-12,4259.19,36593,1668,61,2026-10-01T00:00:00Z
+359,17,Valentine's Day Campaign,paid_social,conversion,2027-02-13,4453.49,18772,2446,44,2026-10-01T00:00:00Z
+360,17,Valentine's Day Campaign,paid_social,conversion,2027-02-14,4893.87,73755,2415,75,2026-10-01T00:00:00Z
+361,18,Valentine's Gift Finder Email,email,conversion,2027-02-05,795.52,27603,4628,67,2026-10-01T00:00:00Z
+362,18,Valentine's Gift Finder Email,email,conversion,2027-02-06,638.93,39960,5405,191,2026-10-01T00:00:00Z
+363,18,Valentine's Gift Finder Email,email,conversion,2027-02-07,1000.92,42978,2521,133,2026-10-01T00:00:00Z
+364,18,Valentine's Gift Finder Email,email,conversion,2027-02-08,895.90,35075,2203,196,2026-10-01T00:00:00Z
+365,18,Valentine's Gift Finder Email,email,conversion,2027-02-09,942.32,37887,4233,134,2026-10-01T00:00:00Z
+366,18,Valentine's Gift Finder Email,email,conversion,2027-02-10,599.72,34873,2546,83,2026-10-01T00:00:00Z
+367,18,Valentine's Gift Finder Email,email,conversion,2027-02-11,778.00,42870,3707,174,2026-10-01T00:00:00Z
+368,18,Valentine's Gift Finder Email,email,conversion,2027-02-12,807.76,26324,5215,164,2026-10-01T00:00:00Z
+369,18,Valentine's Gift Finder Email,email,conversion,2027-02-13,819.96,40233,3949,57,2026-10-01T00:00:00Z
+370,19,Spring Refresh Launch,paid_social,awareness,2027-03-01,2064.79,25573,986,72,2026-10-01T00:00:00Z
+371,19,Spring Refresh Launch,paid_social,awareness,2027-03-02,2414.14,37284,1681,60,2026-10-01T00:00:00Z
+372,19,Spring Refresh Launch,paid_social,awareness,2027-03-03,2061.26,53836,1921,101,2026-10-01T00:00:00Z
+373,19,Spring Refresh Launch,paid_social,awareness,2027-03-04,1977.17,67156,920,41,2026-10-01T00:00:00Z
+374,19,Spring Refresh Launch,paid_social,awareness,2027-03-05,1645.41,17283,1805,118,2026-10-01T00:00:00Z
+375,19,Spring Refresh Launch,paid_social,awareness,2027-03-06,1726.98,45910,620,45,2026-10-01T00:00:00Z
+376,19,Spring Refresh Launch,paid_social,awareness,2027-03-07,1593.74,28239,1657,90,2026-10-01T00:00:00Z
+377,19,Spring Refresh Launch,paid_social,awareness,2027-03-08,1547.37,63920,1583,70,2026-10-01T00:00:00Z
+378,19,Spring Refresh Launch,paid_social,awareness,2027-03-09,1627.11,62608,1844,33,2026-10-01T00:00:00Z
+379,19,Spring Refresh Launch,paid_social,awareness,2027-03-10,2141.33,37674,1527,64,2026-10-01T00:00:00Z
+380,19,Spring Refresh Launch,paid_social,awareness,2027-03-11,2463.62,59311,2425,59,2026-10-01T00:00:00Z
+381,19,Spring Refresh Launch,paid_social,awareness,2027-03-12,2316.39,26194,1362,72,2026-10-01T00:00:00Z
+382,19,Spring Refresh Launch,paid_social,awareness,2027-03-13,1538.38,65936,524,66,2026-10-01T00:00:00Z
+383,19,Spring Refresh Launch,paid_social,awareness,2027-03-14,2031.33,68942,2368,120,2026-10-01T00:00:00Z
+384,19,Spring Refresh Launch,paid_social,awareness,2027-03-15,1726.00,78784,696,99,2026-10-01T00:00:00Z
+385,19,Spring Refresh Launch,paid_social,awareness,2027-03-16,2401.51,30480,759,71,2026-10-01T00:00:00Z
+386,19,Spring Refresh Launch,paid_social,awareness,2027-03-17,1655.10,38066,1835,18,2026-10-01T00:00:00Z
+387,19,Spring Refresh Launch,paid_social,awareness,2027-03-18,2020.73,32489,1621,24,2026-10-01T00:00:00Z
+388,19,Spring Refresh Launch,paid_social,awareness,2027-03-19,1790.84,18795,1105,15,2026-10-01T00:00:00Z
+389,19,Spring Refresh Launch,paid_social,awareness,2027-03-20,1647.33,26314,2326,74,2026-10-01T00:00:00Z
+390,19,Spring Refresh Launch,paid_social,awareness,2027-03-21,1893.60,67213,1362,59,2026-10-01T00:00:00Z
+391,19,Spring Refresh Launch,paid_social,awareness,2027-03-22,1454.12,16113,1123,118,2026-10-01T00:00:00Z
+392,19,Spring Refresh Launch,paid_social,awareness,2027-03-23,1627.12,57922,1906,71,2026-10-01T00:00:00Z
+393,19,Spring Refresh Launch,paid_social,awareness,2027-03-24,1916.78,20726,2215,49,2026-10-01T00:00:00Z
+394,19,Spring Refresh Launch,paid_social,awareness,2027-03-25,1601.16,67911,435,83,2026-10-01T00:00:00Z
+395,19,Spring Refresh Launch,paid_social,awareness,2027-03-26,1562.78,73342,2254,19,2026-10-01T00:00:00Z
+396,19,Spring Refresh Launch,paid_social,awareness,2027-03-27,1979.39,29990,1480,94,2026-10-01T00:00:00Z
+397,19,Spring Refresh Launch,paid_social,awareness,2027-03-28,1906.05,77099,1332,57,2026-10-01T00:00:00Z
+398,19,Spring Refresh Launch,paid_social,awareness,2027-03-29,2278.46,65088,2114,104,2026-10-01T00:00:00Z
+399,19,Spring Refresh Launch,paid_social,awareness,2027-03-30,1546.27,19502,2361,89,2026-10-01T00:00:00Z
+400,19,Spring Refresh Launch,paid_social,awareness,2027-03-31,1805.47,66938,1806,40,2026-10-01T00:00:00Z
+401,20,Spring Search Campaign,paid_search,conversion,2027-03-01,2040.62,11489,623,107,2026-10-01T00:00:00Z
+402,20,Spring Search Campaign,paid_search,conversion,2027-03-02,2688.65,22462,225,24,2026-10-01T00:00:00Z
+403,20,Spring Search Campaign,paid_search,conversion,2027-03-03,2625.56,21845,702,144,2026-10-01T00:00:00Z
+404,20,Spring Search Campaign,paid_search,conversion,2027-03-04,1647.83,22471,1220,96,2026-10-01T00:00:00Z
+405,20,Spring Search Campaign,paid_search,conversion,2027-03-05,1959.23,17944,1330,146,2026-10-01T00:00:00Z
+406,20,Spring Search Campaign,paid_search,conversion,2027-03-06,2138.55,9082,399,72,2026-10-01T00:00:00Z
+407,20,Spring Search Campaign,paid_search,conversion,2027-03-07,2040.73,17917,1455,110,2026-10-01T00:00:00Z
+408,20,Spring Search Campaign,paid_search,conversion,2027-03-08,2209.36,22494,1284,84,2026-10-01T00:00:00Z
+409,20,Spring Search Campaign,paid_search,conversion,2027-03-09,1939.78,10905,1135,59,2026-10-01T00:00:00Z
+410,20,Spring Search Campaign,paid_search,conversion,2027-03-10,2256.18,5216,753,103,2026-10-01T00:00:00Z
+411,20,Spring Search Campaign,paid_search,conversion,2027-03-11,2056.95,21359,274,120,2026-10-01T00:00:00Z
+412,20,Spring Search Campaign,paid_search,conversion,2027-03-12,2552.71,23063,1454,134,2026-10-01T00:00:00Z
+413,20,Spring Search Campaign,paid_search,conversion,2027-03-13,2056.95,14765,681,48,2026-10-01T00:00:00Z
+414,20,Spring Search Campaign,paid_search,conversion,2027-03-14,2192.68,21935,830,145,2026-10-01T00:00:00Z
+415,20,Spring Search Campaign,paid_search,conversion,2027-03-15,1902.04,10207,434,76,2026-10-01T00:00:00Z
+416,20,Spring Search Campaign,paid_search,conversion,2027-03-16,1671.48,22470,1080,149,2026-10-01T00:00:00Z
+417,20,Spring Search Campaign,paid_search,conversion,2027-03-17,2655.25,8359,225,87,2026-10-01T00:00:00Z
+418,20,Spring Search Campaign,paid_search,conversion,2027-03-18,2572.37,11177,727,144,2026-10-01T00:00:00Z
+419,20,Spring Search Campaign,paid_search,conversion,2027-03-19,1941.79,11735,390,78,2026-10-01T00:00:00Z
+420,20,Spring Search Campaign,paid_search,conversion,2027-03-20,2328.04,9618,403,76,2026-10-01T00:00:00Z
+421,20,Spring Search Campaign,paid_search,conversion,2027-03-21,2808.22,7590,1090,26,2026-10-01T00:00:00Z
+422,20,Spring Search Campaign,paid_search,conversion,2027-03-22,2438.45,21074,812,82,2026-10-01T00:00:00Z
+423,20,Spring Search Campaign,paid_search,conversion,2027-03-23,2186.78,6995,286,28,2026-10-01T00:00:00Z
+424,20,Spring Search Campaign,paid_search,conversion,2027-03-24,2619.46,11106,703,72,2026-10-01T00:00:00Z
+425,20,Spring Search Campaign,paid_search,conversion,2027-03-25,1668.78,22803,480,130,2026-10-01T00:00:00Z
+426,20,Spring Search Campaign,paid_search,conversion,2027-03-26,2240.10,22637,400,98,2026-10-01T00:00:00Z
+427,20,Spring Search Campaign,paid_search,conversion,2027-03-27,2333.83,18132,1286,131,2026-10-01T00:00:00Z
+428,20,Spring Search Campaign,paid_search,conversion,2027-03-28,2565.38,17389,341,110,2026-10-01T00:00:00Z
+429,20,Spring Search Campaign,paid_search,conversion,2027-03-29,2744.95,5995,413,83,2026-10-01T00:00:00Z
+430,20,Spring Search Campaign,paid_search,conversion,2027-03-30,2311.02,17805,1030,55,2026-10-01T00:00:00Z
+431,20,Spring Search Campaign,paid_search,conversion,2027-03-31,1860.88,24482,1146,83,2026-10-01T00:00:00Z
+432,21,St Patrick's Sale,email,retention,2027-03-14,921.08,11066,1677,164,2026-10-01T00:00:00Z
+433,21,St Patrick's Sale,email,retention,2027-03-15,1317.08,14634,4109,123,2026-10-01T00:00:00Z
+434,21,St Patrick's Sale,email,retention,2027-03-16,1383.74,23654,4533,144,2026-10-01T00:00:00Z
+435,21,St Patrick's Sale,email,retention,2027-03-17,1383.87,30808,2905,48,2026-10-01T00:00:00Z
+436,22,Earth Day Green Products,paid_social,brand,2027-04-15,3439.20,31546,745,27,2026-10-01T00:00:00Z
+437,22,Earth Day Green Products,paid_social,brand,2027-04-16,3655.07,66261,1151,41,2026-10-01T00:00:00Z
+438,22,Earth Day Green Products,paid_social,brand,2027-04-17,3069.58,62710,1769,53,2026-10-01T00:00:00Z
+439,22,Earth Day Green Products,paid_social,brand,2027-04-18,3617.53,21681,1829,42,2026-10-01T00:00:00Z
+440,22,Earth Day Green Products,paid_social,brand,2027-04-19,2504.21,35511,2442,68,2026-10-01T00:00:00Z
+441,22,Earth Day Green Products,paid_social,brand,2027-04-20,2517.14,64429,1375,78,2026-10-01T00:00:00Z
+442,22,Earth Day Green Products,paid_social,brand,2027-04-21,2352.64,38495,2161,75,2026-10-01T00:00:00Z
+443,22,Earth Day Green Products,paid_social,brand,2027-04-22,3236.56,24479,1047,103,2026-10-01T00:00:00Z
+444,23,Mother's Day Preview,email,retention,2027-04-25,959.05,43997,4082,123,2026-10-01T00:00:00Z
+445,23,Mother's Day Preview,email,retention,2027-04-26,1129.95,8941,4670,165,2026-10-01T00:00:00Z
+446,23,Mother's Day Preview,email,retention,2027-04-27,1172.93,29330,1660,46,2026-10-01T00:00:00Z
+447,23,Mother's Day Preview,email,retention,2027-04-28,854.17,20847,1092,63,2026-10-01T00:00:00Z
+448,23,Mother's Day Preview,email,retention,2027-04-29,1098.76,13282,4671,199,2026-10-01T00:00:00Z
+449,23,Mother's Day Preview,email,retention,2027-04-30,1171.10,38433,3489,37,2026-10-01T00:00:00Z
+450,23,Mother's Day Preview,email,retention,2027-05-01,995.40,37013,1199,53,2026-10-01T00:00:00Z
+451,23,Mother's Day Preview,email,retention,2027-05-02,1277.11,9203,4977,84,2026-10-01T00:00:00Z
+452,23,Mother's Day Preview,email,retention,2027-05-03,1179.36,23436,4840,60,2026-10-01T00:00:00Z
+453,23,Mother's Day Preview,email,retention,2027-05-04,1437.91,40891,5397,146,2026-10-01T00:00:00Z
+454,24,Mother's Day Search,paid_search,conversion,2027-05-01,5004.29,21794,941,36,2026-10-01T00:00:00Z
+455,24,Mother's Day Search,paid_search,conversion,2027-05-02,6898.57,17567,777,22,2026-10-01T00:00:00Z
+456,24,Mother's Day Search,paid_search,conversion,2027-05-03,5735.03,14351,424,90,2026-10-01T00:00:00Z
+457,24,Mother's Day Search,paid_search,conversion,2027-05-04,6152.66,12650,662,43,2026-10-01T00:00:00Z
+458,24,Mother's Day Search,paid_search,conversion,2027-05-05,5817.78,14580,725,112,2026-10-01T00:00:00Z
+459,24,Mother's Day Search,paid_search,conversion,2027-05-06,7060.35,17234,560,74,2026-10-01T00:00:00Z
+460,24,Mother's Day Search,paid_search,conversion,2027-05-07,4527.31,17269,464,29,2026-10-01T00:00:00Z
+461,24,Mother's Day Search,paid_search,conversion,2027-05-08,6791.23,6851,764,128,2026-10-01T00:00:00Z
+462,24,Mother's Day Search,paid_search,conversion,2027-05-09,6028.00,16916,935,121,2026-10-01T00:00:00Z
+463,24,Mother's Day Search,paid_search,conversion,2027-05-10,6798.66,13400,403,93,2026-10-01T00:00:00Z
+464,24,Mother's Day Search,paid_search,conversion,2027-05-11,7450.57,19674,856,116,2026-10-01T00:00:00Z
+465,24,Mother's Day Search,paid_search,conversion,2027-05-12,5571.07,10044,762,54,2026-10-01T00:00:00Z
+466,25,Mother's Day Social,paid_social,conversion,2027-05-01,7164.58,71836,1570,101,2026-10-01T00:00:00Z
+467,25,Mother's Day Social,paid_social,conversion,2027-05-02,7371.70,33797,2113,92,2026-10-01T00:00:00Z
+468,25,Mother's Day Social,paid_social,conversion,2027-05-03,4735.47,50545,2156,71,2026-10-01T00:00:00Z
+469,25,Mother's Day Social,paid_social,conversion,2027-05-04,6567.13,26370,2300,24,2026-10-01T00:00:00Z
+470,25,Mother's Day Social,paid_social,conversion,2027-05-05,6684.37,48181,1803,19,2026-10-01T00:00:00Z
+471,25,Mother's Day Social,paid_social,conversion,2027-05-06,5393.76,22713,830,110,2026-10-01T00:00:00Z
+472,25,Mother's Day Social,paid_social,conversion,2027-05-07,4687.39,28849,690,58,2026-10-01T00:00:00Z
+473,25,Mother's Day Social,paid_social,conversion,2027-05-08,7081.22,54166,489,120,2026-10-01T00:00:00Z
+474,25,Mother's Day Social,paid_social,conversion,2027-05-09,6599.97,17760,1047,98,2026-10-01T00:00:00Z
+475,25,Mother's Day Social,paid_social,conversion,2027-05-10,6147.88,61593,1096,45,2026-10-01T00:00:00Z
+476,25,Mother's Day Social,paid_social,conversion,2027-05-11,5166.95,15819,1306,78,2026-10-01T00:00:00Z
+477,26,Summer Preview Launch,paid_social,awareness,2027-05-20,1681.96,26805,572,116,2026-10-01T00:00:00Z
+478,26,Summer Preview Launch,paid_social,awareness,2027-05-21,2170.66,17345,2126,83,2026-10-01T00:00:00Z
+479,26,Summer Preview Launch,paid_social,awareness,2027-05-22,2008.51,46544,2051,19,2026-10-01T00:00:00Z
+480,26,Summer Preview Launch,paid_social,awareness,2027-05-23,1903.55,41459,636,50,2026-10-01T00:00:00Z
+481,26,Summer Preview Launch,paid_social,awareness,2027-05-24,2413.00,39747,2128,104,2026-10-01T00:00:00Z
+482,26,Summer Preview Launch,paid_social,awareness,2027-05-25,1615.56,39456,1357,67,2026-10-01T00:00:00Z
+483,26,Summer Preview Launch,paid_social,awareness,2027-05-26,2149.73,53972,1851,71,2026-10-01T00:00:00Z
+484,26,Summer Preview Launch,paid_social,awareness,2027-05-27,1914.63,72567,2168,18,2026-10-01T00:00:00Z
+485,26,Summer Preview Launch,paid_social,awareness,2027-05-28,1728.60,56108,1266,67,2026-10-01T00:00:00Z
+486,26,Summer Preview Launch,paid_social,awareness,2027-05-29,1572.16,27004,1258,74,2026-10-01T00:00:00Z
+487,26,Summer Preview Launch,paid_social,awareness,2027-05-30,2504.25,76386,1554,75,2026-10-01T00:00:00Z
+488,26,Summer Preview Launch,paid_social,awareness,2027-05-31,1797.73,23984,1332,86,2026-10-01T00:00:00Z
+489,26,Summer Preview Launch,paid_social,awareness,2027-06-01,1743.57,46780,1363,120,2026-10-01T00:00:00Z
+490,26,Summer Preview Launch,paid_social,awareness,2027-06-02,2514.11,49004,1560,96,2026-10-01T00:00:00Z
+491,26,Summer Preview Launch,paid_social,awareness,2027-06-03,1988.79,29772,1171,101,2026-10-01T00:00:00Z
+492,26,Summer Preview Launch,paid_social,awareness,2027-06-04,2577.90,20374,1693,65,2026-10-01T00:00:00Z
+493,26,Summer Preview Launch,paid_social,awareness,2027-06-05,2320.81,75917,828,75,2026-10-01T00:00:00Z
+494,26,Summer Preview Launch,paid_social,awareness,2027-06-06,1638.39,55539,2363,47,2026-10-01T00:00:00Z
+495,26,Summer Preview Launch,paid_social,awareness,2027-06-07,1809.95,27280,1804,72,2026-10-01T00:00:00Z
+496,26,Summer Preview Launch,paid_social,awareness,2027-06-08,2359.72,19577,807,31,2026-10-01T00:00:00Z
+497,26,Summer Preview Launch,paid_social,awareness,2027-06-09,2325.32,17707,672,77,2026-10-01T00:00:00Z
+498,26,Summer Preview Launch,paid_social,awareness,2027-06-10,2391.09,24383,2278,77,2026-10-01T00:00:00Z
+499,26,Summer Preview Launch,paid_social,awareness,2027-06-11,2621.05,39156,620,29,2026-10-01T00:00:00Z
+500,26,Summer Preview Launch,paid_social,awareness,2027-06-12,2458.57,79782,664,33,2026-10-01T00:00:00Z
+501,26,Summer Preview Launch,paid_social,awareness,2027-06-13,1648.58,16234,731,26,2026-10-01T00:00:00Z
+502,26,Summer Preview Launch,paid_social,awareness,2027-06-14,2625.28,63930,1668,26,2026-10-01T00:00:00Z
+503,26,Summer Preview Launch,paid_social,awareness,2027-06-15,2626.05,61966,1831,90,2026-10-01T00:00:00Z
+504,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-01,473.47,9727,624,17,2026-10-01T00:00:00Z
+505,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-02,347.83,6200,546,52,2026-10-01T00:00:00Z
+506,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-03,405.85,4634,429,27,2026-10-01T00:00:00Z
+507,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-04,380.87,11063,768,24,2026-10-01T00:00:00Z
+508,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-05,321.78,7647,644,27,2026-10-01T00:00:00Z
+509,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-06,446.81,8117,785,11,2026-10-01T00:00:00Z
+510,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-07,459.49,3288,158,48,2026-10-01T00:00:00Z
+511,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-08,498.62,5536,600,58,2026-10-01T00:00:00Z
+512,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-09,391.73,4435,215,51,2026-10-01T00:00:00Z
+513,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-10,307.43,2397,491,43,2026-10-01T00:00:00Z
+514,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-11,507.41,11501,145,58,2026-10-01T00:00:00Z
+515,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-12,361.46,8271,299,28,2026-10-01T00:00:00Z
+516,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-13,362.02,5801,344,35,2026-10-01T00:00:00Z
+517,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-14,419.95,7165,460,51,2026-10-01T00:00:00Z
+518,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-15,356.32,8511,745,32,2026-10-01T00:00:00Z
+519,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-16,427.13,8048,636,25,2026-10-01T00:00:00Z
+520,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-17,487.00,8398,706,38,2026-10-01T00:00:00Z
+521,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-18,374.52,4126,142,20,2026-10-01T00:00:00Z
+522,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-19,447.95,8003,657,32,2026-10-01T00:00:00Z
+523,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-20,311.97,11733,670,48,2026-10-01T00:00:00Z
+524,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-21,364.38,3404,450,37,2026-10-01T00:00:00Z
+525,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-22,405.74,11101,464,26,2026-10-01T00:00:00Z
+526,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-23,435.89,10465,243,41,2026-10-01T00:00:00Z
+527,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-24,461.79,10096,577,42,2026-10-01T00:00:00Z
+528,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-25,295.00,6358,337,47,2026-10-01T00:00:00Z
+529,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-26,314.46,5863,356,30,2026-10-01T00:00:00Z
+530,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-27,374.27,11733,112,35,2026-10-01T00:00:00Z
+531,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-28,499.49,5352,632,33,2026-10-01T00:00:00Z
+532,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-29,394.60,7300,657,14,2026-10-01T00:00:00Z
+533,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-30,426.99,4189,146,36,2026-10-01T00:00:00Z
+534,27,Affiliate Partner Program Q3,affiliate,partnership,2026-07-31,308.99,10009,588,10,2026-10-01T00:00:00Z
+535,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-01,369.66,10929,745,11,2026-10-01T00:00:00Z
+536,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-02,298.58,3869,410,15,2026-10-01T00:00:00Z
+537,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-03,307.78,9165,591,13,2026-10-01T00:00:00Z
+538,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-04,466.47,3823,540,59,2026-10-01T00:00:00Z
+539,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-05,465.15,2325,344,43,2026-10-01T00:00:00Z
+540,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-06,505.43,10950,766,21,2026-10-01T00:00:00Z
+541,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-07,312.53,4160,392,17,2026-10-01T00:00:00Z
+542,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-08,441.01,11379,403,43,2026-10-01T00:00:00Z
+543,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-09,371.99,7525,562,39,2026-10-01T00:00:00Z
+544,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-10,513.53,6414,596,51,2026-10-01T00:00:00Z
+545,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-11,430.87,8973,403,6,2026-10-01T00:00:00Z
+546,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-12,467.35,6120,271,46,2026-10-01T00:00:00Z
+547,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-13,495.23,11670,592,10,2026-10-01T00:00:00Z
+548,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-14,300.87,9334,727,33,2026-10-01T00:00:00Z
+549,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-15,484.28,9020,777,38,2026-10-01T00:00:00Z
+550,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-16,361.30,5303,672,21,2026-10-01T00:00:00Z
+551,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-17,306.74,8013,581,25,2026-10-01T00:00:00Z
+552,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-18,493.73,8360,701,31,2026-10-01T00:00:00Z
+553,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-19,454.42,3404,181,48,2026-10-01T00:00:00Z
+554,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-20,312.41,9916,523,16,2026-10-01T00:00:00Z
+555,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-21,286.09,2905,157,51,2026-10-01T00:00:00Z
+556,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-22,366.96,8827,798,16,2026-10-01T00:00:00Z
+557,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-23,495.17,5388,729,31,2026-10-01T00:00:00Z
+558,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-24,393.36,6011,569,5,2026-10-01T00:00:00Z
+559,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-25,409.55,3048,213,46,2026-10-01T00:00:00Z
+560,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-26,360.88,11696,684,14,2026-10-01T00:00:00Z
+561,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-27,381.21,9763,126,50,2026-10-01T00:00:00Z
+562,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-28,293.70,10276,137,16,2026-10-01T00:00:00Z
+563,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-29,472.72,11578,561,5,2026-10-01T00:00:00Z
+564,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-30,367.04,4178,517,57,2026-10-01T00:00:00Z
+565,27,Affiliate Partner Program Q3,affiliate,partnership,2026-08-31,459.62,3479,145,8,2026-10-01T00:00:00Z
+566,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-01,289.56,8851,552,16,2026-10-01T00:00:00Z
+567,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-02,496.50,2452,730,39,2026-10-01T00:00:00Z
+568,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-03,337.75,9267,340,21,2026-10-01T00:00:00Z
+569,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-04,361.74,2165,770,14,2026-10-01T00:00:00Z
+570,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-05,323.57,7351,638,52,2026-10-01T00:00:00Z
+571,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-06,380.93,11963,744,5,2026-10-01T00:00:00Z
+572,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-07,364.07,11472,602,58,2026-10-01T00:00:00Z
+573,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-08,347.65,2672,675,41,2026-10-01T00:00:00Z
+574,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-09,349.26,9571,553,40,2026-10-01T00:00:00Z
+575,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-10,397.39,5582,629,7,2026-10-01T00:00:00Z
+576,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-11,488.92,9122,197,17,2026-10-01T00:00:00Z
+577,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-12,476.41,3995,116,34,2026-10-01T00:00:00Z
+578,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-13,450.60,4346,666,49,2026-10-01T00:00:00Z
+579,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-14,428.50,4250,447,6,2026-10-01T00:00:00Z
+580,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-15,446.01,9433,104,55,2026-10-01T00:00:00Z
+581,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-16,442.58,4443,486,39,2026-10-01T00:00:00Z
+582,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-17,390.55,3189,774,30,2026-10-01T00:00:00Z
+583,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-18,421.39,6409,785,9,2026-10-01T00:00:00Z
+584,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-19,441.52,6010,189,28,2026-10-01T00:00:00Z
+585,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-20,432.22,11807,271,23,2026-10-01T00:00:00Z
+586,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-21,427.40,6795,304,32,2026-10-01T00:00:00Z
+587,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-22,287.39,3681,443,8,2026-10-01T00:00:00Z
+588,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-23,473.77,4765,265,56,2026-10-01T00:00:00Z
+589,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-24,305.68,5276,476,14,2026-10-01T00:00:00Z
+590,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-25,348.00,9243,705,5,2026-10-01T00:00:00Z
+591,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-26,470.48,8989,428,31,2026-10-01T00:00:00Z
+592,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-27,406.13,5207,125,47,2026-10-01T00:00:00Z
+593,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-28,506.98,2936,410,58,2026-10-01T00:00:00Z
+594,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-29,373.71,10831,387,20,2026-10-01T00:00:00Z
+595,27,Affiliate Partner Program Q3,affiliate,partnership,2026-09-30,306.97,11740,445,50,2026-10-01T00:00:00Z
+596,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-01,506.06,5490,438,37,2026-10-01T00:00:00Z
+597,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-02,558.94,7563,732,47,2026-10-01T00:00:00Z
+598,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-03,493.36,9636,664,7,2026-10-01T00:00:00Z
+599,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-04,545.65,10593,137,37,2026-10-01T00:00:00Z
+600,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-05,547.06,4866,728,46,2026-10-01T00:00:00Z
+601,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-06,584.27,9558,420,38,2026-10-01T00:00:00Z
+602,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-07,699.63,8388,301,57,2026-10-01T00:00:00Z
+603,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-08,416.53,4156,490,60,2026-10-01T00:00:00Z
+604,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-09,504.17,9932,376,34,2026-10-01T00:00:00Z
+605,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-10,645.94,2193,194,5,2026-10-01T00:00:00Z
+606,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-11,665.99,10391,229,26,2026-10-01T00:00:00Z
+607,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-12,574.08,5996,281,59,2026-10-01T00:00:00Z
+608,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-13,587.93,2249,202,32,2026-10-01T00:00:00Z
+609,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-14,508.10,4588,385,12,2026-10-01T00:00:00Z
+610,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-15,556.45,8709,115,12,2026-10-01T00:00:00Z
+611,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-16,479.64,10349,131,60,2026-10-01T00:00:00Z
+612,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-17,434.94,8342,484,33,2026-10-01T00:00:00Z
+613,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-18,480.59,6734,664,54,2026-10-01T00:00:00Z
+614,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-19,621.97,11128,259,10,2026-10-01T00:00:00Z
+615,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-20,517.32,7013,357,50,2026-10-01T00:00:00Z
+616,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-21,686.39,3921,281,15,2026-10-01T00:00:00Z
+617,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-22,566.20,3307,442,40,2026-10-01T00:00:00Z
+618,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-23,544.29,7499,793,58,2026-10-01T00:00:00Z
+619,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-24,627.18,2685,205,42,2026-10-01T00:00:00Z
+620,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-25,582.56,6270,200,12,2026-10-01T00:00:00Z
+621,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-26,525.89,6939,476,13,2026-10-01T00:00:00Z
+622,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-27,506.45,4547,247,16,2026-10-01T00:00:00Z
+623,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-28,598.79,7221,513,57,2026-10-01T00:00:00Z
+624,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-29,409.17,7653,131,9,2026-10-01T00:00:00Z
+625,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-30,662.34,6996,764,7,2026-10-01T00:00:00Z
+626,28,Affiliate Partner Program Q4,affiliate,partnership,2026-10-31,443.54,10380,617,12,2026-10-01T00:00:00Z
+627,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-01,672.43,9686,379,28,2026-10-01T00:00:00Z
+628,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-02,588.98,11993,277,7,2026-10-01T00:00:00Z
+629,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-03,565.97,3776,480,29,2026-10-01T00:00:00Z
+630,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-04,686.21,4681,656,25,2026-10-01T00:00:00Z
+631,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-05,566.19,3871,619,29,2026-10-01T00:00:00Z
+632,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-06,577.74,4504,299,9,2026-10-01T00:00:00Z
+633,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-07,582.96,8831,385,28,2026-10-01T00:00:00Z
+634,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-08,416.81,6026,261,44,2026-10-01T00:00:00Z
+635,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-09,494.87,4369,681,22,2026-10-01T00:00:00Z
+636,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-10,633.68,4194,541,9,2026-10-01T00:00:00Z
+637,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-11,403.44,9755,266,50,2026-10-01T00:00:00Z
+638,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-12,672.47,2809,564,48,2026-10-01T00:00:00Z
+639,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-13,452.50,5212,552,36,2026-10-01T00:00:00Z
+640,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-14,413.25,4649,298,48,2026-10-01T00:00:00Z
+641,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-15,484.16,2766,535,22,2026-10-01T00:00:00Z
+642,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-16,405.76,2935,195,54,2026-10-01T00:00:00Z
+643,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-17,521.66,9127,547,33,2026-10-01T00:00:00Z
+644,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-18,527.08,5933,786,38,2026-10-01T00:00:00Z
+645,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-19,506.93,2852,346,42,2026-10-01T00:00:00Z
+646,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-20,472.93,3710,249,25,2026-10-01T00:00:00Z
+647,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-21,669.44,5911,559,42,2026-10-01T00:00:00Z
+648,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-22,582.38,9081,496,16,2026-10-01T00:00:00Z
+649,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-23,609.63,6522,573,30,2026-10-01T00:00:00Z
+650,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-24,514.35,9845,425,25,2026-10-01T00:00:00Z
+651,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-25,619.62,4602,528,7,2026-10-01T00:00:00Z
+652,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-26,574.01,5684,395,25,2026-10-01T00:00:00Z
+653,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-27,598.59,10764,318,43,2026-10-01T00:00:00Z
+654,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-28,635.53,9651,365,17,2026-10-01T00:00:00Z
+655,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-29,694.67,5413,289,29,2026-10-01T00:00:00Z
+656,28,Affiliate Partner Program Q4,affiliate,partnership,2026-11-30,399.24,11213,681,29,2026-10-01T00:00:00Z
+657,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-01,551.60,2520,296,23,2026-10-01T00:00:00Z
+658,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-02,559.13,11153,476,51,2026-10-01T00:00:00Z
+659,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-03,549.27,8538,245,15,2026-10-01T00:00:00Z
+660,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-04,602.57,8693,613,10,2026-10-01T00:00:00Z
+661,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-05,409.83,8470,691,39,2026-10-01T00:00:00Z
+662,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-06,633.08,2990,725,18,2026-10-01T00:00:00Z
+663,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-07,413.27,9710,279,31,2026-10-01T00:00:00Z
+664,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-08,447.73,10156,552,9,2026-10-01T00:00:00Z
+665,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-09,574.19,3959,159,40,2026-10-01T00:00:00Z
+666,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-10,486.81,11096,189,18,2026-10-01T00:00:00Z
+667,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-11,578.03,7203,308,21,2026-10-01T00:00:00Z
+668,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-12,589.94,7711,501,7,2026-10-01T00:00:00Z
+669,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-13,440.25,6971,572,12,2026-10-01T00:00:00Z
+670,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-14,558.43,2648,622,41,2026-10-01T00:00:00Z
+671,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-15,593.92,7295,546,28,2026-10-01T00:00:00Z
+672,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-16,668.27,2657,531,50,2026-10-01T00:00:00Z
+673,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-17,636.93,8388,650,56,2026-10-01T00:00:00Z
+674,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-18,634.76,5227,367,46,2026-10-01T00:00:00Z
+675,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-19,578.88,9733,237,14,2026-10-01T00:00:00Z
+676,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-20,621.69,8969,672,35,2026-10-01T00:00:00Z
+677,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-21,423.39,11302,317,13,2026-10-01T00:00:00Z
+678,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-22,632.43,5500,385,32,2026-10-01T00:00:00Z
+679,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-23,585.40,4995,473,16,2026-10-01T00:00:00Z
+680,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-24,689.61,11847,752,55,2026-10-01T00:00:00Z
+681,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-25,521.63,6426,529,41,2026-10-01T00:00:00Z
+682,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-26,598.54,11986,767,18,2026-10-01T00:00:00Z
+683,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-27,443.80,6954,717,48,2026-10-01T00:00:00Z
+684,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-28,603.46,6157,375,28,2026-10-01T00:00:00Z
+685,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-29,584.00,6924,223,34,2026-10-01T00:00:00Z
+686,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-30,658.09,11428,103,52,2026-10-01T00:00:00Z
+687,28,Affiliate Partner Program Q4,affiliate,partnership,2026-12-31,699.97,7964,592,43,2026-10-01T00:00:00Z
+688,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-01,491.03,8277,750,48,2026-10-01T00:00:00Z
+689,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-02,579.24,6397,723,39,2026-10-01T00:00:00Z
+690,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-03,364.79,7295,755,34,2026-10-01T00:00:00Z
+691,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-04,577.69,10091,782,27,2026-10-01T00:00:00Z
+692,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-05,454.90,10142,544,8,2026-10-01T00:00:00Z
+693,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-06,558.64,2569,640,39,2026-10-01T00:00:00Z
+694,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-07,522.33,7093,706,49,2026-10-01T00:00:00Z
+695,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-08,580.30,3098,169,60,2026-10-01T00:00:00Z
+696,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-09,392.97,5881,785,30,2026-10-01T00:00:00Z
+697,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-10,389.88,6798,513,13,2026-10-01T00:00:00Z
+698,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-11,453.82,9831,476,56,2026-10-01T00:00:00Z
+699,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-12,616.63,9725,391,54,2026-10-01T00:00:00Z
+700,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-13,376.31,11818,176,40,2026-10-01T00:00:00Z
+701,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-14,382.01,11932,357,43,2026-10-01T00:00:00Z
+702,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-15,546.86,6394,687,26,2026-10-01T00:00:00Z
+703,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-16,517.73,3965,682,5,2026-10-01T00:00:00Z
+704,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-17,494.86,6278,107,48,2026-10-01T00:00:00Z
+705,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-18,419.06,7657,766,41,2026-10-01T00:00:00Z
+706,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-19,455.49,3129,644,26,2026-10-01T00:00:00Z
+707,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-20,486.42,11350,228,60,2026-10-01T00:00:00Z
+708,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-21,598.50,4546,502,15,2026-10-01T00:00:00Z
+709,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-22,360.14,11498,669,11,2026-10-01T00:00:00Z
+710,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-23,503.82,3448,555,13,2026-10-01T00:00:00Z
+711,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-24,407.21,8392,272,22,2026-10-01T00:00:00Z
+712,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-25,550.08,9234,279,55,2026-10-01T00:00:00Z
+713,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-26,515.51,7992,377,31,2026-10-01T00:00:00Z
+714,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-27,508.13,3047,289,16,2026-10-01T00:00:00Z
+715,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-28,488.91,7948,128,29,2026-10-01T00:00:00Z
+716,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-29,355.29,9400,781,14,2026-10-01T00:00:00Z
+717,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-30,600.26,8105,725,34,2026-10-01T00:00:00Z
+718,29,Affiliate Partner Program Q1,affiliate,partnership,2027-01-31,547.30,4745,699,60,2026-10-01T00:00:00Z
+719,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-01,457.66,10850,182,30,2026-10-01T00:00:00Z
+720,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-02,560.08,10501,690,49,2026-10-01T00:00:00Z
+721,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-03,584.53,8119,306,18,2026-10-01T00:00:00Z
+722,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-04,576.77,10506,734,18,2026-10-01T00:00:00Z
+723,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-05,411.75,6141,399,54,2026-10-01T00:00:00Z
+724,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-06,520.31,9487,198,56,2026-10-01T00:00:00Z
+725,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-07,357.42,2607,712,29,2026-10-01T00:00:00Z
+726,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-08,428.65,11829,764,39,2026-10-01T00:00:00Z
+727,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-09,393.29,2506,355,55,2026-10-01T00:00:00Z
+728,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-10,567.08,5041,431,32,2026-10-01T00:00:00Z
+729,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-11,526.73,6677,319,39,2026-10-01T00:00:00Z
+730,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-12,545.69,11589,238,53,2026-10-01T00:00:00Z
+731,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-13,356.95,6145,667,30,2026-10-01T00:00:00Z
+732,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-14,517.26,6685,549,11,2026-10-01T00:00:00Z
+733,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-15,453.52,3475,360,22,2026-10-01T00:00:00Z
+734,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-16,358.86,11349,715,25,2026-10-01T00:00:00Z
+735,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-17,442.84,5113,280,37,2026-10-01T00:00:00Z
+736,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-18,533.65,9015,423,49,2026-10-01T00:00:00Z
+737,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-19,561.14,3402,302,56,2026-10-01T00:00:00Z
+738,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-20,532.86,9491,402,43,2026-10-01T00:00:00Z
+739,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-21,628.93,11866,736,29,2026-10-01T00:00:00Z
+740,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-22,353.69,5928,437,5,2026-10-01T00:00:00Z
+741,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-23,439.34,8254,683,57,2026-10-01T00:00:00Z
+742,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-24,517.43,11233,419,23,2026-10-01T00:00:00Z
+743,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-25,366.19,9785,632,36,2026-10-01T00:00:00Z
+744,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-26,469.65,6741,320,5,2026-10-01T00:00:00Z
+745,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-27,479.66,3061,680,22,2026-10-01T00:00:00Z
+746,29,Affiliate Partner Program Q1,affiliate,partnership,2027-02-28,390.20,7865,456,46,2026-10-01T00:00:00Z
+747,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-01,410.60,4288,677,51,2026-10-01T00:00:00Z
+748,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-02,606.47,6590,707,40,2026-10-01T00:00:00Z
+749,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-03,443.97,4818,489,59,2026-10-01T00:00:00Z
+750,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-04,400.99,8303,323,19,2026-10-01T00:00:00Z
+751,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-05,577.70,5097,556,6,2026-10-01T00:00:00Z
+752,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-06,603.11,10268,167,32,2026-10-01T00:00:00Z
+753,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-07,417.71,6478,734,46,2026-10-01T00:00:00Z
+754,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-08,512.33,11561,604,29,2026-10-01T00:00:00Z
+755,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-09,612.25,6601,458,41,2026-10-01T00:00:00Z
+756,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-10,353.81,6981,203,9,2026-10-01T00:00:00Z
+757,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-11,432.18,9841,233,34,2026-10-01T00:00:00Z
+758,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-12,615.77,9411,665,59,2026-10-01T00:00:00Z
+759,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-13,550.83,6982,466,53,2026-10-01T00:00:00Z
+760,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-14,365.87,8796,195,54,2026-10-01T00:00:00Z
+761,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-15,548.12,6663,756,30,2026-10-01T00:00:00Z
+762,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-16,617.35,3529,681,21,2026-10-01T00:00:00Z
+763,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-17,628.88,8739,422,25,2026-10-01T00:00:00Z
+764,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-18,510.73,9786,506,6,2026-10-01T00:00:00Z
+765,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-19,399.84,5858,495,58,2026-10-01T00:00:00Z
+766,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-20,408.33,7428,761,52,2026-10-01T00:00:00Z
+767,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-21,470.83,5348,174,33,2026-10-01T00:00:00Z
+768,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-22,609.86,6990,475,21,2026-10-01T00:00:00Z
+769,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-23,586.76,11526,709,52,2026-10-01T00:00:00Z
+770,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-24,557.64,3334,521,51,2026-10-01T00:00:00Z
+771,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-25,444.39,4131,280,57,2026-10-01T00:00:00Z
+772,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-26,449.63,7662,504,13,2026-10-01T00:00:00Z
+773,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-27,498.13,10980,210,29,2026-10-01T00:00:00Z
+774,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-28,572.11,11149,529,57,2026-10-01T00:00:00Z
+775,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-29,468.44,10160,315,48,2026-10-01T00:00:00Z
+776,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-30,421.76,3882,551,26,2026-10-01T00:00:00Z
+777,29,Affiliate Partner Program Q1,affiliate,partnership,2027-03-31,547.45,2951,133,53,2026-10-01T00:00:00Z
+778,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-01,421.32,4158,742,49,2026-10-01T00:00:00Z
+779,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-02,424.80,5270,378,35,2026-10-01T00:00:00Z
+780,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-03,738.58,10660,186,20,2026-10-01T00:00:00Z
+781,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-04,620.74,2229,394,40,2026-10-01T00:00:00Z
+782,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-05,436.39,11827,485,52,2026-10-01T00:00:00Z
+783,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-06,537.08,9800,247,18,2026-10-01T00:00:00Z
+784,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-07,541.85,5466,509,36,2026-10-01T00:00:00Z
+785,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-08,468.80,10772,321,60,2026-10-01T00:00:00Z
+786,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-09,554.89,5232,330,56,2026-10-01T00:00:00Z
+787,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-10,453.92,7768,219,38,2026-10-01T00:00:00Z
+788,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-11,740.51,6190,396,34,2026-10-01T00:00:00Z
+789,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-12,612.64,10671,625,6,2026-10-01T00:00:00Z
+790,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-13,741.04,5497,485,54,2026-10-01T00:00:00Z
+791,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-14,612.99,2449,394,17,2026-10-01T00:00:00Z
+792,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-15,502.88,11720,233,7,2026-10-01T00:00:00Z
+793,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-16,733.98,7865,483,16,2026-10-01T00:00:00Z
+794,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-17,737.27,9387,785,22,2026-10-01T00:00:00Z
+795,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-18,488.35,5172,575,13,2026-10-01T00:00:00Z
+796,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-19,496.03,5537,515,9,2026-10-01T00:00:00Z
+797,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-20,657.76,2112,509,45,2026-10-01T00:00:00Z
+798,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-21,472.21,3289,625,34,2026-10-01T00:00:00Z
+799,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-22,670.57,7531,443,60,2026-10-01T00:00:00Z
+800,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-23,670.35,2457,609,5,2026-10-01T00:00:00Z
+801,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-24,419.55,10875,117,21,2026-10-01T00:00:00Z
+802,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-25,684.07,4908,669,39,2026-10-01T00:00:00Z
+803,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-26,717.52,8380,238,22,2026-10-01T00:00:00Z
+804,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-27,595.11,2959,431,17,2026-10-01T00:00:00Z
+805,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-28,457.83,5663,468,19,2026-10-01T00:00:00Z
+806,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-29,472.85,2409,186,26,2026-10-01T00:00:00Z
+807,30,Affiliate Partner Program Q2,affiliate,partnership,2027-04-30,497.11,8457,638,54,2026-10-01T00:00:00Z
+808,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-01,559.77,3981,160,57,2026-10-01T00:00:00Z
+809,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-02,682.25,6232,524,40,2026-10-01T00:00:00Z
+810,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-03,646.25,9197,251,19,2026-10-01T00:00:00Z
+811,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-04,705.62,10865,317,39,2026-10-01T00:00:00Z
+812,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-05,721.13,4427,572,34,2026-10-01T00:00:00Z
+813,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-06,426.52,7058,223,53,2026-10-01T00:00:00Z
+814,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-07,526.10,3431,640,30,2026-10-01T00:00:00Z
+815,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-08,614.78,10267,662,47,2026-10-01T00:00:00Z
+816,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-09,580.92,10974,693,39,2026-10-01T00:00:00Z
+817,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-10,506.39,4596,117,28,2026-10-01T00:00:00Z
+818,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-11,556.58,5891,738,16,2026-10-01T00:00:00Z
+819,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-12,702.86,6652,397,8,2026-10-01T00:00:00Z
+820,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-13,519.72,10511,599,39,2026-10-01T00:00:00Z
+821,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-14,459.95,8459,376,39,2026-10-01T00:00:00Z
+822,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-15,562.07,8955,180,26,2026-10-01T00:00:00Z
+823,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-16,548.61,8694,341,49,2026-10-01T00:00:00Z
+824,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-17,602.30,8994,616,11,2026-10-01T00:00:00Z
+825,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-18,488.27,2328,653,11,2026-10-01T00:00:00Z
+826,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-19,426.29,2591,551,15,2026-10-01T00:00:00Z
+827,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-20,475.15,2391,144,59,2026-10-01T00:00:00Z
+828,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-21,644.10,9679,315,57,2026-10-01T00:00:00Z
+829,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-22,683.55,8695,722,34,2026-10-01T00:00:00Z
+830,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-23,567.53,11839,715,49,2026-10-01T00:00:00Z
+831,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-24,538.00,5562,419,57,2026-10-01T00:00:00Z
+832,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-25,579.01,6264,144,25,2026-10-01T00:00:00Z
+833,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-26,605.75,6566,170,49,2026-10-01T00:00:00Z
+834,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-27,543.95,3329,637,26,2026-10-01T00:00:00Z
+835,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-28,555.31,7305,740,57,2026-10-01T00:00:00Z
+836,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-29,599.73,8192,669,45,2026-10-01T00:00:00Z
+837,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-30,574.70,8803,122,20,2026-10-01T00:00:00Z
+838,30,Affiliate Partner Program Q2,affiliate,partnership,2027-05-31,506.92,5118,673,11,2026-10-01T00:00:00Z
+839,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-01,479.06,2867,428,27,2026-10-01T00:00:00Z
+840,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-02,504.14,11457,175,11,2026-10-01T00:00:00Z
+841,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-03,703.20,8421,723,8,2026-10-01T00:00:00Z
+842,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-04,476.58,4686,340,9,2026-10-01T00:00:00Z
+843,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-05,481.40,2321,777,40,2026-10-01T00:00:00Z
+844,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-06,712.34,9559,326,31,2026-10-01T00:00:00Z
+845,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-07,453.08,3392,591,31,2026-10-01T00:00:00Z
+846,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-08,684.53,8367,484,30,2026-10-01T00:00:00Z
+847,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-09,486.40,8200,114,6,2026-10-01T00:00:00Z
+848,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-10,730.54,2375,162,40,2026-10-01T00:00:00Z
+849,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-11,685.98,7400,360,44,2026-10-01T00:00:00Z
+850,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-12,616.15,5102,549,48,2026-10-01T00:00:00Z
+851,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-13,684.73,3872,757,51,2026-10-01T00:00:00Z
+852,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-14,623.69,8611,249,60,2026-10-01T00:00:00Z
+853,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-15,569.27,3318,438,23,2026-10-01T00:00:00Z
+854,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-16,653.36,4664,605,20,2026-10-01T00:00:00Z
+855,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-17,728.45,9630,127,22,2026-10-01T00:00:00Z
+856,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-18,608.86,8250,301,39,2026-10-01T00:00:00Z
+857,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-19,563.25,5873,480,53,2026-10-01T00:00:00Z
+858,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-20,687.36,5668,416,36,2026-10-01T00:00:00Z
+859,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-21,556.05,3182,583,10,2026-10-01T00:00:00Z
+860,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-22,683.93,10561,785,40,2026-10-01T00:00:00Z
+861,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-23,583.10,11629,324,25,2026-10-01T00:00:00Z
+862,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-24,566.33,5639,526,15,2026-10-01T00:00:00Z
+863,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-25,724.77,8466,123,54,2026-10-01T00:00:00Z
+864,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-26,450.36,10603,393,28,2026-10-01T00:00:00Z
+865,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-27,542.21,10408,211,56,2026-10-01T00:00:00Z
+866,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-28,436.68,4903,599,26,2026-10-01T00:00:00Z
+867,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-29,444.78,10264,451,20,2026-10-01T00:00:00Z
+868,30,Affiliate Partner Program Q2,affiliate,partnership,2027-06-30,720.68,2339,668,60,2026-10-01T00:00:00Z

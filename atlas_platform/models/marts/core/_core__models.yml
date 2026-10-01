@@ -71,7 +71,7 @@ models:
                 values: ['card', 'digital_wallet', 'bnpl', 'store_credit', 'bank']
 
   - name: dim_promotions
-    description: Promotion dimension — 12 active and historical promo codes covering June 2025 through June 2026.
+    description: Promotion dimension — 12 active and historical promo codes covering June 2026 through June 2027.
     columns:
       - name: promotion_id
         tests:
@@ -105,7 +105,7 @@ models:
     description: >
       Central order fact table — one row per order. Incremental (merge on order_id),
       clustered by [order_date, store_id]. Includes gross/net revenue, return data,
-      and realized_revenue (net of refunds). Covers June 2025–June 2026.
+      and realized_revenue (net of refunds). Covers June 2026–June 2027.
     columns:
       - name: order_id
         tests:

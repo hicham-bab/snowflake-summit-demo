@@ -50,6 +50,6 @@ seeds:
     +schema: seeds
 
 vars:
-  start_date: '2025-06-01'
-  end_date: '2026-06-15'
+  start_date: '2026-06-01'
+  end_date: '2027-06-15'
   platform_database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"

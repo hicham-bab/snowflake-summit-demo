@@ -29,9 +29,9 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEEDS_DIR = os.path.join(REPO_ROOT, "seeds")
 RNG = random.Random(42)
 
-ANCHOR_DATE = date(2026, 6, 16)
-ANCHOR_TS = "2026-06-16T00:00:00Z"
-ORDER_WINDOW_START = date(2025, 6, 1)
+ANCHOR_DATE = date(2026, 10, 1)
+ANCHOR_TS = "2026-10-01T00:00:00Z"
+ORDER_WINDOW_START = date(2026, 6, 1)
 
 N_CUSTOMERS = 12000
 N_ORDERS = 300000
@@ -123,7 +123,7 @@ def generate_customers():
 
 
 # ===========================================================================
-# raw_orders.csv -- ~300,000 orders, June 2025 through June 2026
+# raw_orders.csv -- ~300,000 orders, June 2026 through June 2027
 # ===========================================================================
 PAYMENT_WEIGHTS = [(52, "credit_card"), (75, "debit_card"), (88, "paypal"), (95, "apple_pay"), (100, "google_pay")]
 TRAFFIC_WEIGHTS = [(22, "paid_search"), (42, "paid_social"), (58, "organic"), (70, "email"),
@@ -304,7 +304,7 @@ def generate_ad_spend(campaigns):
 
 
 # ===========================================================================
-# raw_events.csv -- ~500,000 behavioral events, June 2025 through June 2026
+# raw_events.csv -- ~500,000 behavioral events, June 2026 through June 2027
 # ===========================================================================
 EVENT_TYPES = ["page_view", "product_view", "add_to_cart", "checkout_started", "purchase_completed", "page_view"]
 EVENT_TRAFFIC = ["paid_search", "paid_social", "organic", "email", "direct"]

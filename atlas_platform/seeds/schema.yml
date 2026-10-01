@@ -45,7 +45,7 @@ seeds:
                 values: ['in-store', 'online', 'mobile']
 
   - name: catalog_campaigns
-    description: Marketing campaign registry covering June 2025 through June 2026.
+    description: Marketing campaign registry covering June 2026 through June 2027.
     columns:
       - name: campaign_id
         tests:
@@ -58,7 +58,7 @@ seeds:
                 values: ['paid_social', 'paid_search', 'email', 'affiliate']
 
   - name: catalog_promotions
-    description: Promotional codes and discounts available across channels — 12 active and historical promos covering June 2025 through June 2026.
+    description: Promotional codes and discounts available across channels — 12 active and historical promos covering June 2026 through June 2027.
     columns:
       - name: promotion_id
         tests:
@@ -92,7 +92,7 @@ seeds:
           - not_null
 
   - name: raw_orders
-    description: One row per customer order. ~300K rows covering June 2025–June 2026.
+    description: One row per customer order. ~300K rows covering June 2026–June 2027.
     columns:
       - name: order_id
         description: Unique order identifier.
@@ -168,7 +168,7 @@ seeds:
     description: >
       Customer behavioral event stream — page_view, product_view, add_to_cart,
       checkout_started, purchase_completed. Powers funnel analysis. ~500K rows
-      covering June 2025–June 2026.
+      covering June 2026–June 2027.
     columns:
       - name: event_id
         tests:
