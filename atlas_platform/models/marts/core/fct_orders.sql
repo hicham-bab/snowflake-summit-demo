@@ -1,47 +1,26 @@
 {{
     config(
-        materialized='incremental',
+        materialized='table',
         schema='marts_core',
-        unique_key='order_id',
-        incremental_strategy='merge',
         cluster_by=['order_date', 'store_id'],
         tags=['mart', 'core', 'published'],
-        access='public',
-        on_schema_change='fail'
+        access='public'
     )
 }}
 
 /*
-  Materialization: INCREMENTAL (merge strategy).
-  Processes only new or updated orders since the last run.
-  cluster_by ['order_date', 'store_id'] enables efficient pruning on Snowflake.
+  Materialization: TABLE.
+  This model aggregates mutable line-item data, so each build replaces the
+  complete relation to keep order revenue aligned with the current source
+  snapshot. Clustered by order_date + store_id for efficient pruning.
 
   This is the central fact table for the platform — consumed by both
   atlas_marketing and atlas_finance via dbt Mesh cross-project refs.
 */
 
-{% if is_incremental() %}
--- Compute cutoff in a standalone CTE to avoid correlated aggregate error
--- when int_orders_enriched is inlined as an ephemeral CTE by Snowflake.
-WITH incremental_cutoff AS (
-    SELECT DATEADD('day', -3, MAX(_loaded_at)) AS cutoff
-    FROM {{ this }}
-),
-
-orders AS (
-    SELECT o.*
-    FROM {{ ref('int_orders_enriched') }} o
-    CROSS JOIN incremental_cutoff ic
-    WHERE o._loaded_at >= ic.cutoff
-)
-
-{% else %}
-
 WITH orders AS (
     SELECT * FROM {{ ref('int_orders_enriched') }}
 )
-
-{% endif %}
 
 SELECT
     order_id,

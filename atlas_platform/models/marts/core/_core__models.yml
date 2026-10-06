@@ -65,9 +65,10 @@ models:
 
   - name: fct_orders
     description: >
-      Central order fact table — one row per order. Incremental (merge on order_id),
-      clustered by [order_date, store_id]. Includes gross/net revenue, return data,
-      and realized_revenue (net of refunds). Covers June 2025–June 2026.
+      Central order fact table — one row per order. Rebuilt as a full table from
+      the current order and line-item snapshot, clustered by [order_date, store_id].
+      Includes gross/net revenue, return data, and realized_revenue (net of refunds).
+      Covers June 2025–June 2026.
     columns:
       - name: order_id
         tests:
@@ -104,10 +105,11 @@ models:
 
   - name: fct_order_items
     description: >
-      Order line-item fact — one row per product per order. Incremental (merge),
-      clustered by [order_id, category]. Includes unit margin and line margin_pct
-      for profitability analysis.
+      Order line-item fact — one row per product per order. Rebuilt as a full table
+      from the current line-item snapshot, clustered by [order_id, category].
+      Includes unit margin and line margin_pct for profitability analysis.
     columns:
+
       - name: order_item_id
         tests:
           - unique
