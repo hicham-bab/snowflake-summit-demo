@@ -23,5 +23,6 @@ SELECT
     is_stackable,
     max_redemptions,
     is_active,
+    (end_date < CURRENT_DATE())                         AS is_expired,
     CURRENT_TIMESTAMP()                                 AS dbt_updated_at
 FROM {{ ref('catalog_promotions') }}
