@@ -50,6 +50,8 @@ models:
     staging:
       +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'view' }}"
       +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+      # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+      +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
       +meta:
         engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
       +docs:
@@ -67,6 +69,8 @@ models:
         +schema: intermediate
         +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'ephemeral' }}"
         +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+        # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+        +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
         +meta:
           engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
         +docs:
@@ -75,6 +79,8 @@ models:
         +schema: intermediate
         +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'ephemeral' }}"
         +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+        # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+        +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
         +meta:
           engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
         +docs:
@@ -86,24 +92,32 @@ models:
         +tags: ["mart", "core", "published"]
         dim_products:
           +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+          # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+          +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
           +meta:
             engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
             node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         dim_stores:
           +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+          # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+          +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
           +meta:
             engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
             node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         dim_promotions:
           +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+          # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+          +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
           +meta:
             engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
             node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         dim_payment_methods:
           +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
+          # Lake Compute writes Iceberg into the Fivetran Managed Data Lake
+          +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
           +meta:
             engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
