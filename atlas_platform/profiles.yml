@@ -5,7 +5,7 @@ atlas_platform:
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') | upper }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH', '~/.snowflake/keys/atlas_rsa_key.p8') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
@@ -22,7 +22,7 @@ atlas_platform:
       - name: snowflake
         type: snowflake
         default: true
-        account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+        account: "{{ env_var('SNOWFLAKE_ACCOUNT') | upper }}"
         user: "{{ env_var('SNOWFLAKE_USER') }}"
         private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH', '~/.snowflake/keys/atlas_rsa_key.p8') }}"
         role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
@@ -38,7 +38,7 @@ atlas_platform:
         fivetran_credential: "{{ env_var('DBT_LAKE_COMPUTE_TOKEN') }}"
     prod:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') | upper }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH', '~/.snowflake/keys/atlas_rsa_key.p8') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE_PROD', 'TRANSFORMER_PROD') }}"
@@ -54,7 +54,7 @@ atlas_marketing:
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') | upper }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH', '~/.snowflake/keys/atlas_rsa_key.p8') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
@@ -70,7 +70,7 @@ atlas_finance:
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') | upper }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH', '~/.snowflake/keys/atlas_rsa_key.p8') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
