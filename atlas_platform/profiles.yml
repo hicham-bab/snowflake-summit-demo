@@ -12,6 +12,7 @@ atlas_platform:
       schema: public
       threads: 8
       client_session_keep_alive: false
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
       query_tag: dbt_platform
     # Snowflake + Lake Compute sidecar. Use with DBT_USE_LAKE_COMPUTE=true and
     # DBT_ENGINE_EXPERIMENTAL_MULTI_ADAPTER=true: dbt build --target lc
@@ -43,6 +44,7 @@ atlas_platform:
       database: ATLAS_PLATFORM
       schema: public
       threads: 16
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
       query_tag: dbt_platform_prod
 
 atlas_marketing:
@@ -58,6 +60,7 @@ atlas_marketing:
       database: "{{ env_var('SNOWFLAKE_DATABASE_MKT', 'ATLAS_MARKETING') }}"
       schema: public
       threads: 4
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
       query_tag: dbt_marketing
 
 atlas_finance:
@@ -73,4 +76,5 @@ atlas_finance:
       database: "{{ env_var('SNOWFLAKE_DATABASE_FIN', 'ATLAS_FINANCE') }}"
       schema: public
       threads: 4
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
       query_tag: dbt_finance
