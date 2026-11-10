@@ -20,11 +20,35 @@ clean-targets:
   - target
   - dbt_packages
 
+# Lake Compute: with DBT_USE_LAKE_COMPUTE=true (and DBT_ENGINE_EXPERIMENTAL_MULTI_ADAPTER=true)
+# the project mixes engines in one DAG, writing into the Fivetran Managed Data Lake:
+# - landing (one passthrough per seed) runs on Snowflake as Snowflake-managed Iceberg,
+#   standing in for Fivetran landing raw data in the lake
+# - 12 models run on Lake Compute (DuckDB on Iceberg): all 6 staging models,
+#   int_orders_enriched, int_order_items_enriched and the 4 catalog dims
+# - int_customers_with_orders stays on Snowflake (APPROX_TOP_K, DATEADD, :: are Snowflake-only),
+#   and so do the incremental facts (Lake Compute has no merge) and dim_dates (GENERATOR)
+# - the Semantic Layer and the consumer projects stay on Snowflake and read the lake back
+# Unset (Production, dbt platform jobs): everything runs on Snowflake as before, and landing is ephemeral.
+# Lake Compute mode writes to *_LC schemas (see generate_schema_name) so it never touches prod tables.
 models:
   +static_analysis: strict
   atlas_platform:
+    +meta:
+      engine: snowflake
+    landing:
+      +schema: landing
+      +tags: ["landing"]
+      +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'ephemeral' }}"
+      +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'default' }}"
+      +external_volume: "{{ 'SNOWFLAKE_MANAGED' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
     staging:
-      +materialized: view
+      +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'view' }}"
+      +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+      +meta:
+        engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+      +docs:
+        node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
       ecommerce:
         +schema: staging_ecommerce
         +tags: ["staging", "ecommerce"]
@@ -34,11 +58,51 @@ models:
     intermediate:
       +materialized: ephemeral
       +tags: ["intermediate"]
+      int_orders_enriched:
+        +schema: intermediate
+        +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'ephemeral' }}"
+        +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        +meta:
+          engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+        +docs:
+          node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+      int_order_items_enriched:
+        +schema: intermediate
+        +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'ephemeral' }}"
+        +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        +meta:
+          engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+        +docs:
+          node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
     marts:
       core:
         +materialized: table
         +schema: marts_core
         +tags: ["mart", "core", "published"]
+        dim_products:
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +meta:
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+          +docs:
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        dim_stores:
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +meta:
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+          +docs:
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        dim_promotions:
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +meta:
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+          +docs:
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        dim_payment_methods:
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +meta:
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+          +docs:
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
       inventory:
         +materialized: table
         +schema: marts_inventory
@@ -53,3 +117,8 @@ vars:
   start_date: '2026-06-01'
   end_date: '2027-06-15'
   platform_database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"
+
+# Data tests always run on Snowflake, whichever engine built the model: one place to govern quality.
+data_tests:
+  atlas_platform:
+    +adapter: snowflake

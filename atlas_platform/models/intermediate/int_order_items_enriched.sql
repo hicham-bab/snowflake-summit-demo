@@ -1,7 +1,4 @@
-{{
-    config(materialized='ephemeral')
-}}
-
+-- Engine: Lake Compute (DuckDB on Iceberg) when DBT_USE_LAKE_COMPUTE=true, else ephemeral on Snowflake. Set in dbt_project.yml.
 /*
   Materialization: EPHEMERAL
   Enriches order items with product metadata for use in fct_order_items.
@@ -23,7 +20,7 @@ products AS (
         cost_price,
         margin_pct,
         is_featured
-    FROM {{ ref('catalog_products') }}
+    FROM {{ ref('lnd_catalog_products') }}
 ),
 
 enriched AS (

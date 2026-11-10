@@ -1,9 +1,6 @@
-{{
-    config(materialized='view')
-}}
-
+-- Materialization set in dbt_project.yml: view on Snowflake, Lake Compute table in Lake Compute mode.
 WITH source AS (
-    SELECT * FROM {{ ref('raw_customers') }}
+    SELECT * FROM {{ ref('lnd_raw_customers') }}
 ),
 
 renamed AS (
@@ -28,12 +25,12 @@ renamed AS (
         is_sms_subscribed,
 
         -- Derived cohort
-        DATE_TRUNC('month', acquisition_date)          AS acquisition_month,
-        DATE_TRUNC('quarter', acquisition_date)        AS acquisition_quarter,
+        CAST(DATE_TRUNC('month', acquisition_date) AS DATE)          AS acquisition_month,
+        CAST(DATE_TRUNC('quarter', acquisition_date) AS DATE)        AS acquisition_quarter,
         YEAR(acquisition_date)                         AS acquisition_year,
 
         -- Days since acquisition (for tenure analysis)
-        DATEDIFF('day', acquisition_date, CURRENT_DATE()) AS days_since_acquisition,
+        DATEDIFF('day', acquisition_date, CURRENT_DATE) AS days_since_acquisition,
 
         created_at,
         updated_at

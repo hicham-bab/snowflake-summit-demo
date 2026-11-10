@@ -19,5 +19,5 @@ SELECT
     supports_refund,
     supports_partial_refund,
     is_active,
-    CURRENT_TIMESTAMP()                                 AS dbt_updated_at
-FROM {{ ref('catalog_payment_methods') }}
+    CAST(CURRENT_TIMESTAMP AS TIMESTAMP)                                 AS dbt_updated_at
+FROM {{ ref('lnd_catalog_payment_methods') }}

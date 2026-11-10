@@ -1,11 +1,8 @@
-{{
-    config(materialized='view')
-}}
-
+-- Materialization set in dbt_project.yml: view on Snowflake, Lake Compute table in Lake Compute mode.
 -- Staging view over the dim_campaigns seed — adds derived fields for downstream use.
 
 WITH campaigns AS (
-    SELECT * FROM {{ ref('catalog_campaigns') }}
+    SELECT * FROM {{ ref('lnd_catalog_campaigns') }}
 ),
 
 renamed AS (
@@ -27,7 +24,7 @@ renamed AS (
         DATEDIFF('day', start_date, end_date) + 1      AS campaign_duration_days,
         ROUND(budget_usd / NULLIF(DATEDIFF('day', start_date, end_date) + 1, 0), 2)
                                                         AS daily_budget_usd,
-        DATE_TRUNC('month', start_date)                AS campaign_start_month,
+        CAST(DATE_TRUNC('month', start_date) AS DATE)                AS campaign_start_month,
         QUARTER(start_date)                             AS campaign_quarter,
         YEAR(start_date)                               AS campaign_year
 

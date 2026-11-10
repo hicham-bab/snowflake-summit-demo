@@ -23,5 +23,5 @@ SELECT
     is_stackable,
     max_redemptions,
     is_active,
-    CURRENT_TIMESTAMP()                                 AS dbt_updated_at
-FROM {{ ref('catalog_promotions') }}
+    CAST(CURRENT_TIMESTAMP AS TIMESTAMP)                                 AS dbt_updated_at
+FROM {{ ref('lnd_catalog_promotions') }}
