@@ -1,9 +1,6 @@
-{{
-    config(materialized='view')
-}}
-
+-- Materialization set in dbt_project.yml: view on Snowflake, Lake Compute table in Lake Compute mode.
 WITH source AS (
-    SELECT * FROM {{ ref('raw_ad_spend') }}
+    SELECT * FROM {{ ref('lnd_raw_ad_spend') }}
 ),
 
 renamed AS (
@@ -22,7 +19,7 @@ renamed AS (
         -- Derived performance metrics
         CASE
             WHEN impressions > 0
-            THEN ROUND((clicks::FLOAT / impressions) * 100, 4)
+            THEN ROUND((CAST(clicks AS DOUBLE) / impressions) * 100, 4)
             ELSE 0
         END                                             AS click_through_rate_pct,
 
@@ -38,8 +35,8 @@ renamed AS (
             ELSE NULL
         END                                             AS cost_per_acquisition,
 
-        DATE_TRUNC('week',  spend_date)                AS spend_week,
-        DATE_TRUNC('month', spend_date)                AS spend_month,
+        CAST(DATE_TRUNC('week', spend_date) AS DATE)                AS spend_week,
+        CAST(DATE_TRUNC('month', spend_date) AS DATE)                AS spend_month,
         QUARTER(spend_date)                             AS spend_quarter,
         YEAR(spend_date)                               AS spend_year,
 

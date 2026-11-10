@@ -2,9 +2,7 @@ selectors:
   - name: lake_compute
     description: >
       The models that run on Lake Compute when DBT_USE_LAKE_COMPUTE=true, with their tests.
+      Upstream landing tables must already exist (build them once with a full dbt build).
     definition:
-      union:
-        - method: fqn
-          value: int_orders_enriched
-        - method: fqn
-          value: int_order_items_enriched
+      method: config.meta.engine
+      value: lake_compute

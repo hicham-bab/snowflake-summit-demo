@@ -20,7 +20,7 @@ products AS (
         cost_price,
         margin_pct,
         is_featured
-    FROM {{ ref('stg_catalog__products') }}
+    FROM {{ ref('lnd_catalog_products') }}
 ),
 
 enriched AS (

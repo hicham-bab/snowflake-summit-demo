@@ -22,5 +22,5 @@ SELECT
     district,
     is_active,
     manager_name,
-    CURRENT_TIMESTAMP()                                 AS dbt_updated_at
-FROM {{ ref('catalog_stores') }}
+    CAST(CURRENT_TIMESTAMP AS TIMESTAMP)                                 AS dbt_updated_at
+FROM {{ ref('lnd_catalog_stores') }}

@@ -1,13 +1,13 @@
 -- Materialization set in dbt_project.yml: view on Snowflake, Iceberg table in Lake Compute mode.
 WITH source AS (
-    SELECT * FROM {{ ref('raw_order_items') }}
+    SELECT * FROM {{ ref('lnd_raw_order_items') }}
 ),
 
 renamed AS (
     SELECT
-        order_item_id,
-        order_id,
-        product_id,
+        CAST(order_item_id AS BIGINT)                   AS order_item_id,
+        CAST(order_id AS BIGINT)                        AS order_id,
+        CAST(product_id AS BIGINT)                      AS product_id,
         quantity,
         unit_price_at_purchase,
         line_gross_revenue,
@@ -22,7 +22,7 @@ renamed AS (
             ELSE 0
         END                                             AS discount_pct,
 
-        _loaded_at
+        CAST(_loaded_at AS TIMESTAMP)                   AS _loaded_at
     FROM source
 )
 

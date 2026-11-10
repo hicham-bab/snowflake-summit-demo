@@ -24,5 +24,5 @@ SELECT
     launch_date,
     weight_lbs,
     is_featured,
-    CURRENT_TIMESTAMP()                                 AS dbt_updated_at
-FROM {{ ref('catalog_products') }}
+    CAST(CURRENT_TIMESTAMP AS TIMESTAMP)                                 AS dbt_updated_at
+FROM {{ ref('lnd_catalog_products') }}

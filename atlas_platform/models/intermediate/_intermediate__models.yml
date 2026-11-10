@@ -1,0 +1,118 @@
+version: 2
+
+models:
+  - name: int_customers_with_orders
+    description: >
+      Customer-level enrichment that combines staged customer attributes with
+      lifetime order aggregates for dim_customers.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier.
+      - name: first_name
+        description: Customer first name.
+      - name: last_name
+        description: Customer last name.
+      - name: full_name
+        description: Customer full name.
+      - name: email
+        description: Customer email address.
+      - name: city
+        description: Customer city.
+      - name: state
+        description: Customer state.
+      - name: customer_segment
+        description: Customer marketing segment.
+      - name: acquisition_channel
+        description: Channel through which the customer was acquired.
+      - name: acquisition_date
+        description: Date the customer was acquired.
+      - name: acquisition_month
+        description: Month the customer was acquired.
+      - name: acquisition_quarter
+        description: Quarter the customer was acquired.
+      - name: acquisition_year
+        description: Year the customer was acquired.
+      - name: age
+        description: Customer age.
+      - name: gender
+        description: Customer gender.
+      - name: is_email_subscribed
+        description: Whether the customer is subscribed to email marketing.
+      - name: is_sms_subscribed
+        description: Whether the customer is subscribed to SMS marketing.
+      - name: days_since_acquisition
+        description: Days between acquisition date and the current date.
+      - name: total_orders
+        description: Count of all orders placed by the customer.
+      - name: completed_orders
+        description: Count of completed orders placed by the customer.
+      - name: returned_orders
+        description: Count of returned orders placed by the customer.
+      - name: cancelled_orders
+        description: Count of cancelled orders placed by the customer.
+      - name: lifetime_gross_revenue
+        description: Gross revenue from completed customer orders.
+      - name: lifetime_net_revenue
+        description: Net revenue from completed customer orders.
+      - name: avg_order_value
+        description: Average gross revenue across completed customer orders.
+      - name: first_order_date
+        description: Date of the customer's first order.
+      - name: last_order_date
+        description: Date of the customer's most recent order.
+      - name: days_between_first_last_order
+        description: Days between the customer's first and latest order dates.
+      - name: distinct_channels_used
+        description: Count of distinct traffic sources used by the customer.
+      - name: most_common_channel
+        description: Most common traffic source for the customer.
+      - name: customer_lifecycle_stage
+        description: Lifecycle stage based on recency of completed orders.
+      - name: customer_value_tier
+        description: Value tier based on lifetime net revenue.
+
+  - name: int_order_items_enriched
+    description: >
+      Order-item enrichment that joins staged order items to product attributes
+      and calculates unit and line-level margin metrics.
+    columns:
+      - name: order_item_id
+        description: Unique order line-item identifier.
+      - name: order_id
+        description: Order identifier.
+      - name: product_id
+        description: Product identifier.
+      - name: product_name
+        description: Product display name.
+      - name: sku
+        description: Product SKU.
+      - name: category
+        description: Product category.
+      - name: subcategory
+        description: Product subcategory.
+      - name: brand
+        description: Product brand.
+      - name: quantity
+        description: Quantity purchased for the order item.
+      - name: unit_price_at_purchase
+        description: Unit price charged at purchase time.
+      - name: cost_price
+        description: Product unit cost.
+      - name: line_gross_revenue
+        description: Gross revenue for the order item.
+      - name: line_net_revenue
+        description: Net revenue for the order item.
+      - name: line_discount
+        description: Discount amount applied to the order item.
+      - name: discount_pct
+        description: Discount percentage applied to the order item.
+      - name: unit_margin
+        description: Unit price less product cost.
+      - name: line_margin
+        description: Unit margin multiplied by quantity.
+      - name: line_margin_pct
+        description: Unit margin as a percentage of unit price.
+      - name: is_featured
+        description: Whether the product is featured in the catalog.
+      - name: _loaded_at
+        description: Timestamp when the source order item was loaded.

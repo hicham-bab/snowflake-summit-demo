@@ -33,7 +33,7 @@ returns AS (
 
 stores AS (
     SELECT store_id, store_name, store_type, channel, city, state, region
-    FROM {{ ref('stg_catalog__stores') }}
+    FROM {{ ref('lnd_catalog_stores') }}
 ),
 
 enriched AS (
