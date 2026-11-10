@@ -2,7 +2,7 @@
 
     {%- set default_schema = target.schema -%}
     {#- Lake Compute mode writes to <schema>_LC so it never overwrites the Snowflake-only tables. -#}
-    {%- set suffix = '_LC' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else '' -%}
+    {%- set suffix = '_LC' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else '' -%}
 
     {%- if custom_schema_name is none -%}
 

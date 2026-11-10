@@ -1,5 +1,7 @@
 atlas_platform:
-  target: dev
+  # Default: Snowflake + Lake Compute. Models configured for Lake Compute run there with a plain `dbt build`.
+  # Snowflake only: `dbt build --target dev`, or DBT_USE_LAKE_COMPUTE=false.
+  target: lc
   outputs:
     dev:
       type: snowflake

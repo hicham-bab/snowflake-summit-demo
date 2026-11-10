@@ -2,7 +2,7 @@
 
 {{
     config(
-        target_schema='snapshots' ~ ('_LC' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else ''),
+        target_schema='snapshots' ~ ('_LC' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else ''),
         strategy='check',
         unique_key='customer_id',
         check_cols=[

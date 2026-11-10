@@ -39,16 +39,16 @@ models:
     landing:
       +schema: landing
       +tags: ["landing"]
-      +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'ephemeral' }}"
-      +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'default' }}"
-      +external_volume: "{{ 'SNOWFLAKE_MANAGED' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+      +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'ephemeral' }}"
+      +table_format: "{{ 'iceberg' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'default' }}"
+      +external_volume: "{{ 'SNOWFLAKE_MANAGED' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
     staging:
-      +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'view' }}"
-      +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+      +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'view' }}"
+      +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
       +meta:
-        engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+        engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
       +docs:
-        node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
       ecommerce:
         +schema: staging_ecommerce
         +tags: ["staging", "ecommerce"]
@@ -60,49 +60,49 @@ models:
       +tags: ["intermediate"]
       int_orders_enriched:
         +schema: intermediate
-        +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'ephemeral' }}"
-        +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'ephemeral' }}"
+        +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         +meta:
-          engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+          engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
         +docs:
-          node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
       int_order_items_enriched:
         +schema: intermediate
-        +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'ephemeral' }}"
-        +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+        +materialized: "{{ 'table' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'ephemeral' }}"
+        +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         +meta:
-          engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+          engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
         +docs:
-          node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
     marts:
       core:
         +materialized: table
         +schema: marts_core
         +tags: ["mart", "core", "published"]
         dim_products:
-          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
           +meta:
-            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
-            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         dim_stores:
-          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
           +meta:
-            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
-            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         dim_promotions:
-          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
           +meta:
-            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
-            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
         dim_payment_methods:
-          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+          +adapter: "{{ 'lakecompute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
           +meta:
-            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else 'snowflake' }}"
+            engine: "{{ 'lake_compute' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else 'snowflake' }}"
           +docs:
-            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+            node_color: "{{ '#FF694B' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
       inventory:
         +materialized: table
         +schema: marts_inventory
@@ -122,4 +122,4 @@ vars:
 # one place to govern quality. Unset otherwise, so normal runs need no experimental flag.
 data_tests:
   atlas_platform:
-    +adapter: "{{ 'snowflake' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
+    +adapter: "{{ 'snowflake' if env_var('DBT_USE_LAKE_COMPUTE', 'true' if target.name == 'lc' else 'false') | lower == 'true' else none }}"
