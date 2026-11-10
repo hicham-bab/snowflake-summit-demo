@@ -118,7 +118,8 @@ vars:
   end_date: '2027-06-15'
   platform_database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"
 
-# Data tests always run on Snowflake, whichever engine built the model: one place to govern quality.
+# In Lake Compute mode, data tests run on Snowflake whichever engine built the model:
+# one place to govern quality. Unset otherwise, so normal runs need no experimental flag.
 data_tests:
   atlas_platform:
-    +adapter: snowflake
+    +adapter: "{{ 'snowflake' if env_var('DBT_USE_LAKE_COMPUTE', 'false') | lower == 'true' else none }}"
