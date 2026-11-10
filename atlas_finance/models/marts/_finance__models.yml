@@ -3,13 +3,15 @@ version: 2
 models:
   - name: fct_revenue_daily
     description: >
-      Daily revenue rollup — one row per day per store. Incremental merge on revenue_date.
-      Clustered by [revenue_date, store_id]. Includes gross margin calculation.
-      NOTE: gross_margin_pct has a known operator precedence bug (see model SQL).
+      Daily revenue rollup — one row per day per store. Incremental merge on revenue_date. Clustered by [revenue_date, store_id]. Includes gross margin calculation. NOTE: gross_margin_pct has a known operator precedence bug (see model SQL).
+       Semantic model over fct_revenue_daily. Powers the finance Semantic Layer — daily revenue, margins, refunds, and order counts by store and channel.
     columns:
       - name: revenue_date
         tests:
           - not_null
+        dimension:
+          type: time
+        granularity: day
       - name: store_id
         tests:
           - not_null
@@ -20,6 +22,97 @@ models:
         tests:
           - not_null
 
+      - name: order_month
+        dimension:
+          type: time
+        granularity: month
+      - name: order_quarter
+        dimension:
+          type: categorical
+      - name: order_year
+        dimension:
+          type: categorical
+      - name: store_channel
+        dimension:
+          type: categorical
+      - name: store_region
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: fct_revenue_daily
+    agg_time_dimension: revenue_date
+    derived_semantics:
+      entities:
+        - name: revenue_day_store
+          type: primary
+          expr: revenue_date || '_' || CAST(store_id AS VARCHAR)
+    metrics:
+      - name: finance_gross_revenue
+        description: Total gross revenue — all channels, all regions.
+        label: "Gross Revenue"
+        type: simple
+        agg: sum
+        expr: gross_revenue
+      - name: finance_net_revenue
+        description: Net revenue after discounts.
+        label: "Net Revenue"
+        type: simple
+        agg: sum
+        expr: net_revenue
+      - name: finance_realized_revenue
+        description: Revenue net of all refunds — cash collected.
+        label: "Realized Revenue"
+        type: simple
+        agg: sum
+        expr: realized_revenue
+      - name: finance_cogs
+        description: Total cost of goods sold for completed orders.
+        label: "COGS"
+        type: simple
+        agg: sum
+        expr: total_cogs
+      - name: total_discounts
+        agg: sum
+        expr: total_discounts
+        label: "Total Discounts"
+        type: simple
+        hidden: true
+      - name: total_refunds
+        agg: sum
+        expr: total_refunds
+        label: "Total Refunds (base)"
+        type: simple
+        hidden: true
+      - name: total_completed_orders
+        agg: sum
+        expr: completed_orders
+        label: "Completed Orders"
+        type: simple
+        hidden: true
+      - name: total_unique_customers
+        agg: sum
+        expr: unique_customers
+        label: "Unique Customers"
+
+
+        type: simple
+        hidden: true
+      - name: gross_profit
+        description: Gross profit — net revenue minus COGS.
+        label: "Gross Profit"
+        type: derived
+        expr: "finance_net_revenue - finance_cogs"
+        input_metrics:
+          - name: finance_net_revenue
+          - name: finance_cogs
+
+      - name: gross_margin_rate
+        description: Gross margin percentage — (net_revenue - cogs) / net_revenue.
+        label: "Gross Margin %"
+        type: ratio
+        numerator: gross_profit
+        denominator: finance_net_revenue
   - name: fct_revenue_monthly
     description: >
       Monthly revenue aggregation — exec-reporting grain. Full table refresh.
@@ -34,33 +127,127 @@ models:
           The daily model has a bug here that this model corrects.
 
   - name: fct_customer_ltv
-    description: >
-      Customer lifetime value — one row per customer. Full table refresh.
-      Includes net_ltv (minus refunds) and predicted_12m_ltv extrapolation.
+    description: >-
+      Customer lifetime value — one row per customer. Full table refresh. Includes net_ltv (minus refunds) and predicted_12m_ltv extrapolation.
+       Semantic model over fct_customer_ltv — customer value and LTV metrics.
     columns:
       - name: customer_id
         tests:
           - unique
           - not_null
 
+        entity:
+          type: primary
+          name: customer
+      - name: customer_segment
+        dimension:
+          type: categorical
+      - name: customer_value_tier
+        dimension:
+          type: categorical
+      - name: customer_lifecycle_stage
+        dimension:
+          type: categorical
+      - name: acquisition_channel
+        dimension:
+          type: categorical
+      - name: acquisition_month
+        dimension:
+          type: time
+        granularity: month
+    semantic_model:
+      enabled: true
+      name: fct_customer_ltv
+    agg_time_dimension: acquisition_month
+    metrics:
+      - name: avg_customer_net_ltv
+        description: Average customer lifetime value net of refunds.
+        label: "Avg Net Customer LTV"
+        type: simple
+        agg: average
+        expr: net_ltv
+      - name: total_refunds_finance_metric
+        description: Total refunded amount — impacts realized revenue and cash flow.
+        label: "Total Refunds"
+        type: simple
+        agg: sum
+        expr: total_refunds
+      - name: total_net_ltv
+        agg: sum
+        expr: net_ltv
+        label: "Total Net LTV"
+        type: simple
+        hidden: true
+      - name: total_customers_finance
+        agg: count
+        expr: customer_id
+        label: "Customer Count"
+        type: simple
+        hidden: true
   - name: fct_cohort_analysis
-    description: >
-      Monthly cohort retention analysis — one row per cohort × activity month.
-      Computes retention_rate_pct and cumulative_cohort_revenue for the investor deck.
+    description: >-
+      Monthly cohort retention analysis — one row per cohort × activity month. Computes retention_rate_pct and cumulative_cohort_revenue for the investor deck.
+       Semantic model over fct_cohort_analysis — cohort retention and cumulative LTV.
     columns:
       - name: cohort_month
         tests:
           - not_null
+        dimension:
+          type: time
+        granularity: month
       - name: retention_rate_pct
         tests:
           - not_null
 
+      - name: months_since_acquisition
+        dimension:
+          type: categorical
+      - name: acquisition_channel
+        dimension:
+          type: categorical
+      - name: customer_segment
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: fct_cohort_analysis
+    agg_time_dimension: cohort_month
+    derived_semantics:
+      entities:
+        - name: cohort_period
+          type: primary
+          expr: cohort_month || '_' || CAST(months_since_acquisition AS VARCHAR) || '_' || acquisition_channel
+    metrics:
+      - name: cohort_month_1_retention
+        description: Percentage of customers who purchase again in Month 1 after acquisition.
+        label: "Month-1 Retention Rate"
+        type: simple
+        agg: average
+        expr: retention_rate_pct
+      - name: total_cohort_revenue
+        agg: sum
+        expr: cohort_net_revenue
+        label: "Cohort Net Revenue"
+        type: simple
+        hidden: true
+      - name: active_cohort_customers
+        agg: sum
+        expr: active_customers
+        label: "Active Customers"
+
+
+        type: simple
+        hidden: true
   - name: dim_fiscal_calendar
     description: >
       Atlas's fiscal calendar (Feb 1 – Jan 31) derived from the platform dim_dates.
       Includes fiscal year/quarter/period labels for budget vs. actuals alignment.
+      Also the MetricFlow time spine for this project.
+    time_spine:
+      standard_granularity_column: date_day
     columns:
       - name: date_day
+        granularity: day
         tests:
           - unique
           - not_null

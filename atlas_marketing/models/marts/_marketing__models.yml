@@ -10,12 +10,78 @@ models:
       - name: spend_date
         tests:
           - not_null
+        dimension:
+          type: time
+        granularity: day
       - name: roas_tier
         tests:
           - accepted_values:
               arguments:
                 values: ['high_performing', 'efficient', 'break_even', 'underperforming']
 
+        dimension:
+          type: categorical
+      - name: spend_month
+        dimension:
+          type: time
+        granularity: month
+      - name: channel
+        dimension:
+          type: categorical
+      - name: campaign_type
+        dimension:
+          type: categorical
+      - name: campaign_name
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: fct_campaign_performance
+    description: Semantic model over fct_campaign_performance. Powers marketing efficiency metrics.
+    agg_time_dimension: spend_date
+    derived_semantics:
+      entities:
+        - name: campaign
+          type: primary
+          expr: CAST(campaign_id AS VARCHAR) || '_' || CAST(spend_date AS VARCHAR)
+    metrics:
+      - name: total_marketing_spend
+        description: Total ad spend across all channels and campaigns.
+        label: "Total Marketing Spend"
+        type: simple
+        agg: sum
+        expr: spend_usd
+      - name: total_impressions
+        agg: sum
+        expr: impressions
+        label: "Total Impressions"
+        type: simple
+        hidden: true
+      - name: total_clicks
+        agg: sum
+        expr: clicks
+        label: "Total Clicks"
+        type: simple
+        hidden: true
+      - name: total_attributed_revenue
+        agg: sum
+        expr: attributed_net_revenue
+        label: "Attributed Net Revenue"
+        type: simple
+        hidden: true
+      - name: total_attributed_orders
+        agg: sum
+        expr: dbt_attributed_orders
+        label: "Attributed Orders"
+        type: simple
+        hidden: true
+      - name: avg_roas
+        agg: average
+        expr: roas
+        label: "Average ROAS"
+
+        type: simple
+        hidden: true
   - name: fct_customer_acquisition
     description: >
       Customer acquisition metrics by channel and cohort month. Intentionally has a
@@ -29,13 +95,63 @@ models:
           - not_null
 
   - name: fct_channel_attribution
-    description: >
-      Monthly revenue attribution by last-touch channel. Incremental merge on
-      [attributed_channel, order_month]. Powers the marketing attribution dashboard.
+    description: >-
+      Monthly revenue attribution by last-touch channel. Incremental merge on [attributed_channel, order_month]. Powers the marketing attribution dashboard.
+       Semantic model over fct_channel_attribution. Monthly revenue by channel.
     columns:
       - name: attributed_channel
         tests:
           - not_null
+        dimension:
+          type: categorical
       - name: order_month
         tests:
           - not_null
+        dimension:
+          type: time
+        granularity: month
+    semantic_model:
+      enabled: true
+      name: fct_channel_attribution
+    agg_time_dimension: order_month
+    derived_semantics:
+      entities:
+        - name: channel_month
+          type: primary
+          expr: attributed_channel || '_' || CAST(order_month AS VARCHAR)
+    metrics:
+      - name: total_channel_revenue
+        agg: sum
+        expr: attributed_net_revenue
+        label: "Channel Revenue"
+        type: simple
+        hidden: true
+      - name: channel_order_count
+        agg: sum
+        expr: attributed_orders
+        label: "Attributed Orders by Channel"
+        type: simple
+        hidden: true
+      - name: mobile_revenue
+        agg: sum
+        expr: mobile_revenue
+        label: "Mobile Revenue"
+
+
+        type: simple
+        hidden: true
+      - name: paid_social_revenue_share
+        description: Share of attributed revenue from paid social channels.
+        label: "Paid Social Revenue Share"
+        type: derived
+        expr: "paid_social_revenue / NULLIF(total_channel_revenue, 0)"
+        input_metrics:
+          - name: total_channel_revenue
+
+  - name: metricflow_time_spine
+    description: MetricFlow time spine for atlas_marketing, one row per day from atlas_platform.dim_dates.
+    time_spine:
+      standard_granularity_column: date_day
+    columns:
+      - name: date_day
+        granularity: day

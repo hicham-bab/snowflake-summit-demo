@@ -3,9 +3,8 @@ version: 2
 models:
   - name: dim_customers
     description: >
-      Customer dimension — one row per customer, enriched with lifetime order
-      statistics, lifecycle stage, and value tier. Rebuilt nightly as a full table.
-      Consumed by atlas_marketing and atlas_finance via dbt Mesh.
+      Customer dimension — one row per customer, enriched with lifetime order statistics, lifecycle stage, and value tier. Rebuilt nightly as a full table. Consumed by atlas_marketing and atlas_finance via dbt Mesh.
+       Semantic model over dim_customers. Powers customer-centric metrics: LTV, segment counts, acquisition performance, and lifecycle analysis.
     # BUG #3: customer_id is missing unique + not_null tests.
     # Copilot will flag this as a data quality gap.
     columns:
@@ -14,22 +13,85 @@ models:
         # tests:       ← Missing! Copilot will catch this.
         #   - unique
         #   - not_null
+        entity:
+          type: primary
+          name: customer
       - name: customer_segment
         tests:
           - accepted_values:
               arguments:
                 values: ['VIP', 'Premium', 'Regular', 'Budget']
+        dimension:
+          type: categorical
       - name: customer_lifecycle_stage
         tests:
           - accepted_values:
               arguments:
                 values: ['active', 'at_risk', 'churned', 'never_purchased']
+        dimension:
+          type: categorical
       - name: customer_value_tier
         tests:
           - accepted_values:
               arguments:
                 values: ['high_value', 'mid_value', 'low_value', 'no_purchases']
 
+        dimension:
+          type: categorical
+      - name: acquisition_channel
+        dimension:
+          type: categorical
+      - name: acquisition_month
+        dimension:
+          type: time
+        granularity: month
+      - name: state
+        dimension:
+          type: categorical
+      - name: gender
+        dimension:
+          type: categorical
+      - name: is_email_subscribed
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: dim_customers
+    agg_time_dimension: acquisition_month
+    metrics:
+      - name: total_customers
+        description: Total number of customers in the system.
+        label: "Total Customers"
+        type: simple
+        agg: count
+        expr: customer_id
+      - name: active_customers
+        description: Customers who ordered in the past 90 days.
+        label: "Active Customers"
+        type: simple
+        agg: sum
+        expr: CASE WHEN customer_lifecycle_stage = 'active' THEN 1 ELSE 0 END
+      - name: average_customer_ltv
+        description: Average lifetime net revenue per customer.
+        label: "Avg Customer LTV"
+        type: simple
+        agg: average
+        expr: lifetime_net_revenue
+      - name: total_customer_ltv
+        description: Sum of lifetime net revenue across all customers.
+        agg: sum
+        expr: lifetime_net_revenue
+        label: "Total Customer LTV"
+        type: simple
+        hidden: true
+      - name: avg_order_count_per_customer
+        agg: average
+        expr: total_orders
+        label: "Avg Orders per Customer"
+
+
+        type: simple
+        hidden: true
   - name: dim_products
     description: Product dimension — 80 active SKUs across 8 categories with cost and margin data.
     columns:
@@ -103,17 +165,22 @@ models:
 
   - name: fct_orders
     description: >
-      Central order fact table — one row per order. Incremental (merge on order_id),
-      clustered by [order_date, store_id]. Includes gross/net revenue, return data,
-      and realized_revenue (net of refunds). Covers June 2026–June 2027.
+      Central order fact table — one row per order. Incremental (merge on order_id), clustered by [order_date, store_id]. Includes gross/net revenue, return data, and realized_revenue (net of refunds). Covers June 2026–June 2027.
+       Semantic model over fct_orders. Powers all order-level metrics in the dbt Semantic Layer — revenue, order counts, AOV, and return rates.
     columns:
       - name: order_id
         tests:
           - unique
           - not_null
+        entity:
+          type: primary
+          name: order
       - name: order_date
         tests:
           - not_null
+        dimension:
+          type: time
+        granularity: day
       - name: customer_id
         tests:
           - not_null
@@ -121,6 +188,9 @@ models:
               arguments:
                 to: ref('dim_customers')
                 field: customer_id
+        entity:
+          type: foreign
+          name: customer
       - name: store_id
         tests:
           - not_null
@@ -128,11 +198,16 @@ models:
               arguments:
                 to: ref('dim_stores')
                 field: store_id
+        entity:
+          type: foreign
+          name: store
       - name: order_status
         tests:
           - accepted_values:
               arguments:
                 values: ['COMPLETED', 'RETURNED', 'CANCELLED']
+        dimension:
+          type: categorical
       - name: gross_revenue
         tests:
           - not_null
@@ -140,6 +215,115 @@ models:
         tests:
           - not_null
 
+      - name: order_month
+        dimension:
+          type: time
+        granularity: month
+      - name: order_quarter
+        dimension:
+          type: categorical
+      - name: order_year
+        dimension:
+          type: categorical
+      - name: store_channel
+        dimension:
+          type: categorical
+      - name: store_region
+        dimension:
+          type: categorical
+      - name: traffic_source
+        dimension:
+          type: categorical
+      - name: payment_method
+        dimension:
+          type: categorical
+      - name: has_discount
+        dimension:
+          type: categorical
+      - name: is_completed
+        dimension:
+          type: categorical
+      - name: is_returned
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: fct_orders
+    agg_time_dimension: order_date
+    metrics:
+      - name: total_gross_revenue
+        description: Total gross revenue across all orders and channels.
+        label: "Total Gross Revenue"
+        type: simple
+        agg: sum
+        expr: gross_revenue
+      - name: total_net_revenue
+        description: Total net revenue after discounts.
+        label: "Total Net Revenue"
+        type: simple
+        agg: sum
+        expr: net_revenue
+      - name: realized_revenue
+        description: Revenue net of all approved refunds — closest to cash collected.
+        label: "Realized Revenue"
+        type: simple
+        agg: sum
+        expr: realized_revenue
+      - name: discount_amount
+        agg: sum
+        expr: order_level_discount
+        label: "Total Discounts"
+        type: simple
+        hidden: true
+      - name: refund_amount
+        agg: sum
+        expr: refund_amount
+        label: "Total Refunds"
+        type: simple
+        hidden: true
+      - name: order_count
+        description: Total number of orders placed.
+        agg: count
+        expr: order_id
+        label: "Orders"
+        type: simple
+        hidden: true
+      - name: completed_order_count
+        agg: sum
+        expr: CASE WHEN is_completed THEN 1 ELSE 0 END
+        label: "Completed Orders"
+        type: simple
+        hidden: true
+      - name: returned_order_count
+        agg: sum
+        expr: CASE WHEN is_returned THEN 1 ELSE 0 END
+        label: "Returned Orders"
+        type: simple
+        hidden: true
+      - name: total_units_sold
+        agg: sum
+        expr: total_units
+        label: "Units Sold"
+
+
+        type: simple
+        hidden: true
+      - name: return_rate
+        description: Percentage of orders that were returned.
+        label: "Return Rate"
+        type: ratio
+        numerator: returned_order_count
+        denominator: order_count
+      - name: revenue_mom_growth
+        description: Month-over-month net revenue growth rate.
+        label: "Revenue MoM Growth"
+        type: derived
+        expr: "(total_net_revenue - net_revenue_prev_month) / nullif(net_revenue_prev_month, 0)"
+        input_metrics:
+          - name: total_net_revenue
+          - name: total_net_revenue
+            alias: net_revenue_prev_month
+            offset_window: 1 month
   - name: fct_order_items
     description: >
       Order line-item fact — one row per product per order. Incremental (merge),

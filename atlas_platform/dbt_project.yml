@@ -9,11 +9,9 @@ profile: atlas_platform
 flags:
   manage_state: true
   # Webinar hygiene: keep the console clean. Remove to see them again.
-  # SemanticModelDeprecated: semantic models use the legacy YAML; migrate after the webinar.
   # StateServiceWarn: dbt State's metadata fetch is slow on this shared Snowflake account.
   warn_error_options:
     silence:
-      - SemanticModelDeprecated
       - StateServiceWarn
 model-paths: ["models"]
 seed-paths: ["seeds"]

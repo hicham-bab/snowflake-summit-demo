@@ -2,6 +2,9 @@ name: atlas_finance
 version: '1.0.0'
 require-dbt-version: [">=1.9.0"]
 
+dbt-cloud:
+    project-id: 17342
+
 profile: atlas_finance
 
 model-paths: ["models"]
