@@ -1,7 +1,4 @@
-{{
-    config(materialized='ephemeral')
-}}
-
+-- Engine: Lake Compute (DuckDB on Iceberg) when DBT_USE_LAKE_COMPUTE=true, else ephemeral on Snowflake. Set in dbt_project.yml.
 /*
   Materialization: EPHEMERAL — inlined as a CTE into downstream models.
   This keeps intermediate business logic encapsulated without creating
@@ -36,7 +33,7 @@ returns AS (
 
 stores AS (
     SELECT store_id, store_name, store_type, channel, city, state, region
-    FROM {{ ref('catalog_stores') }}
+    FROM {{ ref('stg_catalog__stores') }}
 ),
 
 enriched AS (

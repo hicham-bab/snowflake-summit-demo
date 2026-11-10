@@ -1,7 +1,4 @@
-{{
-    config(materialized='view')
-}}
-
+-- Materialization set in dbt_project.yml: view on Snowflake, Iceberg table in Lake Compute mode.
 WITH source AS (
     SELECT * FROM {{ ref('raw_order_items') }}
 ),

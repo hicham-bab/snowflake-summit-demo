@@ -1,0 +1,10 @@
+selectors:
+  - name: lake_compute
+    description: >
+      The models that run on Lake Compute when DBT_USE_LAKE_COMPUTE=true, with their tests.
+    definition:
+      union:
+        - method: fqn
+          value: int_orders_enriched
+        - method: fqn
+          value: int_order_items_enriched

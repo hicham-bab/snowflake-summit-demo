@@ -13,6 +13,26 @@ atlas_platform:
       threads: 8
       client_session_keep_alive: false
       query_tag: dbt_platform
+    # Snowflake + Lake Compute sidecar. Use with DBT_USE_LAKE_COMPUTE=true and
+    # DBT_ENGINE_EXPERIMENTAL_MULTI_ADAPTER=true: dbt build --target lc
+    lc:
+      - name: snowflake
+        type: snowflake
+        default: true
+        account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+        user: "{{ env_var('SNOWFLAKE_USER') }}"
+        private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH', '~/.snowflake/keys/atlas_rsa_key.p8') }}"
+        role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+        warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'ATLAS_WH') }}"
+        database: "{{ env_var('SNOWFLAKE_DATABASE', 'ATLAS_PLATFORM') }}"
+        schema: public
+        threads: 8
+        private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
+        query_tag: dbt_platform_lc
+      - name: lakecompute
+        type: lakecompute
+        method: fivetran
+        fivetran_credential: "{{ env_var('DBT_LAKE_COMPUTE_TOKEN') }}"
     prod:
       type: snowflake
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
